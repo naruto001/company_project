@@ -1,0 +1,118 @@
+/* accordion */
+
+ .accordion02 {
+ 	width: 100%;
+ 	height:auto;
+ 	background: #fff;
+ 	-webkit-border-radius:0.08rem;
+ 	-moz-border-radius: 0.08rem;
+ 	border-radius: 0.08rem;
+ }
+.accordion02 .link02 {
+	display: block;
+	padding: 0.58rem 0.7rem 0.58rem 1.5rem;
+	color: #4D4D4D;
+	font-size:0.52rem;
+ 	border-bottom: 1px solid #ddd;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	position:relative;
+}
+.accordion02 li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion02 .link02 i {
+	position: absolute;
+	top:0.72rem;
+	right:0.74rem;
+	font-size:0.6rem;
+	color: #9c9c9c;
+	font-weight:100;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.accordion02 .link02 i.fa-map-marker,.accordion02 .link02 i.fa-phone,.accordion02 .link02 i.fa-file-text {
+	position:absolute;
+	left:0.7rem;
+	top:0.72rem;
+	color:#58b7ad;
+}
+.accordion02 li.open .link {
+/* 	color: #b63b4d; */
+}
+.accordion02 li.open {
+	border-bottom:1px solid #ddd;
+}
+
+.accordion02 li.open i {
+/* 	color: #b63b4d; */
+}
+.accordion02 li.open i.fa-chevron-down {
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate-90deg);
+	transform: rotate(-90deg);
+}
+.accordion02 .submenu02 {
+ 	display: none;
+ 	width:93.6%;
+ 	height:auto;
+ 	padding:0.7rem 0 1.1rem;
+ 	position:relative;
+ 	margin:0 auto;
+}
+/* .accordion02 .submenu dl {
+	width:100%;
+	height:6.3rem;
+	border:1px solid #fee7ca;
+	border-bottom:none;
+	border-right:none;
+	background:#fdf0df;
+	box-sizing:border-box;
+}
+.accordion02 dl dd {
+	float:left;
+	width:33.333%;
+	height:1.26rem;
+	box-sizing:border-box;
+	line-height:1.2rem;
+	font-size:0.48rem;
+	color:#522c16;
+	text-align:center;
+	overflow:hidden;
+	white-space:nowrap;
+	border-right:1px solid #fee7ca;
+	border-bottom:1px solid #fee7ca;
+}
+.accordion02 dd:last-child  {
+	width:66.67%;
+}
+.accordion02 .head_tit {
+	font-weight:bold;
+}
+.accordion02 .submenu .pjxx_tit {
+	width:4.36rem;
+	height:0.84rem;
+	background:#4e3c23;
+	margin-top:0.4rem;
+	margin-bottom:0.4rem;
+	color:#fff;
+	font-size:0.48rem;
+	text-align:center;
+	line-height:0.84rem;
+}
+.accordion02 .submenu .pjxx_txt {
+	color:#522c16;
+	font-size:0.48rem;
+	line-height:0.88rem;
+	text-align:justify;
+}
+.accordion02 .submenu .pjxx_ps {
+	color:#ff382b;
+	font-size:0.48rem;
+	margin-top:0.54rem;
+} */

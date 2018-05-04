@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>景点门票-订单支付</title>
+    <link rel="shortcut icon" href="http://www.pyticket.com/static/pymj/images/pylogos.png" type="image/x-icon">
+    <meta name="keywords" content="票务资讯,在线票务">
+    <meta name="description" content="品逸美景官方网站为您提供最新最全的旅游景区电子票务资讯。">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="css/dy_content.css" />
+    <link href="css/foundation.min.css" rel="stylesheet" type="text/css">
+    <link href="css/calendar.css" rel="stylesheet" />
+    <link href="css/foundation-datepicker.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="news">
+        <!-- 头部导航 -->
+        <header id="header">
+            <div>
+                <div class="headL fl">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="headR fr">
+                    <ul class="nav">
+                        <li class="aboutMe_li">
+                            <a href="jdyd.html" title="">产品预订</a>
+                        </li>
+                        <li class="aboutMe_li">
+                            <a href="http://www.pyticket.com/portal/list/index/id/14.html" title="">加入我们</a>
+                        </li>
+                        <li class="aboutMe_li">
+                            <a href="http://www.pyticket.com/portal/page/index/id/14.html" title="">商务合作</a>
+                        </li>
+                        <li class="aboutMe_li">
+                            <a href="http://www.pyticket.com/portal/page/index/id/13.html" title="">合作案例</a>
+                        </li>
+                        <li class="aboutMe_li">
+                            <a href="javascript:alert(&#39;正在建设中。。。&#39;);" title="">在线商城</a>
+                        </li>
+                        <li class="aboutMe_li">
+                            <a href="http://www.pyticket.com/portal/list/index/id/12.html" title="">新闻中心</a>
+                        </li>
+                        <li class="aboutMe_li">
+                            <a href="http://www.pyticket.com/portal/page/index/id/12.html" title="">产品与服务</a>
+                        </li>
+                        <li class="aboutMe_li">
+                            <a href="http://www.pyticket.com/portal/page/index/id/11.html" title="">关于品逸</a>
+                        </li>
+                        <li>
+                            <a href="http://www.pyticket.com/" title="">首页</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- end 头部导航 -->
+
+        <!-- 广告图 -->
+        <div class="imgTit" style="background: url(img/img_tit.jpg) no-repeat center; height:320px;"></div>
+        <!-- end 广告图 -->
+
+        <!-- 当前位置 -->
+        <div class="nav_wrapper1">
+            <div class="navList">
+                <div class="navList_left">
+                    <a href="#" class="nav_active">景点门票</a>
+                    <a href="#">精品酒店</a>
+                </div>
+                <div class="navList_right">
+                    <a href="http://www.pyticket.com/">您当前位置 : 首页 ></a>
+                    <a href="javascript:;">产品预订</a>
+                </div>
+            </div>
+        </div>
+        <!-- end 当前位置 -->
+
+        <!-- 内容区 -->
+        <div class="py_content_wrap">
+            <div class="py_content">
+                <!-- 支付流程 -->
+                <div class="dy_step">
+                    <ul class="dy_step_list">
+                        <li class="dy_list_active">
+                            填写订单
+                            <span></span>
+                        </li>
+                        <li class="dy_a">
+                            选择支付方式
+                            <span></span>
+                        </li>
+                        <li class="dy_a">
+                            购买成功
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end 支付流程 -->
+
+                <!-- 确认预订信息 -->
+                <div class="dy_verify02">
+                    <p class="dy_ver_tit02">确认预订信息</p>
+                    <div class="dy_ver_ctn02">
+                        <p class="dy_ver_hotel_name02">
+                            <span class="dy_ver_hotel_tit">景区名称：</span>
+                            <span class="dy_ver_hotel_ctn">滴水洞景区</span>
+                        </p>
+                        <p class="dy_ver_hotel_style02">
+                            <span class="dy_ver_style_tit">门票名称：</span>
+                            <span class="dy_ver_style_ctn">滴水洞景区门票</span>
+                        </p>
+                        <p class="dy_ver_date">
+                            <span>出行日期：</span>
+                            <input type="text" id="dt" placeholder="trigger calendar">
+                            <div id="dd"></div>
+                        </p>
+                        <p class="dy_ver_sum02">
+                            <span>门票数量：</span>
+                            <span class="reduce" id="min">-</span>
+                            <input type="text" class="numll" value="1" id="quantity" onchange="edit()" name="quantity">
+                            <span class="odd" id="add">+</span>
+                        </p>
+                        <p class="dy_ver_price02">
+                            <span>总金额：</span>
+                            <input value="98.12 " name="jiage" class="jiage" type="hidden" />
+                            <span class="dy_ver_danjia">￥98.12 </span>
+                        </p>
+                    </div>
+                </div>
+                <!-- end 确认预订信息 -->
+
+                <!-- 入住信息 -->
+                <div class="dy_infor">
+                    <p class="dy_infor_tit">您的联系方式
+                        <span>(温馨提示：为及时联系您确认，请填写真实信息)</span>
+                    </p>
+                    <div class="dy_infor_ctn">
+                        <p class="dy_ipt dy_user">
+                            入住人：
+                            <span class="dy_warning">*</span>
+                            <input type="text" class="dy_infor_txt" name="name" id="dy_name" placeholder="请填写姓名" />
+                        </p>
+                        <p class="dy_ipt dy_tele">
+                            联系电话：
+                            <span class="dy_warning">*</span>
+                            <input type="text" class="dy_infor_txt" name="name" id="dy_tele" placeholder="请填写联系电话" />
+                            <span>(免费接收订单确认短信)</span>
+                        </p>
+                        <p class="dy_ipt dy_id">
+                            身份证号：
+                            <span class="dy_warning">*</span>
+                            <input type="text" class="dy_infor_txt" name="name" id="dy_id" placeholder="请填写身份证号" />
+                        </p>
+                        <p class="dy_totalPrice">
+                            订单结算总额：
+                            <span>￥</span>
+                            <span class="dy_amount">370.00</span>
+                        </p>
+                        <p class="dy_pay">
+                            <button class="dy_pay_btn" data-form="form" id="dy_pay_btn">立即支付</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- 入住信息 -->
+
+            </div>
+        </div>
+        <!-- end 内容区 -->
+
+        <!-- 底部栏目 -->
+        <div class="bott">
+            <div class="bott1">
+                <div class="erweima1">
+                    <img src="img/erweima1.jpg" alt="">
+                    <p>品逸票务</p>
+                </div>
+                <div class="erweima2">
+                    <img src="img/erweima2.jpg" alt="">
+                    <p>品逸美景票务</p>
+                </div>
+
+                <div style="display: inline-block;margin-left: 34px;">
+                    <div class="bott_con">
+                        <div class="bott_con0">
+                            <img src="img/phone.png" alt="">
+                            <div class="bott_lian1">
+                                <span>服务热线 : </span>
+                                <span>0731-8414-5018</span>
+                            </div>
+                            <img src="img/mobile.png" alt="">
+                            <div class="bott_lian2">
+                                <span>客服热线 : </span>
+                                <span>188-0749-0002</span>
+                            </div>
+                        </div>
+                        <div class="bott_con1 adre">
+                            <div>
+                                <!-- <script type="text/javascript" src="js/businessLicense.js"></script> -->
+                                <a href="http://www.hngswj.gov.cn//ei/Ei!certificate.action?id=2c990dab6065e3970160687d61be0042" target="_blank" style="border:0;">
+                                    <!-- <img src="img/Ei!readEiimgByMemory.action" style="border:0;"> -->
+                                </a>
+                            </div>
+                            <span>网址 : www.pyticket.com</span>
+                            <span>邮箱 : pymj@pyticket.com</span>
+                            <span>
+                                <!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspanid='cnzz_stat_icon_1271901240'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271901240%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> -->
+                                <span id='cnzz_stat_icon_1271901240'></span id='cnzz_stat_icon_1271901240'>
+                            </span>
+                            <!-- <script src="js/z_stat.php" type="text/javascript"></script>
+                            <script src="js/core.php" charset="utf-8" type="text/javascript"></script> -->
+                            <a href="http://www.cnzz.com/stat/website.php?web_id=1271901240" target="_blank" title="站长统计">
+                                <img border="0" hspace="0" vspace="0" src="./img/pic.gif">
+                            </a>
+                        </div>
+                        <div class="bott_con1">
+                            <span>地址 : 湖南省长沙市岳麓区麓谷大道627号新长海中心B1栋10A04</span>
+                        </div>
+                        <div class="bott_con1">
+                            <span>Copyright © 2017-2018品逸美景票务服务有限公司.All Rights Reserved.湘ICP备17015379 </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end 底部栏目 -->
+
+        <!-- 右侧客服悬浮窗 -->
+        <div class="sidebar">
+            <ul>
+                <li class="lis1">
+                    <!--<img  style="CURSOR: pointer" onclick="javascript:window.open('http://b.qq.com/webc.htm?new=0&sid=3101312900&o=www.pyticket.com&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');"  border="0" SRC=http://wpa.qq.com/pa?p=1:3101312900:1 alt="点击这里给我发消息">-->
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=1&amp;uin=3101312900&amp;site=qq&amp;menu=yes">
+                        <i class="sidebar_Q">
+                        </i>
+                    </a>
+                </li>
+                <li class="lis2">
+                    <a title="" href="http://www.pyticket.com/portal/list/index/id/12.html">
+                        <div class="lis2_l">
+                            <i class="sidebar_P"></i>
+                        </div>
+                        <div class="lis2_hide">
+                            <span>咨询热线</span>
+                            <p>0731-8414-5018</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- <li class="lis3"><a href="" title=""><i class="sidebar_E"></i></a></li> -->
+                <li class="lis4">
+                    <a href="http://www.pyticket.com/portal/list/index/id/12.html" title="">
+                        <i class="sidebar_G"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end 右侧客服悬浮窗 -->
+
+    </div>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/calendar.js"></script>
+    <script>
+        $('#dd').calendar({
+            trigger: '#dt',
+            zIndex: 999,
+            format: 'yyyy-mm-dd',
+            onSelected: function (view, date, data) {
+                console.log('event: onSelected')
+            },
+            onClose: function (view, date, data) {
+                console.log('event: onClose')
+                console.log('view:' + view)
+                console.log('date:' + date)
+                console.log('data:' + (data || 'None'));
+            }
+        });
+    </script>
+
+    <script>
+        $('#dy_pay_btn').on('click', function () {
+            var str = "";
+            if ($.trim($('#dy_name').val()).length == 0) {
+                str += '姓名不能为空\n';
+                $('#dy_name').focus();
+                alert(str);
+                return false;
+            };
+
+            if ($.trim($('#dy_tele').val()).length == 0) {
+                str += '手机号没有输入\n';
+                $('#dy_tele').focus();
+                alert(str);
+                return false;
+            } else {
+                var isphone = isPhoneNo($.trim($('#dy_tele').val()));
+                if (isphone == false) {
+                    str += '手机号码不正确\n';
+                    $('#dy_tele').focus();
+                    alert(str);
+                    return false;
+                }
+            };
+
+            function isPhoneNo(phone) {
+                var pattern = /^1[34578]\d{9}$/;
+                if (phone.length != 11) {
+                    return false;
+                }
+                return pattern.test(phone);
+            };
+
+            if ($.trim($('#dy_id').val()).length == 0) {
+                str += '身份证号码没有输入\n';
+                $('#dy_id').focus();
+                alert(str);
+                return false;
+            } else {
+                if (isIdentityCardNumber($.trim($('#dy_id').val())) == false) {
+                    str += '身份证号不正确；\n';
+                    $('#dy_id').focus();
+                    alert(str);
+                    return false;
+                };
+            }
+        });
+
+        //身份证规则验证
+        function isIdentityCardNumber(code) {
+            var city = {
+                11: "北京",
+                12: "天津",
+                13: "河北",
+                14: "山西",
+                15: "内蒙古",
+                21: "辽宁",
+                22: "吉林",
+                23: "黑龙江 ",
+                31: "上海",
+                32: "江苏",
+                33: "浙江",
+                34: "安徽",
+                35: "福建",
+                36: "江西",
+                37: "山东",
+                41: "河南",
+                42: "湖北 ",
+                43: "湖南",
+                44: "广东",
+                45: "广西",
+                46: "海南",
+                50: "重庆",
+                51: "四川",
+                52: "贵州",
+                53: "云南",
+                54: "西藏 ",
+                61: "陕西",
+                62: "甘肃",
+                63: "青海",
+                64: "宁夏",
+                65: "新疆",
+                71: "台湾",
+                81: "香港",
+                82: "澳门",
+                91: "国外 "
+            };
+            var tip = "";
+            var pass = true;
+
+            if (!code || !/^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X|x)$/i.test(code)) {    //  18位验证
+                tip = "身份证号格式错误";
+                pass = false;
+            } else if (!city[code.substr(0, 2)]) {
+                tip = "地址编码错误";
+                pass = false;
+            } else {
+                //18位身份证需要验证最后一位校验位
+                if (code.length == 18) {
+                    code = code.split('');
+                    //∑(ai×Wi)(mod 11)
+                    //加权因子
+                    var factor = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
+                    //校验位
+                    var parity = [1, 0, 'X', 9, 8, 7, 6, 5, 4, 3, 2, 'x'];
+                    var sum = 0;
+                    var ai = 0;
+                    var wi = 0;
+                    for (var i = 0; i < 17; i++) {
+                        ai = code[i];
+                        wi = factor[i];
+                        sum += ai * wi;
+                    }
+                    var last = parity[sum % 11];
+                    if (parity[sum % 11] != code[17]) {
+                        tip = "校验位错误";
+                        pass = false;
+                    }
+                }
+            }
+            // if(!pass) alert(tip);
+            return pass;
+        }
+    </script>
+    <script>
+            var num = $('.dy_ver_sum02 input').val();
+            $('.odd').on('click', function () {
+                num++;
+                $('.dy_ver_sum02 input').val(num);
+                $('.dy_ver_danjia').html('￥'+ parseFloat( ($('.jiage').val() * num).toFixed(2) ) );
+                $('.dy_amount').html('￥'+ parseFloat( ($('.jiage').val() * num ).toFixed(2)) );
+    
+            });
+            $('.reduce').on('click', function () {
+                num--;
+                if (num < 0) {
+                    num = 0;
+                };
+                $('.dy_ver_sum02 input').val(num);
+                $('.dy_ver_danjia').html('￥'+ parseFloat( ($('.jiage').val() * num).toFixed(2) ) );
+                $('.dy_amount').html('￥'+ parseFloat( ($('.jiage').val() * num ).toFixed(2)) );
+            })
+        </script>
+
+</body>
+
+</html>

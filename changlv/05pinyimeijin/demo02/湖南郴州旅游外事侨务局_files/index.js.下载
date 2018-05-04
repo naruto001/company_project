@@ -1,0 +1,145 @@
+/**
+ * Created by Administrator on 2017/11/16.
+ */
+$(document).ready(function () {
+    //搜索框获取和失去焦点事件
+    //$('.search_422').focus(function () {
+    //    var str = $(this).val();
+    //    if (str == '') {
+    //        $(this).val('')
+    //        $(this).css('color', '#333')
+    //    }
+    //})
+    //$('.search_422').blur(function () {
+    //    var str = $(this).val();
+    //    if (str == '') {
+    //        $(this).val('');
+    //        $(this).css('color', '#ccc')
+    //    }
+    //})
+
+//轮播图
+    $('#banner').slide({
+        titCell: ".hd ul li",
+        mainCell: ".bd ul",
+        mouseOverStop: false,
+        effect: "left",
+        trigger: "mouseover",
+        autoPlay: true,
+        interTime: 5000,
+        delayTime: 250,
+    })
+//个人中心显示隐藏
+    $('.namebox').mouseenter(function () {
+        $('.name').addClass('active');
+        $('.name_hide').show();
+    }).mouseleave(function () {
+        $('.name').removeClass('active');
+        $('.name_hide').hide();
+    })
+	
+	
+	$.ajax({
+			async: true,
+			type : "GET",
+			url : "/Index/index/getNav",
+			complete: function(msg){
+			   // alert('complete');
+			},
+			success : function(data) {
+			   $("#content_nav").html(data);
+			   
+			    $('.nav_info').mouseenter(function () {  //其他导航页面的时候显示浮动导航
+					$('.nav_hide').show()
+				});
+				$('.nav_hide').mouseleave(function () {  //从元素身上离开后，隐藏其盒子
+					$('.nav_hide').hide()
+				});
+				$('.suspension_nav .item').hover(function () { //一级导航，显示和隐藏相对应的二级导航
+					$(this).addClass('active').siblings('.item').removeClass('active');
+					var index = $(this).index();
+					$('.content_nav .content_show').eq(index).show().siblings().hide();
+				})
+				$('.suspension_nav').hover(function () { //二级导航菜单悬浮出来显示和隐藏
+					$('.content_nav').show();
+				}, function () {
+					$('.content_nav').hide();
+					$('.item').removeClass('active')
+				})
+				$('.content_nav .content_show').hover(function () { //二级导航悬浮
+					var index = $(this).index();
+					$(".suspension_nav .item").eq(index).addClass("active");
+					$(".content_nav ").show();
+				}, function () {
+					$(".suspension_nav .item").removeClass("active");
+					$(".content_nav").hide();
+				})
+				$('.nav_left').hover(function () { //移除整个盒子的时候，二级悬浮菜单全部隐藏
+		
+				}, function () {
+					$(".content_nav .content_show").hide();
+				})
+			   
+			   
+			}
+     }); 
+
+
+//悬浮导航显示和隐藏
+    /*$(function () {
+        $('.nav_info').mouseenter(function () {  //其他导航页面的时候显示浮动导航
+            $('.nav_hide').show()
+        });
+        $('.nav_hide').mouseleave(function () {  //从元素身上离开后，隐藏其盒子
+            $('.nav_hide').hide()
+        });
+        $('.suspension_nav .item').hover(function () { //一级导航，显示和隐藏相对应的二级导航
+            $(this).addClass('active').siblings('.item').removeClass('active');
+            var index = $(this).index();
+            $('.content_nav .content_show').eq(index).show().siblings().hide();
+        })
+        $('.suspension_nav').hover(function () { //二级导航菜单悬浮出来显示和隐藏
+            $('.content_nav').show();
+        }, function () {
+            $('.content_nav').hide();
+            $('.item').removeClass('active')
+        })
+        $('.content_nav .content_show').hover(function () { //二级导航悬浮
+            var index = $(this).index();
+            $(".suspension_nav .item").eq(index).addClass("active");
+            $(".content_nav ").show();
+        }, function () {
+            $(".suspension_nav .item").removeClass("active");
+            $(".content_nav").hide();
+        })
+        $('.nav_left').hover(function () { //移除整个盒子的时候，二级悬浮菜单全部隐藏
+
+        }, function () {
+            $(".content_nav .content_show").hide();
+        })
+    })*/
+})
+
+
+//判断菜单的滚动高度显示隐藏
+$(window).scroll(function () {
+    var scroll_top = $(window).scrollTop();
+    if (scroll_top >= 500) {
+        $(".sidebar").fadeIn();
+    } else {
+        $(".sidebar").fadeOut();
+    }
+})
+//二维码显示隐藏
+$('.sidebar .lis2').mouseenter(function () {
+    $(this).find('.ermbox').fadeIn()
+}).mouseleave(function () {
+    $(this).find('.ermbox').fadeOut()
+})
+
+//返回顶部
+function gotoTop() {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 800);
+}

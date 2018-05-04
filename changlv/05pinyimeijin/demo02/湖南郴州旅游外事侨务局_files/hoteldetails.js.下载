@@ -1,0 +1,56 @@
+/**
+ * Created by Administrator on 2017/11/28.
+ */
+$(document).ready(function () {
+    $('.tk_list li .hotel_room').on('click', function () {
+        roomindex = $(this).parents().index();
+        $('.roombox').hide();
+        $('.roombox ul').removeClass('rommImg');
+        $('.roombox').eq(roomindex).show();
+        $('.roombox').eq(roomindex).find('.room_img ul').addClass('rommImg');
+        $('.room_lt .next').css('display', 'block')
+        $('.room_lt .prev').css('display', 'block')
+        //轮播图
+        $('.roombox').slide({
+            mainCell: ".room_img ul",
+            autoPlay: false,
+        });
+        $('.roombox .colse').on('click', function () {
+            $('.roombox').hide();
+        })
+        //酒店房型轮播图左右箭头控制事件
+        var rommimg = $('.room_img ul.rommImg').find('img').length;  //获取图片的长度
+        var i = 0;  //定义变量
+        if (i == 0) {
+            $('.room_lt .prev').css('display', 'none')
+        }
+        if (i == rommimg - 1) {
+            $('.room_lt .next').css('display', 'none')
+        }
+        $('.room_lt .prev').on('click', function () {
+            i--;
+            if (i == 0) {
+                $('.room_lt .prev').css('display', 'none')
+            } else {
+                $('.room_lt .next').css('display', 'block')
+                $('.room_lt .prev').css('display', 'block')
+            }
+        })
+        $('.room_lt .next').on('click', function () {
+            i++;
+            if (i == rommimg - 1) {
+                $('.room_lt .next').css('display', 'none')
+            } else {
+                $('.room_lt .next').css('display', 'block')
+                $('.room_lt .prev').css('display', 'block')
+            }
+        })
+    })
+//    地图弹出事件
+    $('.tk_txt_info .map').on('click', function () {
+        $('.mapbox').show();
+    })
+    $('.map_headr .colse').on('click', function () {
+        $('.mapbox').hide();
+    })
+})

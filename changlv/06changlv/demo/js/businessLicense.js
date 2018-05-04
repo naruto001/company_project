@@ -1,0 +1,1 @@
+document.write("<a href='http://www.hngswj.gov.cn//ei/Ei!certificate.action?id=2c990dab5fdc97ee015fdd82accf0349' target='_blank' style='border:0;'><img src='http://www.hngswj.gov.cn//ei/Ei!readEiImgByMemory.action' style='border:0;'/></a>")

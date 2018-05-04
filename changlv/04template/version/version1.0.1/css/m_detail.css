@@ -1,0 +1,140 @@
+
+.tabbox {
+  width: 100%;
+  min-width:1000px;
+  height: auto;
+  margin: 0 auto;
+  /* background: #f0f0f0; */
+}
+
+.tabbox .tab {
+  overflow: hidden;
+  /* background: #ccc; */
+  margin: 0 auto;
+  width: 1098px;
+  height: auto;
+  min-width: 1000px;
+}
+.tabbox .tab a {
+  display: block;
+  float: left;
+  font-size: 16px;
+  color: #666;
+  padding: 30px 36px;
+}
+
+.tabbox .tab a:hover {
+  font-size: 16px;
+  color: #006eb5;
+  border-bottom: 2px solid #006eb5;
+}
+
+.tabbox .tab a.on {
+  color: #006eb5;
+  border-bottom: 2px solid #006eb5;
+}
+
+.tabbox .content {
+  width:100%;
+  height:auto;
+  min-width:1000px;
+  overflow: hidden;
+  background:#f7f7f7;
+}
+.tabbox .content .m_temp_bg {
+    height: 28px;
+    width:100%;
+    min-width:1000px;
+    background: url(../img/temp_top_bg.png);
+  }
+.tabbox .content ul {
+    width:1098px;
+    height:auto;
+    min-width:1000px;
+    overflow:hidden;
+    margin:0 auto;
+}  
+.tabbox .content li {
+  display: none;
+  position:relative;
+}
+
+.tabbox .content li.show {
+  display: block;
+}
+/* iphone */
+.wrap {
+    /* width:425px;
+    height:876px; */
+    width:310px;
+    height:650px;
+    margin:0 auto 50px;
+    background:url(../img/iphone_7.png) no-repeat;
+    background-size:100%;
+    position:relative;
+}
+.wrap .screen_viewport {
+    position: absolute;
+    left: 19px;
+    top: 78px;
+    right: 19px;
+    bottom: 91px;
+    overflow-x: hidden;
+}
+.wrap .screen_viewport .temp_pic {
+    width:100%;
+    height:auto;
+}
+/* 缩放按钮 */
+.content .scale {
+    width:216px;
+    height:220px;
+    border:1px solid #dcdcdc;
+    border-radius:5px;
+    background:#f2f2f2;
+    position:absolute;
+    right:0;
+    top:100px;
+}
+.content .scale .mt_back {
+    width:150px;
+    height:46px;
+    background:#ffa634;
+    border-radius:10px;
+    display:block;
+    line-height:46px;
+    text-align:center;
+    margin:30px auto 0;
+    color:#fff;
+}
+.content .mt_back i {
+    font-size:bold;
+    font-size:18px;
+    margin-left:5px;
+}
+.content .scale .mstit {
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:16px;
+    color:#666;
+    margin-top:18px;
+}
+.content .scale .scale_btn {
+    height:72px;
+    line-height:72px;
+    text-align:center;
+}
+.content .scale_btn a {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#cfcfcf;
+    text-align:center;
+    line-height:30px;
+    color:#666;
+}
+.content .scale_btn .scale_num {
+    margin:0 5px;
+}

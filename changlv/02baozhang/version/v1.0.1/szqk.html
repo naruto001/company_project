@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link rel="stylesheet" href="css/frame.css"/>
+        <title>其他收支情况</title>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <link rel="stylesheet" href="css/selectFilter.css" />
+    </head>
+    <body>   
+        <!--header -->
+            <div class="header">
+                <a href="add.html" class="back" ><i class="iconfont">&#xe66f;</i></a>
+                <p class="h_title">其他收支情况</p>
+            </div>
+        <!-- end header -->
+            
+        <!-- content -->
+            <div class="content">
+                <form class="szqk_wrap" name="szqk_wrap">
+                    <p class="szqk_tit">计调添加其他费用</p>
+                    <ul class="szqk_list">
+                        <li class="clear">
+                            <span class="szqk_left">类型</span>
+                            <input type="text" class="szqk_right" placeholder="请输入类型"/>
+                        </li>
+                        <li class="clear">
+                            <span class="szqk_left">子项</span>
+                            <input type="text" class="szqk_right" placeholder="请输入子项"/>
+                        </li>
+                        <li class="clear">
+                            <span class="szqk_left">类型</span>
+                            <input type="text" class="szqk_right" placeholder="请输入类型"/>
+                        </li>
+                        <li class="clear">
+                            <span class="szqk_left">往来单位</span>
+                            <input type="text" class="szqk_right" placeholder="请输入往来单位"/>
+                        </li>
+                        <li class="clear">
+                            <span class="szqk_left">数量</span>
+                            <input type="text" class="szqk_right" placeholder="请输入数量"/>
+                        </li>
+                        <li class="clear">
+                            <span class="szqk_left">单价</span>
+                            <input type="text" class="szqk_right" placeholder="请输入单价"/>
+                        </li>
+                        <li class="clear">
+                            <span class="szqk_left">金额</span>
+                            <input type="text" class="szqk_right" placeholder="请输入金额"/>
+                        </li>
+                        <li class="clear fkfs">
+                            <span class="szqk_left">付款方式</span>
+                            <!-- filter-->
+                            <div class="filter_box11">
+                                <div class="filter_text">
+                                    <input class="filter_title" type="text"  readonly placeholder="pleace select"/>
+                                    <i class="icon icon_filter_arrow"></i>
+                                </div>
+                                <select name="filter">
+                                    <option value="a" selected>导游现付</option>
+                                    <option value="b">游客现付</option>
+                                    <option value="c">公司代付</option>
+                                    <option value="d">付付付付</option>
+                                    <option value="e">55555</option>
+                                    <option value="f">66666</option>
+                                    <option value="g">77777</option>
+                                </select>
+                            </div>
+                                <!-- end filter -->
+                        </li>
+                        <li class="clear">
+                            <span class="szqk_left">付款金额</span>
+                            <input type="text" class="szqk_right" placeholder="请输入付款金额"/>
+                        </li>
+                    </ul>
+                    <input type="submit" value="保存提交" class="szqk_submit"/>
+                </form>
+            </div>
+        <!-- end content -->
+        <!--filter-->
+        <script src="js/selectFilter.js"></script>
+        <script>
+            $('.filter_box11').selectFilter();
+        </script>
+    </body>
+</html>

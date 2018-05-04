@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>特色展区</title>
+        <link href="css/frame.css" rel="stylesheet"/>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script>
+            window.onload = function () {
+                var oBtn = document.getElementById("btn");
+                var oDiv = document.getElementById("nav_wrap");
+                var flag = 1;
+
+                /*document.addEventListener('touchstart', function (ev) {
+                    ev.preventDefault();
+                } );*/
+
+                oBtn.addEventListener('touchend', function () {
+                    if(flag) {
+                        oDiv.style.display = "block";
+                        oDiv.addEventListener('touchmove', function () {
+                            this.style.display = "none";
+                        } )
+
+                    }else {
+                        oDiv.style.display = "none";
+                    }
+                } );
+            }
+        </script>
+                                
+    </head>
+    <body>
+        <!-- header -->
+        <div class="t_header">
+            <a href="index.html" class="t_back"><i class="iconfont">&#xe62b;</i></a>
+            <p class="t_title">特色展区</p>
+            <a class="iconfont t_menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+        <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content">
+            <!-- 选项卡 -->
+            <ul class="t_tab clear">
+                <li>
+                    <a class="t_active" href="javascript:;">
+                        车行区
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq01.html">
+                        步行区
+                    </a>
+                </li>
+            </ul>
+            <!-- end 选项卡 -->
+            <div class="t_color"></div>
+            
+            <!-- loop -->
+                <div id="focus_Box">
+                    <span class="prev">&nbsp;</span>
+                    <span class="next">&nbsp;</span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img width="8.9rem" height="6.16rem" src="img/1.jpg" class="focus_pic"/>
+                                <span class="focus_tit">大熊猫馆</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img width="8.9rem" height="6.16rem" src="img/2.jpg" class="focus_pic"/>
+                                <span class="focus_tit">大熊猫馆</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img width="8.9rem" height="6.16rem"  src="img/3.jpg" class="focus_pic"/>
+                                <span class="focus_tit">大熊猫馆</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img width="8.9rem" height="6.16rem"  src="img/4.jpg" class="focus_pic"/>
+                                <span class="focus_tit">大熊猫馆</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img width="8.9rem" height="6.16rem"  src="img/5.jpg" class="focus_pic"/>
+                                <span class="focus_tit">大熊猫馆</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <!-- end loop -->
+
+            <!-- 热门攻略 -->
+            <div class="t_raiders">
+                <p class="t_title">热门攻略</p>
+                <ul class="t_list">
+                    <li>
+                        <a href="tszq_detail.html" class="t_li_link">
+                            <img src="img/tszq01.png" alt="animal01">
+                            <span class="t_li_tit">车行猛兽区</span>
+                            <p class="t_li_date">
+                                <span class="t_view"><i class="iconfont">&#xe68a;</i>500</span>
+                                <span class="t_zan"><i class="iconfont">&#xe60d;</i>52</span>
+                                <span class="t_time">发表日期：017-12-21</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tszq_detail.html" class="t_li_link">
+                            <img src="img/tszq02.png" alt="animal01">
+                            <span class="t_li_tit">车行食草区</span>
+                            <p class="t_li_date">
+                                <span class="t_view"><i class="iconfont">&#xe68a;</i>500</span>
+                                <span class="t_zan"><i class="iconfont">&#xe60d;</i>52</span>
+                                <span class="t_time">发表日期：017-12-21</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tszq_detail.html" class="t_li_link">
+                            <img src="img/tszq03.png" alt="animal01">
+                            <span class="t_li_tit">步行区鳄鱼馆</span>
+                            <p class="t_li_date">
+                                <span class="t_view"><i class="iconfont">&#xe68a;</i>500</span>
+                                <span class="t_zan"><i class="iconfont">&#xe60d;</i>52</span>
+                                <span class="t_time">发表日期：017-12-21</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="more_wrap">
+                    <a href="tszq_detail.html" class="more"  style="background:#dd6b0f;">更多+</a>
+                </div>
+
+            </div>
+
+            <!-- footer -->
+            <div class="t_footer">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div> 
+        <!-- end content -->
+
+        <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt">联系我们</p>
+                </a>
+            </li>
+        </ul>
+       
+        <script src="js/ZoomPic.js"></script>
+    </body>
+</html>

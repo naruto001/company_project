@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link rel="stylesheet" href="css/frame.css"/>
+        <title>车辆安排详情</title>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <link rel="stylesheet" href="css/selectFilter.css" />
+        <link rel="stylesheet" href="css/accordion.css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>   
+        <!--header -->
+            <div class="header">
+                <a href="clap.html" class="back" ><i class="iconfont">&#xe66f;</i></a>
+                <p class="h_title">车辆安排</p>
+            </div>
+        <!-- end header -->
+            
+        <!-- content -->
+            <div class="content">
+                <form class="clapxq_wrap" name="clapxq_wrap">
+                    <div class="clapxq_intro">
+                        <img src="img/clapxq01.png" class="clapxq_pic"/>
+                        <p class="clapxq_cmp">XXX旅游运输公司</p>
+                        <p class="clapxq_car"><span class="clapxq_carintro">11座  | 湘K 365VB</span><span class="clapxq_driver">司机：夏勇</span></p>
+                    </div>
+                    <!-- accordion -->
+                    <ul class="public_box accordion" id="accordion">
+
+                        <li>
+                            <p class="link clear public_p"><span class="acd_left">预算合计</span><span class="acd_right">￥450</span><i class="fa fa-chevron-down"></i></p>
+
+                            <ul class="submenu">
+
+                                <li clas="acd_li">
+                                    <span class="acd_li_left">实际消费数量</span>
+                                    <input type="text" class="acd_li_right" placeholder="请输入实际消费数量"/>
+                                </li>
+
+                                <li clas="acd_li">
+                                    <span class="acd_li_left">实际消费总额</span>
+                                    <input type="text" class="acd_li_right" placeholder="请输入实际消费总额"/>
+                                </li>
+
+                                <!-- filter-->
+                                <li clas="acd_li_filter">
+                                    <span class="acd_filter_left">付款方式</span>
+                                    <div class="filter_box13">
+                                        <div class="filter_text">
+                                            <input class="filter_title" type="text"  readonly placeholder="pleace select"/>
+                                            <i class="icon icon_filter_arrow"></i>
+                                        </div>
+                                        <select name="filter">
+                                            <option value="a" selected>导游现付</option>
+                                            <option value="b">游客现付</option>
+                                            <option value="c">公司代付</option>
+                                            <option value="d">付付付付</option>
+                                            <option value="e">55555</option>
+                                            <option value="f">66666</option>
+                                            <option value="g">77777</option>
+                                        </select>
+                                    </div>        
+                                </li>
+
+                                <!-- end filter -->
+                                <li clas="acd_li">
+                                    <span class="acd_li_left">付款金额</span>
+                                    <input type="text" class="acd_li_right" placeholder="请输入款金额"/>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                    <!-- end accordion -->
+                    <input type="submit" value="保存提交" class="clapxq_submit"/>
+                </form>
+            </div>
+        <!-- end content -->
+        <!--filter-->
+        <script src="js/selectFilter.js"></script>
+        <script src="js/accordion.js"></script>
+        <script>
+            $('.filter_box13').selectFilter();
+        </script>
+    </body>
+</html>

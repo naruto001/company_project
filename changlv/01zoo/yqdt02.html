@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>园区动态</title>
+        <link href="css/frame.css" rel="stylesheet"/>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script>
+            window.onload = function () {
+				var oBtn = document.getElementById("btn");
+				var oDiv = document.getElementById("nav_wrap");
+				var flag = 1;
+
+				/*document.addEventListener('touchstart', function (ev) {
+					ev.preventDefault();
+				} );*/
+
+				oBtn.addEventListener('touchend', function () {
+					if(flag) {
+						oDiv.style.display = "block";
+						oDiv.addEventListener('touchmove', function () {
+							this.style.display = "none";
+						} )
+
+					}else {
+						oDiv.style.display = "none";
+					}
+				} );
+			}
+        </script>
+                                
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <a href="index.html" class="back"><i class="iconfont">&#xe62b;</i></a>
+            <p class="h_title">园区动态</p>
+            <a class="iconfont menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+       <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content">
+            <!-- banner -->
+            <img src="img/yqdt01.jpg" alt="banner" class="yqdt_banner"/>  
+            <!-- end banner -->
+           
+            <!-- 选项卡 -->
+            <ul class="a_tab clear">
+                <li>
+                    <a href="yqdt.html">
+                        保护教育
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt01.html">
+                        主题活动
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="javascript:;">
+                        园区动态
+                    </a>
+                </li>
+            </ul>
+            <!-- end 选项卡 -->
+            
+            <!-- news -->
+            <div class="yqdt_news">
+                 <div class="yqdt_head_news">
+                    <a href="yqdt_detail.html" class="yqdt_head_link">
+                        <img src="img/yqdt02.jpg" alt="yqdt02.jpg" class="news_bg">
+                        <img src="img/yqdt03.png" class="headline"/>
+                        <span class="yqdt_head_tit">一场来自长沙生态动物园的维密秀</span>
+                        <span class="yqdt_head_date"><i class="iconfont">&#xe60e;</i>2018-01-11</span>
+                        <span class="yqdt_head_view"><i class="iconfont">&#xe68a;</i>145</span>
+                        <span class="yqdt_head_ctn">最近一段时间朋友圈被维密秀刷屏了满屏的漂亮姑娘大长腿各种视频图片怎么看都看不过瘾大长腿小蛮腰轻盈的猫步妩媚的表情看得心情美滋滋要...</span>
+                    </a>
+                 </div>
+                 <ul class="yqdt_list">
+                    <li>
+                        <a href="yqdt_detail.html" class="yqdt_list_link">
+                            <div class="yqdt_date_p">
+                                <div class="yqdt_date_wrap">
+                                    <p class="yqdt_month">05-12</p>
+                                    <p class="yqdt_year">2017</p>
+                                </div>
+                                <div class="yqdt_li_pic"></div>
+                            </div>
+                            <p class="yqdt_li_tit">一场来自长沙生态动物园的维密秀</p>
+                            <p class="yqdt_li_txt">最近一段时间朋友圈被维密秀刷屏了满屏的漂 亮姑娘大长腿各种视频图片怎么看都看不过瘾大长腿小蛮腰轻盈的猫步妩媚的表情看得心情美滋滋要...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="yqdt_detail.html" class="yqdt_list_link">
+                            <div class="yqdt_date_p">
+                                <div class="yqdt_date_wrap">
+                                    <p class="yqdt_month">05-12</p>
+                                    <p class="yqdt_year">2017</p>
+                                </div>
+                                <div class="yqdt_li_pic"></div>
+                            </div>
+                            <p class="yqdt_li_tit">一场来自长沙生态动物园的维密秀</p>
+                            <p class="yqdt_li_txt">最近一段时间朋友圈被维密秀刷屏了满屏的漂 亮姑娘大长腿各种视频图片怎么看都看不过瘾大长腿小蛮腰轻盈的猫步妩媚的表情看得心情美滋滋要...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="yqdt_detail.html" class="yqdt_list_link">
+                            <div class="yqdt_date_p">
+                                <div class="yqdt_date_wrap">
+                                    <p class="yqdt_month">05-12</p>
+                                    <p class="yqdt_year">2017</p>
+                                </div>
+                                 <div class="yqdt_li_pic"></div>
+                            </div>
+                            <p class="yqdt_li_tit">一场来自长沙生态动物园的维密秀</p>
+                            <p class="yqdt_li_txt">最近一段时间朋友圈被维密秀刷屏了满屏的漂 亮姑娘大长腿各种视频图片怎么看都看不过瘾大长腿小蛮腰轻盈的猫步妩媚的表情看得心情美滋滋要...</p>
+                        </a>
+                    </li>
+                 </ul>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div>
+        <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="mpyd.html">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <p class="c_pic"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt">联系我们</p>
+                </a>
+            </li>
+        </ul>
+        <!-- end 底部菜单 -->
+    </body>
+</html>

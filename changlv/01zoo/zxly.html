@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>在线留言</title>
+        <link href="css/frame.css" rel="stylesheet"/>
+        <script src="js/rem.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script>
+            window.onload = function () {
+				var oBtn = document.getElementById("btn");
+				var oDiv = document.getElementById("nav_wrap");
+				var flag = 1;
+
+				/*document.addEventListener('touchstart', function (ev) {
+					ev.preventDefault();
+				} );*/
+
+				oBtn.addEventListener('touchend', function () {
+					if(flag) {
+						oDiv.style.display = "block";
+						oDiv.addEventListener('touchmove', function () {
+							this.style.display = "none";
+						} )
+
+					}else {
+						oDiv.style.display = "none";
+					}
+				} );
+			}
+        </script>
+                                
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <a href="index.html" class="back"><i class="iconfont">&#xe62b;</i></a>
+            <p class="h_title">在线留言</p>
+            <a class="iconfont menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+       <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content">
+            <!-- 选项卡 -->
+            <ul class="contact_tab clear">
+                <li>
+                    <a href="contact.html">
+                        联系方式
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="javascript:;">
+                        在线留言
+                    </a>
+                </li>
+            </ul>
+            <!-- end 选项卡 -->
+            <!-- 在线留言 -->
+            <div class="message">
+                <form class="zxly_form">
+                    <input type="text" class="name" placeholder="姓名："/>
+                    <input type="text" class="code" placeholder="验证码："/>
+                    <input type="text" class="theme" placeholder="主题："/>
+                    <textarea class="zxly_txt" placeholder="留言内容"></textarea>
+                    <input type="submit" class="zxly_sub" value="提交"/>
+                </form>
+            </div>
+            <div class="mes_cnt">
+                <p class="mes_cnt_tit">留言信息</p>
+                <ul class="mes_cnt_list">
+                    <li>
+                        <p class="mes_user_wrap">
+                            <span class="mes_lft">
+                                <img class="mes_user_pic" src="img/zxly01.png"/>
+                                <span class="mes_user">wenqing_chan</span>
+                            </span>
+                            <span class="mes_rgt">
+                                <i class="iconfont"></i>
+                                <span class="mes_time">2013-8-15 10:42:20</span>
+                            </span>
+                        </p>
+                        <p class="mes_theme">主题：【不知道海豚馆建成了没】</p>
+                        <p class="mes_txt">从2010年开始到去年年底止，去了长沙生态动物园三次了。从第一次去在地图上看到海豚馆，然后去找，被告知在建设中，直到去年下半年去，还是一堆的砖块建筑物，真不知道海豚馆什么时候能建成，能带我女儿去看海豚。</p>
+                        <p class="mes_reply">管理员回复：谢谢，一切为游客服务！海豚馆目前已经建成欢迎您和家人一起来游玩哦！ </p>
+                    </li>
+                    <li>
+                        <p class="mes_user_wrap">
+                            <span class="mes_lft">
+                                <img class="mes_user_pic" src="img/zxly01.png"/>
+                                <span class="mes_user">wenqing_chan</span>
+                            </span>
+                            <span class="mes_rgt">
+                                <i class="iconfont"></i>
+                                <span class="mes_time">2013-8-15 10:42:20</span>
+                            </span>
+                        </p>
+                        <p class="mes_theme">主题：【不知道海豚馆建成了没】</p>
+                        <p class="mes_txt">从2010年开始到去年年底止，去了长沙生态动物园三次了。从第一次去在地图上看到海豚馆，然后去找，被告知在建设中，直到去年下半年去，还是一堆的砖块建筑物，真不知道海豚馆什么时候能建成，能带我女儿去看海豚。</p>
+                        <p class="mes_reply">管理员回复：谢谢，一切为游客服务！海豚馆目前已经建成欢迎您和家人一起来游玩哦！ </p>
+                    </li>
+                    <li>
+                        <p class="mes_user_wrap">
+                            <span class="mes_lft">
+                                <img class="mes_user_pic" src="img/zxly01.png"/> 
+                                <span class="mes_user">wenqing_chan</span>
+                            </span>
+                            <span class="mes_rgt">
+                                <i class="iconfont"></i>
+                                <span class="mes_time">2013-8-15 10:42:20</span>
+                            </span>
+                        </p>
+                        <p class="mes_theme">主题：【门票】</p>
+                        <p class="mes_txt">大学生有学生证，可以有 优惠吗？</p>
+                    </li>
+                </ul>
+                <a href="#" class="zxly_more">更多+</a>
+            </div>
+            <!-- end 在线留言 -->
+
+            <!-- footer -->
+            <div class="footer">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div>
+        <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="mpyd.html">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <p class="c_pic" style="color:#009181;"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt" style="color:#009181;">联系我们</p>
+                </a>
+            </li>
+        </ul>
+        <!-- end 底部菜单 -->
+        <script type="text/javascript">
+                   //创建和初始化地图函数：
+                    function initMap(){
+                        createMap();//创建地图
+                        setMapEvent();//设置地图事件
+                        addMapControl();//向地图添加控件
+                    }
+                    
+                    //创建地图函数：
+                    function createMap(){
+                        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                        var point = new BMap.Point(113.010512,28.040095);//定义一个中心点坐标
+                        map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
+                        window.map = map;//将map变量存储在全局
+                    }
+                    
+                    //地图事件设置函数：
+                    function setMapEvent(){
+                        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                        map.enableKeyboard();//启用键盘上下左右键移动地图
+                        map.enablePinchToZoom();
+                        map.enableInertialDragging();
+                    }
+                    
+                   /* //地图控件添加函数：
+                    function addMapControl(){
+                        //向地图中添加缩放控件
+                    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                    map.addControl(ctrl_nav);
+                        //向地图中添加缩略图控件
+                    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                    map.addControl(ctrl_ove);
+                        //向地图中添加比例尺控件
+                    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                    map.addControl(ctrl_sca);
+                    }*/
+                    
+                    
+                   initMap();//创建和初始化地图*/
+
+                </script>
+    </body>
+</html>

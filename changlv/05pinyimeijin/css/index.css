@@ -1,0 +1,3070 @@
+@charset "utf-8";
+/*样式重置*/
+html,body,div,span,img,a,input,textarea,select,form,b,p,h1,h2,h3,h4,h5,h6,::after,::before{padding:0;border:0;margin:0;outline:0;box-sizing:border-box;}
+html{position:absolute;top:0;right:0;bottom:0;left:0;}
+body{width:100%;height:100%;font-family:"微软雅黑 lucida Grande",Verdana,"Microsoft YaHei";overflow-x: hidden;color: #333333;}
+a{text-decoration:none;color: inherit;}
+span,a,img,b{display: inline-block;}
+input::-webkit-input-placeholder {color: #bbb;}
+ul{margin: 0;padding: 0;}
+li{list-style: none;}
+/*全局类*/
+.fl{float:left;}
+.fr{float:right;}
+.fx:after{content:"";display:block;height:0;overflow:hidden;clear:both;}
+.font-12{font-size:12px;}
+.font-14{font-size:14px;}
+.font-16{font-size:16px;}
+.font-18{font-size:18px;}
+
+/*头部*/
+#header{
+	width: 1200px;
+	margin: 0 auto;
+	height: 92px;
+}
+#header .headR{
+	line-height: 92px !important;
+	font-size: 16px !important;
+}
+#header .headL{
+	line-height: 0px;
+}
+#header ul li{
+	float: right;
+	color: #333333;
+}
+#header ul li.nav_l{
+	margin-left: 30px;
+}
+.line_26{
+	line-height: 26px !important;
+}
+
+/*轮播*/
+.block_home_slider {position: relative;background-color:#fff;text-align: center;	line-height: 0px;margin-right: auto;margin-left: auto;}
+.block_home_slider .slide {position:relative; margin-top: -1px;}
+.block_home_slider .slide img{ width:100%;}
+.block_home_slider .flex-direction-nav a {width:70px; height:70px; margin-top:-35px; display:block; position:absolute; top:50%; background-repeat:no-repeat; background-image:url(http://www.pyticket.com/static/pymj/images/sprite_arrow.png); text-indent:-9000px;}
+.block_home_slider .flex-direction-nav a.flex-prev {left:50px; background-position:left top;}
+.block_home_slider .flex-direction-nav a.flex-prev:hover {background-position:left bottom;}
+.block_home_slider .flex-direction-nav a.flex-next {right:50px; background-position:right top;}
+.block_home_slider .flex-direction-nav a.flex-next:hover {background-position:right bottom;}
+.block_home_slider .flex-control-paging {padding-top:15px; display:inline-block; position: absolute; bottom: 20px; width:104px; left: 50%; margin-left: -52px;}
+.block_home_slider .flex-control-paging li {margin: 0px 5px;padding: 0px;float: left;overflow: hidden;list-style-type: none;}
+.block_home_slider .flex-control-paging li a {width:13px; height:12px; display:block; background-repeat:no-repeat; background-image:url(http://www.pyticket.com/static/pymj/images/square.png); text-indent:-9000px; cursor:pointer;}
+.block_home_slider .flex-control-paging li a.flex-active {background:url(http://www.pyticket.com/static/pymj/images/square1.png) no-repeat;}
+ /*{background-position:right top;} width:16px;height:16px;*/
+.block_home_post_feature {width:300px;}
+.block_home_post_feature p {padding-bottom:0px;}
+.flexslider {margin: 0; padding: 0; overflow: hidden; width:100%;}
+.flexslider .slides{ width:9999999px;}
+.flexslider .slides > li {	float:left; width:100%;}
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slide_1{
+	width: 100%;
+	height: 830px;
+	background: url(http://www.pyticket.com/static/pymj/images/banner1_bac.jpg);
+}
+.slide_2{
+	width: 100%;
+	height: 830px;
+	background: url(http://www.pyticket.com/static/pymj/images/banner2_bac.jpg);
+}
+.slide_3{
+	width: 100%;
+	height: 830px;
+	background: url(http://www.pyticket.com/static/pymj/images/banner3_bac.jpg);
+}
+
+
+/*景点*/
+.jingd{
+	padding-top: 69px;
+	text-align: center;
+}
+.jingd p.conT{
+	font-size: 2.5rem;
+}
+.jingd p.conT1{
+	font-size: 1.375rem;
+	color: #666666;
+	margin-top: 28px;
+}
+.jingd div.jingd_show{
+	/*width: 1146px;
+    height: 699px;
+    z-index: 101;
+    background: url("http://www.pyticket.com/static/pymj/images/data2.jpg") no-repeat;*/
+	margin: 0 auto;
+	position: relative;
+	margin-top: 25px;
+	padding-bottom: 75px;
+}
+.jingd .jingTe{
+	width: 348px;
+	position: absolute;
+	right: 67px;
+	bottom: 160px;
+	z-index: 101;
+	text-align: left;
+}
+
+.jingd .jingTe h3.tit{
+	margin-bottom: 17px;
+	font-size: 18px;
+	color: #333333;
+}
+.jingd .jingTe .jCon{
+	font-size: 0.9375rem;
+	color: #555555;
+}
+.jingd .jingTe .jCony{
+	margin-top: 16px;
+}
+.jingd .jingTe p:nth-last-child(2){
+	width: 360px;
+}
+/*分销*/
+.fenX{
+	/*height: 958px;*/
+	padding-top: 69px;
+	background-color: #f6fafd;
+	text-align: center;
+}
+.fenX p.conT{
+	font-size: 2.5rem;
+}
+.fenX p.conT1{
+	font-size: 1.375rem;
+	color: #666666;
+	margin-top: 28px;
+}
+.fenX div.fenXi{
+	margin-top: 48px;
+	padding-bottom: 75px;
+}
+/*接口*/
+.jieK{
+	text-align: center;
+	padding-top: 69px;
+}
+.jieK p.conT{
+	font-size: 2.5rem;
+}
+.jieK p.conT1{
+	font-size:  1.375rem;
+	color: #666666;
+	margin-top: 28px;
+}
+.jieK div.jieKi{
+	margin-top:75px;
+	padding-bottom: 75px;
+}
+/*个性化*/
+.geX{
+	padding-top: 69px;
+	background-color: #f6fafd;
+	position: relative;
+	text-align: center;
+}
+.geX p.conT{
+	font-size: 2.5rem;
+}
+.geX p.conT1{
+	font-size: 1.375rem;
+	color: #666666;
+	margin-top: 28px;
+}
+/*.geX div.geXi{
+	width: 836px;
+    height: 774px;
+    margin: 0 auto;
+    z-index: 101;
+    background: url("http://www.pyticket.com/static/pymj/images/advantage21.jpg") no-repeat;
+    position: relative;
+    left: -15px;
+}*/
+.geXzi h3{
+	position: absolute;
+	top: 47%;
+	z-index: 102;
+	left: 41%;
+	font-weight: 100;
+	font-size: 40px;
+	color: #333333;
+}
+.geXzi .spo{
+	font-size: 18px;
+	position: absolute;
+	z-index: 102;
+	color: #333333;
+}
+.geXzi .sp1{
+	top: 51.4%;
+	left: 10.2%;
+}
+.geXzi .sp2{
+	top: 22%;
+	left: 26.6%;}
+.geXzi .sp3{
+	top: 22%;
+	left: 58%;
+}
+.geXzi .sp4{
+	top: 49%;
+	left: 75%;
+}
+.geXzi .sp5{
+	top: 79%;
+	left: 53.8%;
+}
+.geXzi .sp6{
+	top: 81%;
+	left: 30%;
+}
+
+/*合作*/
+.heZ{
+	height: 830px;
+	padding-top: 75px;
+	position: relative;
+}
+.heZ div.heZi{
+	text-align: center;
+    margin-top: 70px;  
+}
+.heZ .heZi .heZf{
+    width: 1200px;
+    height: 478px;
+	margin: 0 auto;
+	background: url(http://www.pyticket.com/static/pymj/images/lingxing.png) no-repeat;
+	position: relative;
+}   
+.heZf_u:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.heZf_u1{
+	padding: 0 96px;
+    position: relative;
+    top: 87px;
+}
+.heZf_u2{
+	position: relative;
+    padding: 0 31px;
+    top: 94px;
+}
+.heZf_u3{
+    padding: 0 91px;
+    position: relative;
+    top: 100px;
+}
+.heZf li{
+	float: left;
+	cursor: pointer;
+	margin-right: 105px;
+}
+.heZf .heZf_u1_1{
+	display: inline-block;
+	width: 150px;
+	height: 55px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -111px -74px;
+	position: relative;
+	left: 67px;
+}
+.heZf .heZf_u1_2{
+	display: inline-block;
+	width: 150px;
+	height: 110px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -363px -40px;
+    position: relative;
+    top: -38px;
+    left: 67px;
+}
+.heZf .heZf_u1_3{
+	display: inline-block;
+	width: 142px;
+	height: 72px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -592px -69px;
+    position: relative;
+    left: 42px;
+    top: -8px;
+}
+.heZf .heZf_u1_4{
+	display: inline-block;
+	width: 146px;
+	height: 80px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -825px -69px;
+    position: relative;
+    left: 26px;
+}
+.heZf .heZf_u2_1{
+	display: inline-block;
+	width: 112px;
+	height: 50px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -10px -201px;
+    position: relative;
+    left: 35px;
+}
+.heZf .heZf_u2_2{
+	display: inline-block;
+	width: 149px;
+	height: 59px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -228px -195px;
+    position: relative;
+    left: 35px;
+}
+.heZf .heZf_u2_3{
+	display: inline-block;
+    width: 134px;
+    height: 64px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -476px -195px;
+    position: relative;
+    left: 35px;
+}
+.heZf .heZf_u2_4{
+	display: inline-block;
+    width: 144px;
+    height: 76px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -710px -197px;
+    position: relative;
+    left: 26px;
+}
+.heZf .heZf_u2_5{
+	display: inline-block;
+    width: 74px;
+    height: 112px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -976px -170px;
+    position: relative;
+    left: 38px;
+    top: -22px;
+}
+.heZf .heZf_u3_1{
+	display: inline-block;
+    width: 160px;
+    height: 60px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -103px -318px;
+    position: relative;
+    left: 70px;
+}
+.heZf .heZf_u3_2{
+	display: inline-block;
+    width: 156px;
+    height: 78px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -334px -316px;
+    position: relative;
+    left: 34px;
+}
+.heZf .heZf_u3_3{
+	display: inline-block;
+    width: 160px;
+    height: 60px;
+	background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+	background-position: -582px -318px;
+    position: relative;
+    left: 27px;
+}
+.heZf .heZf_u3_4{
+    display: inline-block;
+    width: 122px;
+    height: 96px;
+    background: url(http://www.pyticket.com/static/pymj/images/logo.png) no-repeat;
+    background-position: -836px -290px;
+    position: relative;
+    left: 9px;
+    top: -26px;
+}
+.heZf_u span{
+	transition: all 0.8s; 
+	cursor: pointer;
+	-webkit-transition:all 0.8s;
+	-moz-transition:all 0.8s;
+	-o-transition:all 0.8s;
+	-ms-transition:all 0.8s;
+}
+.heZf_u span:hover{
+	transform: scale(1.1);  
+	-webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+}
+
+
+.heZ .heZt{
+	margin: 0 auto;
+	width: 348px;
+}
+.heZ_wrapper{
+	position: relative;
+	height: 48px;
+}
+.heZ .heZlf{
+	display: inline-block;
+	width: 24px;
+	height: 48px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.heZ .heZl{
+	position: relative;
+	width: 48px;
+	height: 48px;
+	border-radius: 25px;
+	display: inline-block;
+	border: 1px solid rgba(156, 152, 152, 0.35);
+}
+.heZ .heZlc{
+	width: 144px;
+	height: 48px;
+	display: inline-block;
+	line-height: 48px;
+	padding-left: 25px;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 24px;
+	border: 1px solid rgba(156, 152, 152, 0.35);
+	border-left: none;
+}
+.heZ .heZr{
+	width: 48px;
+	height: 48px;
+	border-radius: 25px;
+	display: inline-block;
+	border: 1px solid rgba(156, 152, 152, 0.35);
+	position: relative;
+	left: -25px;
+}
+.heZ .heZrc{
+	border: 1px solid rgba(156, 152, 152, 0.35);
+	border-right: none;
+	width: 144px;
+	height: 48px;
+	display: inline-block;
+	line-height: 48px;
+	color: #555555;
+	padding-left: 36px;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 168px;
+}
+.index_a1{
+	background: url(http://www.pyticket.com/static/pymj/images/lingxing1.png) no-repeat center !important;
+}
+.heZ .heZrf{
+	width: 24px;
+	height: 48px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 312px;
+}
+.heZ .heZb{
+	color: #0076c3;
+	height: 31px;
+	padding-top: 60px;
+	text-align: center;
+}
+.heZ .heZb hr{
+	width: 50px;
+	display: inline-block;
+	border: none;
+	height: 2px;
+	background-color: #0e88e2;
+
+}
+.heZ .heZb p{
+	display: inline-block;
+	font-size: 24px;
+	padding:0 15px;
+}
+.heZ .heZ_active{
+	background-color: #0076c3;
+}
+.heZ .heZc_active{
+	background-color: #0076c3;
+	color: #fff;
+}
+
+/*加入我们*/
+.jiaR{
+	width: 100%;
+    height: 285px;
+	padding-top: 62px;
+	background-color:#f6fafd;
+	position: relative;
+}
+.jiaR .jiaRc{
+	width: 506px;
+	margin: 0 auto;
+	font-size: 24px;
+	margin-top:30px;
+}
+.jiaR .jiaRc .jiaRg{
+	border: 1px solid #0076c3;
+	display: inline-block;
+	width: 240px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 5px;
+	color: #0076c3;
+}
+.jiaR .jiaRc .jiaRf{
+	border: 1px solid #0076c3;
+	display: inline-block;
+	width: 240px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 5px;
+	color: #0076c3;
+	margin-left: 17px;
+}
+.jiaR .jiaRw{
+	width: 186px;
+	margin: 0 auto;
+	font-size: 40px;
+    color: #333333;
+}
+.join_active{
+	background-color: #0076c3;
+	color: #fff !important;
+}
+/*底部*/
+.bott{
+	height: 234px;
+	background-color: #2a2f35;
+	width: 100%;
+	padding: 46px 0;
+	color: #fff;
+	font-size: 15px;
+}
+.bott1{
+    width: 1020px;
+	margin: 0 auto;
+}
+.bott .erweima1 {
+	display: inline-block;
+}
+.erweima1 p{
+	text-align: center;
+	margin-top: 5px;
+}
+.bott .erweima2 {
+	display: inline-block;
+	margin-left: 40px;
+}
+.erweima2 p{
+	text-align: center;
+	margin-top: 5px;
+}
+.bott .bott_con{
+	display: inline-block;
+	position: relative;
+    top: -15px;
+    left: 68px;
+    color: #eaebec;
+}
+.bott .bott_con1{
+	margin-top: 10px;
+}
+.bott .bott_con0 {
+	position: relative;
+    left: -36px;
+}
+.bott .bott_con0 img{
+	vertical-align: middle;
+}
+.bott .bott_con0 img:nth-of-type(2){
+	margin-left: 18px;
+}
+.bott .bott_con0 .bott_lian1{
+	margin-left: 8px;
+	display: inline-block;
+}
+.bott .bott_con0 .bott_lian2{
+	margin-left: 8px;
+	display: inline-block;
+}
+.bott .bott_con0 .bott_lian1 span:nth-of-type(2){
+	font-size: 24px;
+	vertical-align: sub;
+	margin-left: 6px;
+}
+.bott .bott_con0 .bott_lian2 span:nth-of-type(2){
+	font-size: 24px;
+	vertical-align: sub;
+	margin-left: 6px;
+}
+.bott .adre span:nth-of-type(2){
+	margin-left: 23px;
+}
+/*公共的样式*/
+.imgTit{
+	height: 320px;
+	width: 100%;
+}
+/*.imgTit img{*/
+	/*width: 100%;*/
+	/*height: 320px;*/
+/*}*/
+
+.nav_wrapper{
+	width: 100%;
+	background-color: #f8f8f8;
+	z-index: 999;
+}
+.nav_wrapper .navList{
+	width: 1200px;
+	height: 65px;
+	margin: 0 auto;
+	
+}
+.nav_wrapper .navList:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.nav_wrapper .navList .navList_left{
+	float: left;
+	font-size: 18px;
+}
+.nav_wrapper .navList .navList_left a{
+	display: inline-block;
+	height: 16px;
+    border-left: 1px solid #dbdbdb;
+    margin-top: 26px;
+    line-height: 14px;
+	padding-left: 28px;
+    padding-right: 22px;
+}
+.nav_wrapper .navList .navList_left a:nth-of-type(1){
+	padding-left: 0;
+	border:none;
+}
+.nav_wrapper .navList .navList_right{
+	float: right;
+	line-height: 65px;
+	font-size: 14px;
+	color: #b5b5b5;
+}
+.nav_wrapper .nav_active{
+    color: #e0661e;
+}
+
+
+.nav_wrapper1{
+	width: 100%;
+	background-color: #f8f8f8;
+	z-index: 999;
+}
+.nav_wrapper1 .navList{
+	width: 1200px;
+	height: 65px;
+	margin: 0 auto;
+	
+}
+.nav_wrapper1 .navList:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.nav_wrapper1 .navList .navList_left{
+	float: left;
+	font-size: 18px;
+}
+.nav_wrapper1 .navList .navList_left a{
+	display: inline-block;
+	height: 16px;
+    border-left: 1px solid #dbdbdb;
+    margin-top: 26px;
+    line-height: 14px;
+	padding-left: 28px;
+    padding-right: 22px;
+}
+.nav_wrapper1 .navList .navList_left a:nth-of-type(1){
+	padding-left: 0;
+	border:none;
+}
+.nav_wrapper1 .navList .navList_right{
+	float: right;
+	line-height: 65px;
+	font-size: 14px;
+	color: #b5b5b5;
+}
+.nav_wrapper1 .nav_active{
+    color: #e0661e;
+}
+
+/*关于我们*/
+
+.aboutMe{
+}
+#header .aboutMe_li{
+	margin-left: 30px;
+}
+.aboutMe_con{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 65px;
+}
+/*.aboutMe_con p{
+	margin: 0 auto;
+}*/
+p.aboutMe_conp1{
+	text-align: center;
+	font-size: 36px;
+	color: #333333;
+}
+p.aboutMe_conp2{
+	text-align: center;
+	font-size: 15px;
+    margin-top: 13px;
+    color: #555555;
+}
+p.aboutMe_conp3{
+	text-indent: 2em;
+	font-size: 15px;
+	color: #333333;
+}
+.aboutMe_conjj_img{
+	margin-top: 54px;
+	text-align: center;
+	height: 222px;
+	padding: 0 23px;
+}
+.aboutMe_conjj_img img{
+	float: left;
+	margin-left: 6px;
+}
+.aboutMe_conjj_img img:first-child{
+	margin-left: 0;
+}
+.aboutMe_conjj_img:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+
+.aboutMe_conpw{
+	margin-top: 75px;
+	height: 576px;
+	background-color: #f8f8f8;
+	border-top: 1px solid #f8f8f8;
+}
+/*.aboutMe_conpw p{
+	margin: 0 auto;
+}*/
+p.aboutMe_conpwp1{
+	text-align: center;
+	font-size: 36px;
+	margin-top: 65px;
+	color: #333333;
+}
+p.aboutMe_conpwp2{
+	text-align: center;
+	font-size: 15px;
+    margin-top: 10px;
+    color: #555555;
+}
+.aboutMe_conpw_img{
+	text-align: center;
+	margin-top: 60px;
+}
+.aboutMe_conpw_img0{
+	width: 1149px;
+    margin: 0 auto;
+}
+.aboutMe_conpw_img0:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.aboutMe_conpw_img0 div{
+	width: 278px;
+	height: 300px;
+	background-color: #fff;
+	display: inline-block;
+	padding: 30px 20px 53px 20px;
+	border: 2px solid #ededed;
+	float: left;
+}
+.aboutMe_conpw_img0 div img{
+	vertical-align: bottom;
+}
+.aboutMe_conpw_img1{
+	margin-left: 12px;
+}
+.aboutMe_conpw_img_p1{
+	font-size: 22px;
+    margin-top: 25px !important;
+    color: #333333;
+}
+.aboutMe_conpw_img_p2{
+	margin-top: 25px !important;
+	text-align: justify;
+    font-size: 14px;
+    color: #555555;
+    width: 239px;
+}
+.aboutMe_conpw_img0 li{
+	height: 80px;
+	line-height: 80px;
+}
+.aboutMe_conpw_img0 div:hover{
+	background-color: #f38901;
+}
+.aboutMe_conpw_img0 div:hover p{
+	color: #fff !important;
+}
+
+/*合作案例*/
+.cooper{
+	color: #333333;
+}
+.tit_wraper{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 65px;
+}
+p.tit_p1{
+	text-align: center;
+	font-size: 36px;
+	margin: 0 auto;
+}
+p.tit_p2{
+	text-align: center;
+	font-size: 15px;
+    margin-top: 13px !important;
+    margin: 0 auto;
+    color: #555555;
+}
+
+.cooper_anli{
+	width: 1200px;
+	height: 384px;
+	margin-top: 60px;
+	background-color: #f8f8f8;
+	padding: 25px 50px 25px 25px;
+	border: 1px solid #d7d7d7;
+	display: block;
+	box-sizing: border-box;
+    position: relative;
+}
+.cooper_anli div{
+	display: inline-block;
+}
+.cooper_anli_txt{
+	margin-left: 64px;
+	position: absolute;
+	top: 50px;
+}
+.cooper_anli_txt .cooper_anli_txt0{
+    width: 190px;
+	font-size: 26px;
+	color: #333333;
+}
+.cooper_anli_txt  .cooper_anli_txt1{
+	width: 335px;
+	font-size: 15px;
+	margin-top: 16px;
+	color: #555555;
+    line-height: 28px;
+}
+
+.cooper_anli_1{
+	margin-top: 32px;
+	width: 1200px;
+}
+.cooper_anli_1 ul{
+	position: relative;
+}
+.cooper_anli_1 ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.cooper_anli_1 ul li{
+	cursor: pointer;
+	text-align: center;
+	line-height: 125px;
+	width: 230px;
+	height: 125px;
+	background-color: #f8f8f8;
+	float: left;
+	margin-left: 10px;
+	border: 1px solid #d7d7d7;
+}
+.cooper_anli_1 ul li:nth-child(1){
+	margin-left: 0px !important;
+	width: 226px;
+}
+.cooper_anli_1 .cooper_triangle{
+	width: 0;
+	height: 0;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 20px solid #f38804;
+	position: absolute;
+	top: -20px;
+    left: 103px;
+}
+.cooper_anli_1 ul li img{
+	vertical-align: middle;
+}
+.cooper_anli_1 .cooper_active{
+	border: 3px solid #f38804;
+}
+
+.anli_box{
+	height: 496px;
+	position: absolute;
+	left: -1200px;
+	top: 0;
+}
+.anli_wrapper{
+	overflow: hidden;
+	width: 1200px;
+	position: relative;
+	height:447px;
+}
+.cooper_anli{
+	float: left;
+}
+
+
+.cooper_cus{
+	height: 735px;
+	background-color: #f8f8f8;
+	margin-top: 70px;
+	padding-top: 70px;
+}
+.cooper_cus0{
+    width: 1200px;
+    margin: 0 auto;
+}
+.cooper_cus_img{
+	margin-top: 60px;
+	width: 100%;
+}
+
+
+.cooper_cus_img_ul div.a0{
+	width: 185px;
+	height: 160px;
+	overflow: hidden;
+	position: relative;
+}
+.cooper_cus_img_ul div.a1{
+	background: url(http://www.pyticket.com/static/pymj/images/lingxing2.png) no-repeat center;
+	width: 185px;
+	height: 160px;
+	z-index: 101;
+	position: absolute;
+	top:  0;
+	left: 0
+}
+.cooper_cus_img_ul li{
+	position: relative;
+	width: 185px;
+	height: 160px;
+	display: inline-block;
+	margin-left: 12px;
+	text-align: center;
+}
+.cooper_cus_img_ul li:nth-child(1){
+	margin-left: 0px;
+}
+.cooper_cus_img_ul li:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.cooper_cus_img_ul li img{
+	position: absolute;
+	top:  4px;
+	left: 4px;
+	width:100%;
+	height: 100%;
+	transition: all 0.8s;
+	-webkit-transition:all 0.8s;
+	-moz-transition:all 0.8s;
+	-o-transition:all 0.8s;
+	-ms-transition:all 0.8s;
+}
+ul.cooper_cus_img_ul{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+.cooper_cus_img_ul li:hover  img{
+	transform: scale(1.2);
+	-moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+}
+.cooper_cus_img p{
+	width: 100%;
+    position: absolute;
+    top: 177px;
+    z-index: 102;
+    font-size: 14px;
+    color: #333333;
+}
+
+.cooper_cus_img .cooper_go_down{
+	width: 34px;
+	height: 18px;
+	background: url(http://www.pyticket.com/static/pymj/images/godown.jpg);
+    margin: 80px auto 0 auto;
+    cursor: pointer;
+}
+.cooper_cus_img ul.selectShow{
+	display: none;
+	margin: 0 auto;
+}
+
+.cooper_channel_ul_img{
+	margin-top: 60px;
+}
+ul.cooper_channel_ul{
+	width: 100%;
+}
+.cooper_channel_ul .cooper_channel_ul_div:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.cooper_channel_ul .cooper_channel_ul_div{
+	margin-top: 22px;
+}
+.cooper_channel_ul .cooper_channel_ul_div li:nth-of-type(1){
+	margin-left: 0;
+}
+.cooper_channel_ul .cooper_channel_ul_div li{
+	width: 180px;
+	height: 85px;
+	border: 1px solid #d7d7d7;
+	float: left;
+	margin-left: 21px;
+	text-align: center;
+	line-height: 80px;
+}
+.cooper_channel_ul .cooper_channel_ul_div li img{
+	vertical-align: middle;
+}
+
+/*新闻详情*/
+.news_con{
+	margin-top: 18px;
+	padding-bottom: 75px;
+}
+.news_con ul.news_con0  li{
+	position: relative;
+	height: 240px;
+	width: 100%;
+	border-bottom: 1px solid #e3e3e3;
+	padding-top: 25px;
+	cursor: pointer;
+}
+.news_con ul.news_con0 li:nth-of-type(1){
+	padding-top: 0;
+}
+.news_con .news_con0 .news_con_img{
+	display: inline-block;
+}
+.news_con ul.news_con0 li:nth-of-type(1) .news_con_txt{
+	top: 45px;
+}
+.news_con .news_con0 .news_con_txt{
+	display: inline-block;
+	width: 744px;
+	margin-left: 34px;
+	position: absolute;
+	top: 70px;
+}
+.news_con .news_con0 .news_con_txt .news_p1{
+	font-size: 20px;
+	color: #333333;
+}
+
+/*改*/
+.news_con .news_con0 .news_con_txt .news_p2{
+	font-size: 12px;
+	margin-top: 10px;
+	color: #a5a5a5;
+}
+.news_p2_1{
+	display: inline-block;
+	background: url(http://www.pyticket.com/static/pymj/images/newD21.jpg);
+	width: 14px;
+	height: 9px;
+	margin-right: 6px;
+}
+.news_p2_2{
+	display: inline-block;
+	background: url(http://www.pyticket.com/static/pymj/images/newD41.jpg);
+	width: 11px;
+	height: 11px;
+	margin-right: 6px;
+	margin-left: 16px;
+}
+.new_con_right{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	right: 0;
+	top: 45px;
+	border-left: 1px solid #e3e3e3;
+	text-align: right;
+	padding-left: 29px;
+	box-sizing: border-box;
+}
+.new_con_right_p1{
+	color: #fc792b;
+	font-size: 50px;
+	position: relative;
+	top: -13px;
+	left: -2px;
+}
+.new_con_right_p2{
+	color: #999999;
+	font-size: 14px;
+	margin-top: -3px;
+	margin-left: 0px;
+}
+
+.news_con .news_con0 .news_con_txt .news_p3{
+	font-size: 14px;
+	margin-top: 16px;
+	color: #555555;
+	line-height: 26px;
+}
+.news_con .news_page{
+	margin-top: 50px;
+}
+.news_con .news_page ul{
+	text-align: center;
+}
+.news_con .news_page ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.news_con .news_page ul li{
+	display: inline-block;
+	width: 45px;
+	height: 35px;
+	border: 1px solid #e3e3e3;
+	border-left: none;
+	text-align: center;
+    margin-left: -6px;
+	line-height: 35px;
+	cursor: pointer;
+}
+.news_con .news_page ul li:first-child{
+	border: 1px solid #e3e3e3;
+	margin-left: 0;
+}
+.news_con .news_page ul li:last-child{
+	border: 1px solid #e3e3e3;
+	border-left: none;
+}
+.news_con .news_page ul li span{
+	color: #555555;
+
+}
+.active{
+	background-color: #fc792b;
+
+}
+.active span{
+	color: #fff !important;
+}
+/*新闻详情*/
+.newD_con{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 70px;
+	padding-bottom: 75px;
+}
+.newD_con p{
+	margin: 0 auto;
+}
+p.newD_conp1{
+    text-align: center;
+	font-size: 26px;
+	color: #333333;
+	font-weight: bold;
+}
+p.newD_conp2{
+	text-align: center;
+	font-size: 13px;
+    margin-top: 13px;
+    color: #a5a5a5;
+    border-bottom: 1px dotted #e7e7e7;
+    padding-bottom: 30px;
+}
+p.newD_conp2 .newD1{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(http://www.pyticket.com/static/pymj/images/newD1.jpg);
+	vertical-align: text-top;
+	margin-right: 10px;
+}
+p.newD_conp2 .newD2{
+	display: inline-block;
+	width: 20px;
+	height: 13px;
+	background: url(http://www.pyticket.com/static/pymj/images/newD2.jpg);
+	vertical-align: text-top;
+	margin: 0 10px;
+}
+p.newD_conp2 .newD3{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(http://www.pyticket.com/static/pymj/images/newD3.jpg);
+	vertical-align: text-top;
+	margin: 0 10px;
+}
+p.newD_conp2 .newD4{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(http://www.pyticket.com/static/pymj/images/newD4.jpg);
+	vertical-align: text-top;
+	margin: 0 10px;
+}
+p.newD_conp2 .bdsharebuttonbox{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: text-top;
+	margin: 0 10px;
+}
+
+.newD_con .newD_txt{
+	margin-top: 37px;
+	color: #555555;
+	padding-bottom: 58px;
+	font-size: 14px;
+}
+.newD_con .newD_txt img{
+	width:95%;
+}
+.newD_con .newD_txt p{
+	margin-top: 15px;
+	text-indent: 2em;
+	line-height: 30px;
+}
+.newD_con .newD_txt p:first-child{
+	margin-top: 0;
+}
+.newD_page{
+	font-size: 14px;
+	color: #999999;
+}
+.newD_page p{
+	margin-top: 10px;
+	cursor: pointer;
+	border-bottom: 1px dotted #e7e7e7;
+    padding-bottom: 16px;
+}
+.newD_page p:first-child{
+	margin-top: 0;
+}
+/*join分销*/
+p.joinFx_p1{
+	text-align: center;
+    font-size: 36px;
+    color: #333333;
+}
+p.joinFx_p2{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 13px;
+    color: #555555;
+}
+p.joinFx_tit{
+	margin-top: 50px;
+	font-size: 15px;
+	text-align: center;
+}
+p.joinFx_tips{
+	font-size: 13px;
+	color: #ff5a09;
+	margin-top: 20px;
+    text-align: center;
+}
+
+
+.joinFx_form{
+	width: 1038px;
+	height: 524px;
+	background: url(http://www.pyticket.com/static/pymj/images/joinFx1.jpg);
+	margin: 40px auto 0 auto;
+	padding: 36px 100px 36px 100px;
+	font-size: 15px;
+}
+.joinFx_tr{
+	width: 826px;
+	margin: 0 auto;
+	margin-top: 27px;
+}
+.joinFx_tr:first-child{
+	margin-top: 0;
+}
+.joinFx_tr:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.joinFx_trl{
+	float: left;
+}
+.joinFx_trr{
+	float: right;
+}
+.join_x{
+    color: #ff5a09;
+    position: absolute;
+    right: -14px;
+    top: 4px;
+}
+.join_tesp{
+	color: #ff5a09;
+    position: absolute;
+    font-size: 12px;
+    top: 20px;
+    left: -39px;
+    width: 143px;
+}
+.join_tesp1{
+	color: #ff5a09;
+	font-size: 13px;
+	margin-left: 37px;
+}
+.join_yanzm{
+	display: inline-block;
+	width: 83px;
+	height: 28px;
+	background: url(http://www.pyticket.com/static/pymj/images/yanzm.jpg);
+	vertical-align: text-bottom;
+	margin-left: 15px;
+}
+.joinFx_form  input[type = 'file']{
+    width: 170px;
+	height: 23px;
+}
+.joinFx_form  input[type = 'radio']{
+    vertical-align: middle;
+    margin-left: 6px;
+    margin-right: 3px;
+}
+.joinFx_form  .joinFx_submit {
+    width: 180px;
+    height: 50px;
+    background-color: #fc792b;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #fefefe;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.joinFx_form  .joinFx_submit1 {
+    width: 180px;
+    height: 50px;
+    background-color: #fc792b;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #fefefe;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.joinFx .joinFx_form  input[name = "identify"]{
+	width: 197px;
+    height: 37px;
+    padding: 0 0;
+    line-height: 20px;
+    text-indent: 5px;
+    background: url(http://www.pyticket.com/static/pymj/images/input_identifyingcode.jpg) no-repeat;
+    border: none;
+}
+.joinFx_form input.joinFx_text{
+    width: 262px;
+    height: 36px;
+    padding: 0 0;
+    line-height: 20px;
+    text-indent: 5px;
+    background: url(http://www.pyticket.com/static/pymj/images/joinin_inputbg.jpg) no-repeat;
+    border: none;
+}
+.erweim{
+	background: url(http://www.pyticket.com/static/pymj/images/input_identifyingcode.jpg) no-repeat !important;
+	width: 157px !important;
+	height: 37px !important;
+}
+
+.joinFx_form input.joinFx_text:focus{
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.joinFx_sp{
+	min-width: 90px;
+	text-align: right;
+	margin-right: 20px;
+	position: relative;
+}
+
+.joinFx_liuc{
+	margin-top: 67px;
+	height: 223px;
+}
+.joinFx_liuc ul{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25px;
+}
+.joinFx_liuc ul:first-child{
+	margin-top: 0;
+}
+.joinFx_liuc ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.join_tit{
+	font-size: 25px;
+	color: #333333;
+	width: 126px;
+}
+.join_hr{
+	border:none;
+	display: inline-block;
+	height:1px;
+	border-top:1px solid #e3e3e3;
+}
+
+.joinGy_liuc{
+	margin-top: 67px;
+	height: 208px;
+}
+.joinGy_liuc ul{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25px;
+}
+.joinGy_liuc ul:first-child{
+	margin-top: 0;
+}
+.joinGy_liuc ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.joinFx_liuc li{
+	width: 349px;
+	height: 81px;
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+    line-height: 78px;
+	/*float: left;*/
+	font-weight: bold;
+}
+.joinGy_liuc li{
+	width: 260px;
+	height: 81px;
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+    line-height: 78px;
+    font-weight: bold;
+}
+.joinFx_liuc_img1{
+	background: url(http://www.pyticket.com/static/pymj/images/joinFx_a1.jpg) no-repeat;
+}
+.joinFx_liuc_img2{
+	background: url(http://www.pyticket.com/static/pymj/images/joinFx_a2.jpg) no-repeat;
+}
+.joinFx_liuc_img3{
+	background: url(http://www.pyticket.com/static/pymj/images/joinFx_a3.jpg) no-repeat;
+}
+.joinFx_liuc_img4{
+	background: url(http://www.pyticket.com/static/pymj/images/joinFx_a4.jpg) no-repeat;
+}
+.joinFx_liuc_img5{
+	background: url(http://www.pyticket.com/static/pymj/images/joinFx_a5.jpg) no-repeat;
+}
+.joinGy_liuc_img1{
+	background: url(http://www.pyticket.com/static/pymj/images/joinGy_a1.jpg) no-repeat;
+}
+.joinGy_liuc_img2{
+	background: url(http://www.pyticket.com/static/pymj/images/joinGy_a2.jpg) no-repeat;
+}
+.joinGy_liuc_img3{
+	background: url(http://www.pyticket.com/static/pymj/images/joinGy_a3.jpg) no-repeat;
+}
+.joinGy_liuc_img4{
+	background: url(http://www.pyticket.com/static/pymj/images/joinGy_a4.jpg) no-repeat;
+}
+.joinGy_liuc_img5{
+	background: url(http://www.pyticket.com/static/pymj/images/joinGy_a5.jpg) no-repeat;
+}
+/*产品与服务*/
+.product_hr{
+	height: 1px;
+	width: 255px;
+	border:none;
+	border-top: 2px solid #c3c3c3;
+	margin: 20px auto;
+}	
+.product_img1{
+	margin-top: 54px;
+	text-align: center;
+	position: relative;
+}
+.product_p1{
+	text-align: center;
+	font-size: 36px;
+    color: #333333;
+    text-align: center;
+}
+.product_con{
+	background-color: #f8f8f8;
+	height: 783px;
+	padding-top: 68px;
+	padding-bottom: 74px;
+}
+.product_con1{
+	padding-top: 68px;
+}
+.product_img2{
+	text-align: center;
+	margin-top: 60px;
+}
+.product_p2{
+	font-size: 15px;
+	color: #555555;
+	text-align: center;
+}
+.product_sys{
+	width: 1200px;
+	margin: 60px auto 0 auto;
+	padding-bottom: 75px;
+}
+.product_sys ul{
+	height: 308px;
+}
+.product_sys ul.product_sys_ul1 li:first-child{
+	background-color: #fc792b;
+	width: 50px;
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_sys ul.product_sys_ul1 li:first-child span{
+	width: 26px;
+	color: #fff;
+	font-size: 26px;
+}
+ul.product_sys_ul1 li{
+	width:  383.333px;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+ul.product_sys_ul1 li:nth-of-type(2n){
+	background-color: #fbf6f3;
+}
+ul.product_sys_ul1 li:nth-of-type(2n+1){
+	background-color: #fcf2eb;
+}
+
+
+.product_sys ul.product_sys_ul2 li:first-child{
+	background-color: #446b9c;
+	width: 50px;
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_sys ul.product_sys_ul2 li:first-child span{
+	width: 26px;
+	color: #fff;
+	font-size: 26px;
+}
+ul.product_sys_ul2 li{
+	width:  383.333px;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+ul.product_sys_ul2 li:nth-of-type(2n){
+	background-color: #fcf2eb;
+}
+ul.product_sys_ul2 li:nth-of-type(2n+1){
+	background-color: #fbf6f3;
+}
+.product_ptit{
+	font-size: 18px;
+	color: #333333;
+	font-weight: bold;
+	margin-top: 14px;
+	margin-bottom: 24px;
+}
+.product_pcon{
+	font-size: 15px;
+	color: #555555;
+	margin-top: 9px;
+}
+.inline_block{
+	display: inline-block;
+}
+.bac_product2{
+	background: url(http://www.pyticket.com/static/pymj/images/product2.png) no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.product_bac_li2:hover i.bac_product2{
+	background: url(http://www.pyticket.com/static/pymj/images/product2_1.png) no-repeat;
+    animation: buzz 0.5s;
+    -webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.bac_product3{
+	background: url(http://www.pyticket.com/static/pymj/images/product3.png) no-repeat;
+    display: inline-block;
+    width: 51px;
+    height: 52px;
+}
+.product_bac_li3:hover i.bac_product3{
+	background: url(http://www.pyticket.com/static/pymj/images/product3_1.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.bac_product4{
+	background: url(http://www.pyticket.com/static/pymj/images/product4.png) no-repeat;
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+}
+.product_bac_li4:hover i.bac_product4{
+	background: url(http://www.pyticket.com/static/pymj/images/product4_1.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.bac_product5{
+	background: url(http://www.pyticket.com/static/pymj/images/product5.png) no-repeat;
+    display: inline-block;
+    width: 51px;
+    height: 50px;
+}
+.product_bac_li5:hover i.bac_product5{
+	background: url(http://www.pyticket.com/static/pymj/images/product5_1.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.bac_product6{
+	background: url(http://www.pyticket.com/static/pymj/images/product6.png) no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.product_bac_li6:hover i.bac_product6{
+	background: url(http://www.pyticket.com/static/pymj/images/product6_1.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.bac_product7{
+	background: url(http://www.pyticket.com/static/pymj/images/product7.png) no-repeat;
+    display: inline-block;
+    width: 51px;
+    height: 52px;
+}
+.product_bac_li7:hover i.bac_product7{
+	background: url(http://www.pyticket.com/static/pymj/images/product7_1.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+
+.product_con1 .product_sys li:hover{
+	background-color: #f38804;
+}
+
+.product_bac_li2:hover div p{
+	color: #fff !important;
+}.product_bac_li3:hover div p{
+	color: #fff !important;
+}.product_bac_li4:hover div p{
+	color: #fff !important;
+}.product_bac_li5:hover div p{
+	color: #fff !important;
+}.product_bac_li6:hover div p{
+	color: #fff !important;
+}.product_bac_li7:hover div p{
+	color: #fff !important;
+}
+@keyframes buzz{
+	10% {
+		transform: rotate(15deg);
+		-webkit-transform : rotate(15deg); 
+		-moz-transform : rotate(15deg); 
+		-ms-transform : rotate(15deg); 
+		-o-transform : rotate(15deg)
+	}
+	30% {
+		transform: rotate(-15deg);
+		-webkit-transform : rotate(-15deg); 
+		-moz-transform : rotate(-15deg); 
+		-ms-transform : rotate(-15deg); 
+		-o-transform : rotate(-15deg)
+	}
+	50% {
+		transform: rotate(15deg);
+		-webkit-transform : rotate(15deg); 
+		-moz-transform : rotate(15deg); 
+		-ms-transform : rotate(15deg); 
+		-o-transform : rotate(15deg)
+	}
+	70% {
+		transform: rotate(-15deg);
+		-webkit-transform : rotate(-15deg); 
+		-moz-transform : rotate(-15deg); 
+		-ms-transform : rotate(-15deg); 
+		-o-transform : rotate(-15deg)
+	}
+	90% {
+		transform: rotate(15deg);
+		-webkit-transform : rotate(15deg); 
+		-moz-transform : rotate(15deg); 
+		-ms-transform : rotate(15deg); 
+		-o-transform : rotate(15deg)
+	}
+	100%{
+		transform: rotate(0);
+		transform: rotate(0);
+		-webkit-transform : rotate(0); 
+		-moz-transform : rotate(0); 
+		-ms-transform : rotate(0); 
+		-o-transform : rotate(0)
+	}
+}
+@-webkit-keyframes buzz{
+	10% {
+		-webkit-transform : rotate(15deg); 
+	}
+	30% {
+		-webkit-transform : rotate(-15deg); 
+	}
+	50% {
+		-webkit-transform : rotate(15deg); 
+	}
+	70% {
+		-webkit-transform : rotate(-15deg); 
+	}
+	90% {
+		-webkit-transform : rotate(15deg); 
+	}
+	100%{
+		transform: rotate(0);
+		-webkit-transform : rotate(0); 
+	}
+}
+@-moz-keyframes buzz{
+	10% {
+		-moz-transform : rotate(15deg); 
+	}
+	30% {
+		-moz-transform : rotate(-15deg); 
+	}
+	50% {
+		-moz-transform : rotate(15deg); 
+	}
+	70% {
+		-moz-transform : rotate(-15deg); 
+	}
+	90% {
+		-moz-transform : rotate(15deg); 
+	}
+	100%{
+		-moz-transform : rotate(0); 
+	}
+}
+@-ms-keyframes buzz{
+	10% {
+		-ms-transform : rotate(15deg); 
+	}
+	30% { 
+		-ms-transform : rotate(-15deg); 
+	}
+	50% {
+		-ms-transform : rotate(15deg); 
+	}
+	70% {
+		-ms-transform : rotate(-15deg); 
+	}
+	90% {
+		-ms-transform : rotate(15deg); 
+	}
+	100%{
+		-ms-transform : rotate(0); 
+	}
+}
+@-o-keyframes buzz{
+	10% {
+		-o-transform : rotate(15deg)
+	}
+	30% {
+		-o-transform : rotate(-15deg)
+	}
+	50% {
+		-o-transform : rotate(15deg)
+	}
+	70% {
+		-o-transform : rotate(-15deg)
+	}
+	90% {
+		-o-transform : rotate(15deg)
+	}
+	100%{
+		-o-transform : rotate(0)
+	}
+}
+/*商务合作*/
+.com_p3{
+	text-indent: 2rem;
+	font-size: 15px;
+	color: #555555;
+	margin-top: 49px !important;
+	line-height: 26px;
+}
+ul.com_hard{
+	height: 338px;
+    padding: 0 50px;
+}
+.com_hard:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.com_hard li{
+	box-sizing: border-box;
+	width: 25%;
+	float: left;
+	border-right: 1px dotted #d0d0d0;
+	text-align: center;
+}
+.com_hard li hr{
+	width: 20px;
+	height: 2px;
+	border:none;
+	border-top: 2px solid #f28b02;
+}
+.com_hard li:last-child{
+	border: none;
+}
+.com_pTit{
+	font-weight: bold;
+	font-size: 20px;
+	color: #000000;
+	margin-top: 30px;
+	margin-bottom: 7px;
+}
+.com_pCon{
+	width: 225px;
+	color: #555555;
+	font-size: 14px;
+    margin: 0 auto;
+    line-height: 26px;
+	text-align: left;
+}
+
+.com_solution{
+	padding-top: 65px;
+	height: 813px;
+}
+.con_solu{
+	padding: 20px 28px 0 50px;
+}
+.con_solul{
+	margin-top: 50px;
+	display: inline-block;
+}
+.con_solur{
+	display: inline-block;
+	margin-left: 30px;
+}
+.con_solul li{
+	width: 500px;
+	height: 82px;
+	margin-top: 15px;
+	position: relative;
+}
+.con_solul li.com_solu_li1{
+	background: url(http://www.pyticket.com/static/pymj/images/commerce1.png);
+}
+.con_solul li.com_solu_li2{
+	background: url(http://www.pyticket.com/static/pymj/images/commerce21.png);
+}
+.con_solul li.com_solu_li3{
+	background: url(http://www.pyticket.com/static/pymj/images/commerce31.png);	
+}
+.con_solul li.com_solu_li4{
+	background: url(http://www.pyticket.com/static/pymj/images/commerce41.png);
+}
+.con_solul li.com_solu_li5{
+	background: url(http://www.pyticket.com/static/pymj/images/commerce1.png);
+}
+.con_solul li span{
+	width: 360px;
+	font-size: 15px;
+	color: #333333;
+	position: absolute;
+	left: 95px !important;
+	line-height: 26px;
+} 
+.com_plat{
+	margin-top: 60px;
+    padding-bottom: 8px;
+}
+.com_plat ul{
+	padding: 0 6px;
+	height: 302px;
+}
+.com_plat ul li{
+	margin-left: 22px;
+	box-sizing: border-box;
+	width: 276px;
+	height: 302px;
+	background-color: #f38901;
+	color: #fff;
+	float: left;
+	text-align: center;
+	padding-top: 66px;
+}
+.com_plat ul li:hover i{
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.com_plat ul li:first-child{
+	margin-left: 0;
+}
+.com_plat ul li i.com_plat1{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background: url(http://www.pyticket.com/static/pymj/images/commerce2.png);
+}
+.com_plat ul li i.com_plat2{
+	display: inline-block;
+	width: 48px;
+	height: 55px;
+	background: url(http://www.pyticket.com/static/pymj/images/commerce3.png);
+}
+.com_plat ul li i.com_plat3{
+	display: inline-block;
+	width: 51px;
+	height: 52px;
+	background: url(http://www.pyticket.com/static/pymj/images/commerce4.png);
+}
+.com_plat ul li i.com_plat4{
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	background: url(http://www.pyticket.com/static/pymj/images/commerce5.png);
+}
+.com_plat ul li .com_platpT{
+	font-size: 20px;
+	color: #fff;
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+.com_plat ul li .com_platpC{
+	font-size: 14px;
+	color: #fbf3e9;
+	width: 224px;
+	margin: 0 auto;
+	line-height: 26px;
+}
+
+.com_fx{
+	padding: 0px 118px 0 100px;
+	position: relative;
+}
+.com_fxl{
+	width: 478px;
+	display: inline-block;
+	position: absolute;
+	top: 110px;
+}
+.com_fxl p{
+    line-height: 26px;
+    color: #333333;
+    font-size: 15px;
+}
+.com_fxr{
+	display: inline-block;
+	margin-top: 46px;
+}
+
+.com_display{
+	text-align: center;
+	margin-top: 30px;
+}
+.com_platpC{
+	width: 824px;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #555555;
+	line-height: 26px;
+}
+.com_display_img1{
+    margin-top: 60px;
+}
+.com_display_img2{
+	margin-top: 34px;
+}
+/*旅游企业*/
+.tourism_c1{
+	width: 1200px;
+	height: 164px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism1.jpg) no-repeat center;
+}
+.tourism_c1 p.tourism_c1_pTit{
+	font-size: 22px;
+	color: #333333;
+    position: absolute;
+    top: -65px;
+}
+.tourism_c1 ul {
+	width: 1200px;
+}
+.tourism_c1 ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.tourism_c1 ul li{
+	box-sizing: border-box;
+	width: 257px;
+	float: left;
+
+}
+.tourisi_c1_lii{
+	position: relative;
+    left: 38px;
+}
+.tourism_c1 ul li:first-child{
+	width: 178px;
+}
+.tourism_c1 ul li:last-child{
+	width: 251px;
+	position: relative;
+    left: 42px
+}
+.tourism_c1 ul li p{
+	text-align: center;
+	color: #555555;
+	font-size: 16px;
+	width: 181px;
+    margin: 22px auto 0 auto;
+    font-weight: bold;
+}
+
+.tourism_c2_hr{
+	border: none;
+	height: 2px;
+	border-top:2px solid #c3c3c3;
+	width: 55px;
+	margin: 20px auto;
+}
+.tourism_c2_img{
+	margin: 54px auto 0 auto;
+	text-align: center;
+}
+.tourism_c3{
+	margin-top: 60px;
+}
+.tourism_c3_ul{
+	padding: 0 4px 0 4px;
+	margin-top: 28px;
+}
+.tourism_c3_ul_wrapper{
+	height: 200px;
+}
+.tourism_c3_ul_wrapper div{
+	height: 60px;
+}
+.tourism_c3_ul:first-child{
+	margin-top: 0;
+}
+.tourism_c3_ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.tourism_c3_ul li{
+	float: left;
+	width: 277px;
+	height: 277px;
+	box-sizing: border-box;
+	border: 1px solid #e3e3e3;
+	margin-left: 28px;
+	text-align: center;
+}
+.tourism_c3_ul li:first-child{
+	margin-left: 0;
+}
+.tourism_i1{
+	display: inline-block;
+	width: 62px;
+	height: 50px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i1.jpg);
+}
+.tourism_i2{
+	display: inline-block;
+	width: 55px;
+	height: 50px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i2.jpg);
+}
+.tourism_i3{
+	display: inline-block;
+	width: 56px;
+	height: 49px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i3.jpg);
+}
+.tourism_i4{
+	display: inline-block;
+	width: 56px;
+	height: 48px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i4.jpg);
+}
+.tourism_i5{
+	display: inline-block;
+	width: 53px;
+	height: 53px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i5.jpg);
+}
+.tourism_i6{
+	display: inline-block;
+	width: 56px;
+	height: 52px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i6.jpg);
+}
+.tourism_i7{
+	display: inline-block;
+	width: 56px;
+	height: 52px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i7.jpg);
+}
+.tourism_i8{
+	display: inline-block;
+	width: 51px;
+	height: 51px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i8.jpg);
+}
+.tourism_c3_p1{
+	color: #333333;
+	font-size: 20px;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+.tourism_c3_p2{
+	color: #555555;
+	font-size: 14px;
+	line-height: 26px;
+	width: 226px;
+    margin: 0 auto;
+}
+.tourism_c3_ul li:hover{
+	background-color: #f38804;
+}
+.tourism_c3_ul li:hover p{
+	color: #fff;
+}
+.tourism_c3_ul li:hover .tourism_i1{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i1.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.tourism_c3_ul li:hover .tourism_i2{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i2.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.tourism_c3_ul li:hover .tourism_i3{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i3.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.tourism_c3_ul li:hover .tourism_i4{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i4.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.tourism_c3_ul li:hover .tourism_i5{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i5.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.tourism_c3_ul li:hover .tourism_i6{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i6.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.tourism_c3_ul li:hover .tourism_i7{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i7.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+.tourism_c3_ul li:hover .tourism_i8{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism_i8.png) no-repeat;
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}
+
+.tourism_c4_img{
+	margin-top: 56px;
+}
+.tourism_c4_img ul{
+	padding: 0 41px;
+}
+.tourism_c4_img ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.tourism_c4_img ul li{
+	margin-left: 21px;
+	width: 263px;
+	height: 221px;
+	float: left;
+}
+.tourism_c4_img ul li:first-child{
+	margin-left:0;
+}
+.tourism_c4_img1{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism1.png);
+}
+.tourism_c4_img2{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism2.png);
+}
+.tourism_c4_img3{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism3.png);
+}
+.tourism_c4_img4{
+	background: url(http://www.pyticket.com/static/pymj/images/tourism4.png);
+}
+.tourisim_c4_p1{
+	font-size: 26px;
+	color: #fff;
+	position: relative;
+    top: 98px;
+    left: 112px;
+}
+.tourisim_c4_p2{
+    font-size: 14px;
+    color: #fff;
+    width: 154px;
+    position: relative;
+    top: 103px;
+    left: 65px;
+    text-align: center;
+    line-height: 26px;
+}
+.tourism_c5_img{
+	display: inline-block;
+	width: 575px;
+	height: 390px;
+	background: url(http://www.pyticket.com/static/pymj/images/tourism8.jpg);
+	margin-top: 60px;
+}
+.tourism_c5_con{
+	width: 753px;
+	height: 350px;
+	background-color: #f8f8f8;
+	position: relative;
+	left: 447px;
+    top: 22px;
+}
+.tourism_c5_con {
+	position: relative;
+}
+.tourism_c5_con div{
+	width: 690px;
+}
+.tourism_c5_con div p{
+	text-indent: 2rem;
+	font-size: 14px;
+	color: #555555;
+	line-height: 26px;
+}
+/*旅行社*/
+
+.agency_c1{
+	margin-top: 18px;
+	position:  relative;
+}
+.agency_c1_sp{
+	font-size: 36px;
+	color: #ffffff;
+	position: absolute;
+	font-weight: bold;
+}
+.agency_c1_sp1{
+    top: 46%;
+    left: 46.5%;
+}
+.agency_c1_sp2{
+    top: 63%;
+    left: 45%;
+}
+.agency_c1 p{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+}
+.agency_c1_p1{
+    position: absolute;
+    top: 129px;
+    left: 86px;
+}
+.agency_c1_p2{
+	position: absolute;
+    top: 129px;
+    right: 84px;
+}
+.agency_c1_p3{
+	position: absolute;
+    top: 299px;
+    left: 109px;
+}
+.agency_c1_p4{
+	position: absolute;
+    top: 302px;
+    right: 168px;
+}
+.agency_c2{
+	margin-top: 56px;
+}
+.agency_c2 ul li{
+	height: 260px;
+	border-left: 1px dotted #dcdcdc;
+	float: left;
+	box-sizing: border-box;
+	text-align: center;
+}
+.agency_c2 ul li.agency_c2_li1:hover  img{
+	animation: buzz1 0.5s;
+	-webkit-animation: buzz1 0.5s;
+	-moz-animation: buzz1 0.5s;
+	-ms-animation: buzz1 0.5s;
+	-o-animation: buzz1 0.5s;
+}
+.agency_c2 ul li.agency_c2_li2:hover  img{
+	animation: buzz1 0.5s;
+	-webkit-animation: buzz1 0.5s;
+	-moz-animation: buzz1 0.5s;
+	-ms-animation: buzz1 0.5s;
+	-o-animation: buzz1 0.5s;
+}
+.agency_c2 ul li.agency_c2_li3:hover  img{
+	animation: buzz1 0.5s;
+	-webkit-animation: buzz1 0.5s;
+	-moz-animation: buzz1 0.5s;
+	-ms-animation: buzz1 0.5s;
+	-o-animation: buzz1 0.5s;
+}
+.agency_c2 ul li.agency_c2_li4:hover  img{
+	animation: buzz1 0.5s;
+	-webkit-animation: buzz1 0.5s;
+	-moz-animation: buzz1 0.5s;
+	-ms-animation: buzz1 0.5s;
+	-o-animation: buzz1 0.5s;
+}
+
+.agency_c2 ul li:first-child{
+	border-left: none;
+}
+.agency_c2 ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.agency_c2_li1{
+	width: 320px;
+}
+.agency_c2_li2{
+	width: 300px;
+}
+.agency_c2_li3{
+	width: 280px;
+}
+.agency_c2_li4{
+	width: 300px;
+}
+.agency_c2_p1{
+	font-size: 20px;
+	color: #333333;
+	font-weight: bold;
+	margin-top: 38px;
+	margin-bottom: 21px;
+}
+.agency_c2 hr{
+	width: 98px;
+	height: 1px;
+	border:none;
+	border-top: 1px solid #d8d8d8;
+} 
+.agency_c2_p2{
+	font-size: 15px;
+	color: #6d6d6d;
+	width: 184px;
+	line-height: 26px;
+	margin: 0 auto;
+	margin-top: 6px;
+	text-align: left;
+}
+
+.agency_c3{
+	margin-top: 8px;
+}
+.agency_c3 ul li{
+	float: left;
+	box-sizing: border-box;
+	text-align: center;
+	height: 440px;
+}
+.agency_c3 ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.agency_c3 ul li.agency_c3_li1{
+	width: 346px;
+}
+.agency_c3 ul li.agency_c3_li2{
+	width: 538px;
+}
+.agency_c3 ul li.agency_c3_li3{
+	width: 316px;
+}
+.agency_c3 ul li.agency_c3_li2 div.agency_wrapper div{
+ 	padding-top: 30px;
+}
+.agency_c3 ul li.agency_c3_li3 div.agency_wrapper div{
+	padding-top: 30px;
+}
+.agency_c3 ul li div.agency_wrapper{
+	height: 319px;
+}
+.agency_c3 ul li div.agency_wrapper div{
+	height: 211px;
+}
+.agency_c3 ul li hr{
+	width: 64px;
+	height: 3px;
+	border:none;
+	border-top: 3px solid #f38804;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+.agency_c3_p1{
+	font-weight: bold;
+	font-size: 20px;
+	color: #333333;
+	margin-top: 24px;
+}
+.agency_c3_p2{
+	font-size: 15px;
+	color: #555555;
+	width: 345px;
+	line-height: 26px;
+}
+
+.agency_c4{
+	margin-top: 60px;
+}
+.agency_c4 ul{
+	margin-top: 25px;
+}
+.agency_c4 ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.agency_c4 li{
+	float: left;
+	width: 220px;
+	height: 145px;
+	margin-left: 25px; 
+	background-color: #fff;
+	box-shadow: 1px 1px 5px 5px #e6e6e6 ;
+}
+/*.agency_c4 li:hover .agency_c4_wrapper img{
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}*/
+.agency_c4 li:first-child{
+	margin-left: 0;
+}
+.agency_c4_wrapper{
+	width: 170px;
+	height: 78px;
+	text-align: center;
+}
+.agency_c4_p1{
+	margin-top: 14px;
+}
+/*OTA电商*/
+.ota_c1{
+	margin-top: 60px;
+}
+.ota_c1 ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.ota_c1 ul li{
+	float: left;
+	width: 224px;
+	margin-left: 20px;
+	height: 305px;
+	box-sizing: border-box;
+	border:1px solid #f38804;
+}
+.ota_c1 ul li:hover{
+	background-color: #f38804;
+}
+.ota_c1 ul li:hover p{
+	color: #fff;
+}
+/*.ota_c1 ul li:hover img{
+	animation: buzz 0.5s;
+	-webkit-animation: buzz 0.5s;
+	-moz-animation: buzz 0.5s;
+	-ms-animation: buzz 0.5s;
+	-o-animation: buzz 0.5s;
+}*/
+.ota_c1 ul li:first-child{
+	margin-left: 0;
+}
+.ota_c1 .ota_c1_wrapper{
+	width: 192px;
+	height: 220px;
+	text-align: center;
+}
+.ota_p1{
+	font-size: 20px;
+	color: #333333;
+	margin: 28px 0 18px 0;
+}
+.ota_p2{
+	font-size: 14px;
+	color: #555555;
+	line-height: 26px;
+}
+
+.ota_c2{
+	width: 100%;
+	height: 500px;
+	background:url(http://www.pyticket.com/static/pymj/images/ota.jpg);
+	padding-bottom: 32px;
+}
+.ota_c2_p1{
+	font-size: 15px;
+	width: 705px;
+	text-align: center;
+	color: #555555;
+	margin: 0 auto;
+	line-height: 26px;
+}
+/*旅行社*/
+@keyframes buzz1{
+	20% {
+		transform: rotate(72deg);
+		-webkit-transform : rotate(72deg); 
+		-moz-transform : rotate(72deg); 
+		-ms-transform : rotate(72deg); 
+		-o-transform : rotate(72deg)
+	}
+	40% {
+		transform: rotate(144deg);
+		-webkit-transform : rotate(144deg); 
+		-moz-transform : rotate(144deg); 
+		-ms-transform : rotate(144deg); 
+		-o-transform : rotate(144deg)
+	}
+	60% {
+		transform: rotate(216deg);
+		-webkit-transform : rotate(216deg); 
+		-moz-transform : rotate(216deg); 
+		-ms-transform : rotate(216deg); 
+		-o-transform : rotate(216deg)
+	}
+	70% {
+		transform: rotate(288deg);
+		-webkit-transform : rotate(288deg); 
+		-moz-transform : rotate(288deg); 
+		-ms-transform : rotate(288deg); 
+		-o-transform : rotate(288deg)
+	}
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform : rotate(360deg); 
+		-moz-transform : rotate(360deg); 
+		-ms-transform : rotate(360deg); 
+		-o-transform : rotate(360deg)
+	}
+}
+@-webkit-keyframes buzz1{
+	20% {
+		transform: rotate(72deg);
+		-webkit-transform : rotate(72deg); 
+		-moz-transform : rotate(72deg); 
+		-ms-transform : rotate(72deg); 
+		-o-transform : rotate(72deg)
+	}
+	40% {
+		transform: rotate(144deg);
+		-webkit-transform : rotate(144deg); 
+		-moz-transform : rotate(144deg); 
+		-ms-transform : rotate(144deg); 
+		-o-transform : rotate(144deg)
+	}
+	60% {
+		transform: rotate(216deg);
+		-webkit-transform : rotate(216deg); 
+		-moz-transform : rotate(216deg); 
+		-ms-transform : rotate(216deg); 
+		-o-transform : rotate(216deg)
+	}
+	70% {
+		transform: rotate(288deg);
+		-webkit-transform : rotate(288deg); 
+		-moz-transform : rotate(288deg); 
+		-ms-transform : rotate(288deg); 
+		-o-transform : rotate(288deg)
+	}
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform : rotate(360deg); 
+		-moz-transform : rotate(360deg); 
+		-ms-transform : rotate(360deg); 
+		-o-transform : rotate(360deg)
+	}
+}
+@-moz-keyframes buzz1{
+	20% {
+		transform: rotate(72deg);
+		-webkit-transform : rotate(72deg); 
+		-moz-transform : rotate(72deg); 
+		-ms-transform : rotate(72deg); 
+		-o-transform : rotate(72deg)
+	}
+	40% {
+		transform: rotate(144deg);
+		-webkit-transform : rotate(144deg); 
+		-moz-transform : rotate(144deg); 
+		-ms-transform : rotate(144deg); 
+		-o-transform : rotate(144deg)
+	}
+	60% {
+		transform: rotate(216deg);
+		-webkit-transform : rotate(216deg); 
+		-moz-transform : rotate(216deg); 
+		-ms-transform : rotate(216deg); 
+		-o-transform : rotate(216deg)
+	}
+	70% {
+		transform: rotate(288deg);
+		-webkit-transform : rotate(288deg); 
+		-moz-transform : rotate(288deg); 
+		-ms-transform : rotate(288deg); 
+		-o-transform : rotate(288deg)
+	}
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform : rotate(360deg); 
+		-moz-transform : rotate(360deg); 
+		-ms-transform : rotate(360deg); 
+		-o-transform : rotate(360deg)
+	}
+}
+@-ms-keyframes buzz1{
+	20% {
+		transform: rotate(72deg);
+		-webkit-transform : rotate(72deg); 
+		-moz-transform : rotate(72deg); 
+		-ms-transform : rotate(72deg); 
+		-o-transform : rotate(72deg)
+	}
+	40% {
+		transform: rotate(144deg);
+		-webkit-transform : rotate(144deg); 
+		-moz-transform : rotate(144deg); 
+		-ms-transform : rotate(144deg); 
+		-o-transform : rotate(144deg)
+	}
+	60% {
+		transform: rotate(216deg);
+		-webkit-transform : rotate(216deg); 
+		-moz-transform : rotate(216deg); 
+		-ms-transform : rotate(216deg); 
+		-o-transform : rotate(216deg)
+	}
+	70% {
+		transform: rotate(288deg);
+		-webkit-transform : rotate(288deg); 
+		-moz-transform : rotate(288deg); 
+		-ms-transform : rotate(288deg); 
+		-o-transform : rotate(288deg)
+	}
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform : rotate(360deg); 
+		-moz-transform : rotate(360deg); 
+		-ms-transform : rotate(360deg); 
+		-o-transform : rotate(360deg)
+	}
+}
+@-o-keyframes buzz1{
+	20% {
+		transform: rotate(72deg);
+		-webkit-transform : rotate(72deg); 
+		-moz-transform : rotate(72deg); 
+		-ms-transform : rotate(72deg); 
+		-o-transform : rotate(72deg)
+	}
+	40% {
+		transform: rotate(144deg);
+		-webkit-transform : rotate(144deg); 
+		-moz-transform : rotate(144deg); 
+		-ms-transform : rotate(144deg); 
+		-o-transform : rotate(144deg)
+	}
+	60% {
+		transform: rotate(216deg);
+		-webkit-transform : rotate(216deg); 
+		-moz-transform : rotate(216deg); 
+		-ms-transform : rotate(216deg); 
+		-o-transform : rotate(216deg)
+	}
+	70% {
+		transform: rotate(288deg);
+		-webkit-transform : rotate(288deg); 
+		-moz-transform : rotate(288deg); 
+		-ms-transform : rotate(288deg); 
+		-o-transform : rotate(288deg)
+	}
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform : rotate(360deg); 
+		-moz-transform : rotate(360deg); 
+		-ms-transform : rotate(360deg); 
+		-o-transform : rotate(360deg)
+	}
+}
+.sidebar{
+	display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 40px;
+	z-index: 9;
+}
+.sidebar ul:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+.sidebar ul{
+	width: 60px;
+	position: relative;
+	zoom: 1;
+}
+.sidebar ul li{
+	width: 58px;
+	float: left;
+	height: 58px;
+	border: 1px solid #fc792b;
+	border-radius: 8px;
+	background: #fff;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 10px;
+}
+.sidebar_Q{
+	display: block;
+	width: 30px;
+	height: 32px;
+	background: url(http://www.pyticket.com/static/pymj/images/QQ.png) no-repeat;
+	margin: 13px 14px;
+	/*transition: all .3s ease;*/
+	/*-webkit-transition: all .3s ease;*/
+}
+.lis2_l .sidebar_P{
+	display: block;
+	width: 28px;
+	height: 23px;
+	background: url(http://www.pyticket.com/static/pymj/images/phone1.png) no-repeat;
+	margin: 18.5px 16px;
+}
+.sidebar_E{
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(http://www.pyticket.com/static/pymj/images/erweima.png) no-repeat;
+	margin: 13px 13px;
+}
+.sidebar_G{
+	display: block;
+	width: 27px;
+	height: 34px;
+	background: url(http://www.pyticket.com/static/pymj/images/goTop.png) no-repeat;
+	margin: 12px 16px;
+}
+
+.lis1:hover{
+	background-color: #fc792b;
+	border-color: #fc792b;
+}
+.lis1:hover .sidebar_Q{
+	background: url(http://www.pyticket.com/static/pymj/images/QQ.png) no-repeat;
+	background-position: right center
+}
+.lis2:hover{
+	background-color: #fc792b;
+	border-color: #fc792b;
+}
+.lis2:hover .lis2_l .sidebar_P{
+	background: url(http://www.pyticket.com/static/pymj/images/phone1.png) no-repeat;
+	background-position: right center
+}
+.lis3:hover{
+	background-color: #fc792b;
+	border-color: #fc792b;
+}
+.lis3:hover .sidebar_E{
+	background: url(http://www.pyticket.com/static/pymj/images/erweima.png) no-repeat;
+	background-position: right center
+}
+
+.lis2{
+	position: relative;
+}
+.lis2_l{
+
+}
+.lis2_hide{
+	background-color: #fc792b;
+	border-color: #fc792b;
+	height: 60px;
+	display: none;
+	position: absolute;
+	right: 46px;
+	top: -1px;
+	color: #fff;
+	text-align: left ;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+}
+.lis2_hide span{
+	font-size: 12px;
+}
+.lis2_hide p{
+	font-size: 24px;
+.sidebar{
+	display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 40px;
+	z-index: 9;
+}
+.sidebar ul:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+.sidebar ul{
+	width: 60px;
+	position: relative;
+	zoom: 1;
+}
+.sidebar ul li{
+	width: 58px;
+	float: left;
+	height: 58px;
+	border: 1px solid #fc792b;
+	border-radius: 8px;
+	background: #fff;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 10px;
+}
+.sidebar_Q{
+	display: block;
+	width: 30px;
+	height: 32px;
+	background: url(http://www.pyticket.com/static/pymj/images/QQ.png) no-repeat;
+	margin: 13px 14px;
+	/*transition: all .3s ease;*/
+	/*-webkit-transition: all .3s ease;*/
+}
+.lis2_l .sidebar_P{
+	display: block;
+	width: 28px;
+	height: 23px;
+	background: url(http://www.pyticket.com/static/pymj/images/phone1.png) no-repeat;
+	margin: 18.5px 16px;
+}
+.sidebar_E{
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(http://www.pyticket.com/static/pymj/images/erweima.png) no-repeat;
+	margin: 13px 13px;
+}
+.sidebar_G{
+	display: block;
+	width: 27px;
+	height: 34px;
+	background: url(http://www.pyticket.com/static/pymj/images/goTop.png) no-repeat;
+	margin: 12px 16px;
+}
+
+.lis1:hover{
+	background-color: #fc792b;
+	border-color: #fc792b;
+}
+.lis1:hover .sidebar_Q{
+	background: url(http://www.pyticket.com/static/pymj/images/QQ.png) no-repeat;
+	background-position: right center
+}
+.lis2:hover{
+	background-color: #fc792b;
+	border-color: #fc792b;
+}
+.lis2:hover .lis2_l .sidebar_P{
+	background: url(http://www.pyticket.com/static/pymj/images/phone1.png) no-repeat;
+	background-position: right center
+}
+.lis3:hover{
+	background-color: #fc792b;
+	border-color: #fc792b;
+}
+.lis3:hover .sidebar_E{
+	background: url(http://www.pyticket.com/static/pymj/images/erweima.png) no-repeat;
+	background-position: right center
+}
+
+.lis2{
+	position: relative;
+}
+.lis2_l{
+
+}
+.lis2_hide{
+	background-color: #fc792b;
+	border-color: #fc792b;
+	height: 60px;
+	display: none;
+	position: absolute;
+	right: 52px;
+	top: -1px;
+	color: #fff;
+	text-align: left ;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.lis2_hide span{
+	font-size: 12px;
+}
+.lis2_hide p{
+	font-size: 24px;
+}
+

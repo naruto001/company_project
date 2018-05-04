@@ -1,0 +1,927 @@
+/*
+ * @Author: mikey.zhaopeng 
+ * @Date: 2018-04-24 16:04:00 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-05-04 10:46:02
+ */
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.py_content_wrap {
+    width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+    height: auto;
+}
+
+.py_content_wrap .py_content {
+    width: 1200px;
+    height: auto;
+    padding: 75px 0;
+    margin: 0 auto;
+}
+
+.py_content_wrap .py_content .jpjd_list {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+.py_content_wrap .jpjd_list li {
+    width: 100%;
+    height: 228px;
+    border: 1px solid #e3e3e3;
+    /* box-sizing:border-box; */
+    margin-bottom: 28px;
+}
+
+.jpjd_list li .li_left {
+    float: left;
+    width: 410px;
+    height: 228px;
+}
+
+.jpjd_list li .li_center {
+    float: left;
+    width: 594px;
+    height: 228px;
+    padding-top: 45px;
+    padding-left: 22px;
+    border-right: 1px dashed #e3e3e3;
+}
+
+.jpjd_list .li_center .li_tit {
+    font-size: 24px;
+    line-height: 46px;
+    color: #333;
+}
+
+.jpjd_list .li_center .li_star,
+.jpjd_list .li_center .li_addr {
+    font-size: 12px;
+    line-height: 36px;
+    color: #666;
+    width: 550px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.jpjd_list li .li_right {
+    float: left;
+    width: 194px;
+    height: 228px;
+}
+
+.jpjd_list .li_right .li_price {
+    line-height: 60px;
+    color: #333;
+    font-size: 12px;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.jpjd_list .li_price span:nth-of-type(1) {
+    color: #fe6903;
+}
+
+.jpjd_list .li_price span:nth-of-type(2) {
+    color: #fe6903;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.jpjd_list .li_right .li_yudin {
+    text-align: center;
+}
+
+.jpjd_list .li_yudin a {
+    padding: 18px 42px;
+    background: #fe6903;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* 酒店预订-详情页面 */
+
+/* 轮播图左侧 */
+
+.ticketTop {
+    width: 100%;
+    height: 384px;
+    border: 1px solid #dfdfdf;
+    background: #faf8f1;
+    padding: 20px 0 20px 10px;
+}
+
+.thumbnail {
+    width: 500px;
+    height: 342px;
+    float: left;
+}
+
+.thumbnail .bigimg {
+    width: 500px;
+    height: 282px;
+    position: relative;
+}
+
+.thumbnail .bigimg li img {
+    width: 500px;
+    height: 282px;
+}
+
+.thumbnail .smallscroll {
+    width: 100%;
+    height: 50px;
+    float: left;
+    margin-top: 10px;
+    position: relative;
+}
+
+.thumbnail .smallscroll .smallimg {
+    width: 450px;
+    height: 50px;
+    float: left;
+    margin-left: 22px;
+}
+
+.thumbnail .smallscroll .smallimg ul li {
+    width: 84px;
+    float: left;
+    height: 50px;
+    background: #eee;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.thumbnail .smallscroll .smallimg ul li.on {
+    border: 2px solid #ff0000;
+    padding: 2px;
+}
+
+.thumbnail .smallscroll .smallimg ul li.on img {
+    width: 76px;
+    height: 42px;
+}
+
+.thumbnail .smallscroll .smallimg ul li img {
+    width: 84px;
+    height: 50px;
+}
+
+.thumbnail .smallscroll .btn {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    background: #dddddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.thumbnail .smallscroll .btn:hover {
+    background: #f99e9c;
+}
+
+.thumbnail .smallscroll .sPrev {
+    left: 0;
+}
+
+.thumbnail .smallscroll .sPrev span {
+    width: 8px;
+    height: 12px;
+    display: inline-block;
+    background-position: 0 0;
+    margin-top: 19px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.thumbnail .smallscroll .sPrev:hover span {
+    background-position: 0 -12px;
+}
+
+.thumbnail .smallscroll .sNext {
+    right: 0;
+}
+
+.thumbnail .smallscroll .sNext span {
+    width: 8px;
+    height: 12px;
+    display: inline-block;
+    background-position: 0 0;
+    margin-top: 19px;
+}
+
+.thumbnail .smallscroll .sNext:hover span {
+    background-position: 0 -12px;
+}
+
+/* 轮播图左侧 */
+
+/* 轮播图右侧简介 */
+
+.ticketTop .ticketRight {
+    width: 670px;
+    height: 342px;
+    float: left;
+    padding: 20px 20px 20px 44px;
+}
+
+.ticketTop .ticketRight .ticket_tit {
+    line-height: 52px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.ticketTop .ticketRight .ticket_star {
+    line-height: 36px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.ticketTop .ticketRight .ticket_addr {
+    line-height: 24px;
+    font-size: 12px;
+    color: #666;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ticketTop .ticketRight .yuanjia {
+    text-decoration: line-through;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+}
+
+.ticketTop .ticketRight .ticket_price {
+    line-height: 50px;
+    font-size: 12px;
+    color: #ff6600;
+}
+
+.ticketTop .ticket_price span {
+    font-size: 30px;
+}
+
+/* end 轮播图右侧简介 */
+
+/* 详情 */
+
+.dy_detail {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border: 1px solid #dfdfdf;
+}
+
+/* 悬浮导航 */
+
+.dy_detail .dy_nav {
+    width: 1198px;
+    height: 45px;
+    padding-top: 5px;
+    padding-left: 15px;
+    background: #e8e8e8;
+    position: relative;
+}
+
+.dy_detail .dy_nav .dy_nav_list {
+    width: 500px;
+    height: 40px;
+}
+
+.dy_detail .dy_nav ul li {
+    float: left;
+    padding: 0px 30px;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dy_detail .dy_active {
+    background: #0076c3;
+    color: #fff;
+}
+
+.nav_box {
+    position: fixed !important;
+    top: 0;
+    z-index: 9;
+}
+
+.dy_hotel_active {
+    background: #0076c3;
+    color: #fff;
+}
+
+/* end 悬浮导航 */
+
+/* 房型预定 */
+
+.dy_detail .dy_reserve {
+    width: 1200px;
+    height: auto;
+    background: #f5f5f5;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.dy_detail .dy_reserve .dy_anchor {
+    width: 100%;
+    /* height:68px;
+    line-height:68px; */
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.dy_detail .dy_anchor span {
+    padding: 8px 30px;
+    background: #e8e8e8;
+}
+
+.dy_detail .dy_reserve .dy_reserve_detail {
+    width: 100%;
+    height: 30px;
+    background: #e8e8e8;
+}
+
+.dy_detail .dy_reserve_detail p {
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dy_detail .dy_reserve .hotel_style {
+    width: 72px;
+}
+
+.dy_detail .dy_reserve .hotel_bed_style {
+    width: 306px;
+}
+
+.dy_detail .dy_reserve .hotel_dinner {
+    width: 54px;
+}
+
+.dy_detail .dy_reserve .hotel_old_price {
+    width: 304px;
+}
+
+.dy_detail .dy_reserve .hotel_new_price {
+    width: 70px;
+}
+
+.dy_detail .dy_reserve .hotel_pay {
+    width: 280px;
+}
+
+.dy_detail .dy_reserve_list {
+    width: 100%;
+    height: auto;
+}
+
+.dy_detail .dy_reserve_list li {
+    border-bottom: 1px dashed #ccc;
+}
+
+.dy_detail .dy_reserve_list p {
+    line-height: 50px;
+    height: 50px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dy_detail .dy_reserve_list .hotel_old_price {
+    text-decoration: line-through;
+}
+
+.dy_detail .dy_reserve_list .hotel_new_price {
+    color: #ff6600;
+}
+
+.dy_detail .dy_reserve_list .hotel_pay_style {
+    padding: 4px 12px;
+    line-height: 16px;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    border-radius: 4px;
+}
+
+.dy_detail .dy_reserve_list .res_btn {
+    line-height: 16px;
+    padding: 4px 12px;
+    color: #fff;
+    background: #ff6600;
+}
+
+/* end 房型预定 */
+
+/* 设施服务 */
+
+.dy_detail .dy_service {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    height: auto;
+    background: #f5f5f5;
+}
+
+.dy_detail .dy_service .ser_det {
+    line-height: 28px;
+    font-size: 14px;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* end 设施服务 */
+
+/* 酒店简介 */
+
+.dy_detail .dy_hotel_intro {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    height: auto;
+    background: #f5f5f5;
+}
+
+.dy_detail .dy_hotel_intro .dy_intro_det {
+    line-height: 28px;
+    font-size: 14px;
+    color: #666;
+    text-indent: 2em;
+}
+
+.dy_detail .dy_hotel_intro p:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+/* end 酒店简介 */
+
+/* 交通地图 */
+
+.dy_detail .dy_map {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    height: auto;
+    background: #f5f5f5;
+}
+
+.dy_detail .dy_map .container {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}
+
+/* end 详情 */
+
+/* 订单支付 */
+
+.dy_step {
+    width: 100%;
+    height: 36px;
+}
+
+.dy_step .dy_step_list li {
+    width: 240px;
+    height: 36px;
+    float: left;
+    text-align: center;
+    line-height: 36px;
+    position: relative;
+    color: #fff;
+}
+
+.dy_step .dy_step_list span {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 20px;
+    height: 36px;
+    background: url(../img/dy_list_li_a.png) no-repeat;
+}
+
+.dy_step .dy_list_active {
+    background: #0076c3;
+    color: #fff;
+}
+
+.dy_step .dy_list_active span {
+    background: url(../img/dy_list_active_bg.png) no-repeat;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 20px;
+    height: 36px;
+}
+
+.dy_step .dy_step_list .dy_a {
+    margin-left: 20px;
+    background: #bdbdbd;
+}
+
+.dy_step .dy_step_list li:nth-of-type(3) span {
+    background: url(../img/dy_list_li_b.png) no-repeat;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 20px;
+    height: 36px;
+}
+
+/* end 订单支付 */
+
+/* 确认预订信息 */
+
+.dy_verify {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.dy_verify .dy_ver_tit {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.dy_verify .dy_ver_ctn {
+    width: 100%;
+    height: 270px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: #f5f5f5;
+}
+
+.dy_verify .dy_ver_ctn .dy_ver_hotel_name,
+.dy_verify .dy_ver_ctn .dy_ver_hotel_style {
+    height: 48px;
+    line-height: 48px;
+    margin-left: 45px;
+    font-size: 14px;
+    color: #666;
+}
+
+.dy_verify .dy_ver_ctn .dy_ver_box {
+    width: 900px;
+    height: 90px;
+    border: 1px solid #dbdbdb;
+    margin-left: 45px;
+    margin-top:24px;
+}
+
+.dy_verify .dy_ver_box .dy_ver_det {
+    width: 100%;
+    height: 30px;
+}
+
+.dy_verify .dy_ver_det p {
+    line-height: 30px;
+    background: #e8e8e8;
+    font-size: 14px;
+    color: #666;
+    display: table-cell;
+    text-align: center;
+}
+
+.dy_verify .dy_ver_start,
+.dy_verify .dy_ver_end {
+    width: 176px;
+}
+
+.dy_verify .dy_ver_sum {
+    width: 316px;
+}
+
+.dy_verify .dy_ver_price {
+    width: 232px;
+}
+
+.dy_verify .dy_ver_box .dy_ver_num {
+    width: 100%;
+    height: 60px;
+}
+
+.dy_verify .dy_ver_num p {
+    line-height: 60px;
+    font-size: 14px;
+    color: #666;
+    display: table-cell;
+    text-align: center;
+}
+
+.dy_verify .dy_ver_num .span2 {
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 13px;
+    text-align: center;
+}
+
+.dy_verify .dy_ver_num .reduce,
+.dy_verify .dy_ver_num .odd {
+    width: 40px;
+    height: 26px;
+    border: 1px solid #dfdfdf;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    background: #dbdbdb;
+    cursor: pointer;
+}
+
+.dy_verify .dy_ver_sum .numll {
+    width: 76px;
+    height: 26px;
+    border: 1px solid #dfdfdf;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    outline: none;
+    display: inline-block;
+}
+
+.dy_verify .dy_ver_price .dy_ver_danjia {
+    color: #fe6903;
+}
+
+/* end 确认预订信息 */
+
+/* 入住信息 */
+
+.dy_infor {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.dy_infor .dy_infor_tit {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.dy_infor .dy_infor_tit span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.dy_infor .dy_infor_ctn {
+    width: 100%;
+    height: 320px;
+    padding-top: 42px;
+    padding-bottom: 27px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: #f5f5f5;
+}
+.dy_infor_ctn p {
+    margin-bottom: 1.25rem;
+}
+
+.dy_infor .dy_infor_ctn .dy_ipt {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.dy_infor .dy_infor_ctn .dy_infor_txt {
+    width: 234px;
+    height: 30px;
+    display: inline-block;
+}
+
+.dy_infor .dy_infor_ctn .dy_user {
+    padding-left: 60px;
+}
+
+.dy_infor .dy_infor_ctn .dy_tele {
+    padding-left: 45px;
+}
+
+.dy_infor .dy_infor_ctn .dy_id {
+    padding-left: 45px;
+}
+
+.dy_infor .dy_infor_ctn .dy_warning {
+    color: #c23a2e;
+    margin-right: 25px;
+}
+
+.dy_infor .dy_infor_ctn .dy_totalPrice {
+    margin-top: 22px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 146px;
+    font-size: 14px;
+}
+
+.dy_infor .dy_infor_ctn span {
+    color: #fe6903;
+}
+
+.dy_infor .dy_infor_ctn .dy_amount {
+    font-size: 36px;
+}
+
+.dy_infor .dy_infor_ctn .dy_pay {
+    margin-top: 27px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 146px;
+}
+
+.dy_infor .dy_infor_ctn .dy_pay_btn {
+    padding: 10px 27px;
+    background: #fe6903;
+    display: inline;
+    color: #fff;
+    width: 130px;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* end 精品酒店 */
+
+/*******************************
+    *******************************
+    ******************************
+    ******************************
+    *****************************/
+
+/* 景点门票 */
+
+.ticket_style {
+    width: 162px !important;
+}
+
+.ticket_new_price {
+    width: 400px !important;
+}
+
+.ticket_old_price {
+    width: 316px !important;
+}
+
+.ticket_pay {
+    width: 144px !important;
+}
+
+.ticket_link {
+    width: 250px !important;
+}
+
+.yd_det {
+    line-height: 28px !important;
+    font-size: 14px !important;
+    color: #666 !important;
+    text-indent: 0 !important;
+}
+
+/* 景点门票订单支付 */
+
+        /* 确认预订信息 */
+
+.dy_verify02 {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.dy_verify02 .dy_ver_tit02 {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.dy_verify02 .dy_ver_ctn02 {
+    width: 100%;
+    height: 300px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: #f5f5f5;
+}
+
+.dy_verify02 .dy_ver_ctn02 .dy_ver_hotel_name02,
+.dy_verify02 .dy_ver_ctn02 .dy_ver_hotel_style02 {
+    height: 48px;
+    line-height: 48px;
+    margin-left: 45px;
+    font-size: 14px;
+    color: #666;
+}
+.dy_verify02 .dy_ver_ctn02 .dy_ver_date {
+    height:26px;
+    line-height:30px;
+    font-size:14px;
+    color:#666;
+    margin-left:45px;
+}
+.dy_verify02 .dy_ver_date #dt {
+    display:inline-block;
+    width:200px;
+    height:30px;
+    text-align:center;
+    padding: 0 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.dy_verify02 .dy_ver_sum02 {
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    color:#666;
+    margin-left:45px;
+    margin-top:20px;
+}
+.dy_verify02 .dy_ver_sum02 .reduce , .dy_verify02 .dy_ver_sum02 .odd {
+    width: 40px;
+    height: 26px;
+    border: 1px solid #dfdfdf;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    background: #dbdbdb;
+    cursor: pointer;
+}
+.dy_verify02 .dy_ver_sum02 .numll {
+    width: 76px;
+    height: 26px;
+    border: 1px solid #dfdfdf;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    outline: none;
+    display: inline-block;
+}
+.dy_verify02 .dy_ver_price02 {
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    color:#666;
+    margin-left:60px;
+    margin-top:20px;
+}
+.dy_verify02 .dy_ver_price02 .dy_ver_danjia {
+    color: #fe6903;
+    font-size:36px;
+}
+/* end 景点门票订单支付 */

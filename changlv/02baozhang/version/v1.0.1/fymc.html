@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link rel="stylesheet" href="css/frame.css"/>
+        <title>费用名称</title>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <link rel="stylesheet" href="css/selectFilter.css" />
+        <link rel="stylesheet" href="css/accordion.css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                var oUl=document.querySelector('.list-ul');
+                var aLi=document.querySelectorAll('.list-li');
+                var aDiv=document.querySelectorAll('.con');
+                var aDel=document.querySelectorAll('.del');
+                var n=0;
+                for(var i=0;i<aLi.length;i++){
+                    console.log(i);
+                    aLi[i].index=i;
+                    //滑动开始
+                    aLi[i].addEventListener('touchstart',function(ev){
+                        ev.preventDefault();
+                        var oldX=ev.targetTouches[0].pageX;
+                        console.log(oldX);
+                        function fnMove(ev){
+                            ev.preventDefault();
+                            var newX=ev.targetTouches[0].pageX-oldX;
+                            aLi[this.index].style.transform='translateX('+newX+'px)';
+                        }
+                        function fnEnd(ev){
+                            aLi[this.index].removeEventListener('touchmove', fnMove,false);
+                            aLi[this.index].removeEventListener('touchend', fnEnd,false);
+                            ev.preventDefault();
+                            var changeX=ev.changedTouches[0].pageX;
+                            if(oldX-changeX > 40){
+                                aLi[this.index].style.transition='0.2s all ease';
+                                aLi[this.index].style.transform='translateX(-4rem)';
+                            }else{
+                                aLi[this.index].style.transform='translateX(0)';
+                            }
+                        }
+                        aLi[this.index].addEventListener('touchmove', fnMove,false);
+                        aLi[this.index].addEventListener('touchend', fnEnd,false);
+                    },false)
+                    //删除按钮
+                    aDel[i].index=i;
+                    aDel[i].addEventListener('touchstart', function(){
+                        this.innerHTML='';
+                        this.style.height='0';
+                        this.style.transition='0.2s all ease';
+                        aLi[this.index].style.height='0';
+                        aLi[this.index].style.transition='0.2s all ease';
+                        aDiv[this.index].style.height='0';
+                        aDiv[this.index].style.transition='0.2s all ease';
+                        aDiv[this.index].innerHTML='';
+                        this.addEventListener('transitionend',function(){
+                            oUl.removeChild(aLi[this.index]);
+                        }, false)
+                    },false)
+                }
+        },false)
+        </script>
+    </head>
+    <body>   
+        <!--header -->
+            <div class="header">
+                <a href="#" class="back" ><i class="iconfont">&#xe66f;</i></a>
+                <p class="h_title">费用名称</p>
+            </div>
+        <!-- end header -->
+            
+        <!-- content -->
+            <div class="content">
+                <form class="fymc_wrap" name="fymc_wrap">
+                    <ul class="list-ul">
+                        <li class="list-li">
+                            <div class="con">
+                                <p class="fymc-style">类型：XXXXXXX</p>
+                                <p class="fymc-cmp">往来单位往来单位往来单位往来单位往来单位</p>
+                                <p class="fymc-status clear"><span class="st-l">状态：已支付</span><span class="st-r">￥450</span></p>
+                                <p class="verify-wrap"><span class="fymc-verify">确认</span></p>
+                            </div>
+                            <div class="del"><i class="iconfont">&#xe690;</i></div>
+                        </li>
+                        <li class="list-li">
+                            <div class="con">
+                                <p class="fymc-style">类型：XXXXXXX</p>
+                                <p class="fymc-cmp">往来单位往来单位往来单位往来单位往来单位</p>
+                                <p class="fymc-status clear"><span class="st-l">状态：已支付</span><span class="st-r">￥450</span></p>
+                                <p class="verify-wrap"><span class="fymc-verify">确认</span></p>
+                            </div>
+                            <div class="del"><i class="iconfont">&#xe690;</i></div>
+                        </li>
+                    </ul>
+                   
+                </form>
+            </div>
+        <!-- end content -->
+        <script>
+            var aLi = document.querySelectorAll(".list-li");
+            var aDiv = document.querySelectorAll(".btn");
+            for(var i=0; i<aDiv.length; i++) {
+                aDiv[i].index = i;
+                aDiv[i].onclick = function () {
+                    aLi[this.index].className = "fymc-active";
+                }
+            }
+    </script>
+    </body>
+</html>

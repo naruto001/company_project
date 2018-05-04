@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>门票预订</title>
+        <link href="css/frame.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/accordion02.css"/>
+        <link rel="stylesheet" href="css/accordion.css"/>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <script>
+            window.onload = function () {
+				var oBtn = document.getElementById("btn");
+				var oDiv = document.getElementById("nav_wrap");
+				var flag = 1;
+
+				/*document.addEventListener('touchstart', function (ev) {
+					ev.preventDefault();
+				} );*/
+
+				oBtn.addEventListener('touchend', function () {
+					if(flag) {
+						oDiv.style.display = "block";
+						oDiv.addEventListener('touchmove', function () {
+							this.style.display = "none";
+						} )
+
+					}else {
+						oDiv.style.display = "none";
+					}
+				} );
+
+               
+
+			}
+        </script>              
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <a href="mpyd.html" class="back"><i class="iconfont">&#xe62b;</i></a>
+            <p class="h_title">门票预订</p>
+            <a class="iconfont menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+        <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content">
+            
+            <!-- 图片轮播 -->
+            <div data-am-widget="slider" class="am-slider am-slider-c2 mpyd_det_pic" data-am-slider='{&quot;directionNav&quot;:false}' >
+                  <ul class="am-slides">
+                      <li>
+                          <img src="img/mpyd01_01.png"/>
+                          <div class="am-slider-desc">销量：635       推荐：325</div>
+                      </li>
+                      <li>
+                          <img src="img/mpyd01_02.jpg"/>
+                          <div class="am-slider-desc">销量：635       推荐：325</div>
+                      </li>
+                      <li>
+                          <img src="img/mpyd01_03.jpg"/>
+                          <div class="am-slider-desc">销量：635       推荐：325</div>
+                      </li>
+                  </ul>
+            </div>
+            <!-- end 图片轮播 -->
+            <!-- 门票信息 -->
+            <div class="ticket_message">
+                <div class="ticket_mes_head">
+                    <p class="ticket_mes_tit">步行区动物园门票</p>
+                    <p class="ticket_mes_time">园区营业时间：9:00-20:00  周六日：8:00-22:00</p>
+                </div>
+                <!-- Contenedor -->
+                <ul id="accordion02" class="accordion02">
+                    <li>
+                        <div class="link02"><i class="fa fa-map-marker"></i>香港特别行政区荃湾区大屿山香港迪士尼乐园<i class="fa fa-angle-right"></i></div>
+                        <!-- <div class="submenu02">
+                            <p class="mpyd_det_intro">香港迪士尼乐园（Hong Kong Disneyland）位于香港新界大屿山，占地126公顷，在2005年9月12日正式开幕，由香港政府及华特迪士尼公司联合经营的香港国际主题乐园有限公司建设及营运，是全球第5座、亚洲第2座，中国第1座迪士尼乐园。</p>
+                        </div>  -->
+                    </li>
+                    <li>
+                        <div class="link02"><i class="fa fa-phone"></i>0755-2882205<i class="fa fa-angle-right"></i></div>
+                        <!-- <div class="submenu02">
+                            <p class="mpyd_det_intro">香港迪士尼乐园（Hong Kong Disneyland）位于香港新界大屿山，占地126公顷，在2005年9月12日正式开幕，由香港政府及华特迪士尼公司联合经营的香港国际主题乐园有限公司建设及营运，是全球第5座、亚洲第2座，中国第1座迪士尼乐园。</p>
+                        </div>  -->
+                    </li>
+                    <li>
+                        <div class="link02"><i class="fa fa-file-text"></i>景点基础信息<i class="fa fa-angle-right"></i></div>
+                        <!-- <div class="submenu02">
+                            <p class="mpyd_det_intro">香港迪士尼乐园（Hong Kong Disneyland）位于香港新界大屿山，占地126公顷，在2005年9月12日正式开幕，由香港政府及华特迪士尼公司联合经营的香港国际主题乐园有限公司建设及营运，是全球第5座、亚洲第2座，中国第1座迪士尼乐园。</p>
+                        </div>  -->
+                    </li>
+                </ul>
+                <!-- end Contenedor -->
+            </div>
+            <!-- end 门票信息 -->
+
+            <!-- 预定门票-->
+            <div class="reserve">
+                <p class="reserve_tit"><i class="fa fa-file-text"></i>预订（3）</p>
+                <!-- accordion-->
+                <ul id="accordion" class="accordion" style="margin-bottom:0;">
+                    <li>
+                        <div class="link">成人票<i class="fa fa-chevron-down"></i></div>
+                        <div class="submenu">
+                            <ul class="ticket01">
+                                <li>
+                                    <span class="ticket01_left_tit">香港迪士尼乐园景区手机智能导游门票电子导游 不含景区门票</span>
+                                    <span class="ticket01_left_exp">费用说明 ></span>
+                                    <span class="ticket01_right_price">¥ 2567</span>
+                                    <a href="javascript:;" class="ticket01_right_reserve yudin">预订</a>
+                                </li>
+                                <li>
+                                    <span class="ticket01_left_tit">香港迪士尼乐园景区2日长者（老人）电子票扫码入园  不含景区门票</span>
+                                    <span class="ticket01_left_exp">费用说明 ></span>
+                                    <span class="ticket01_right_price">¥ 2567</span>
+                                    <a href="javascript:;" class="ticket01_right_reserve yudin">预订</a>
+                                </li>
+                            </ul>
+                        </div>   
+                    </li>
+                    <li>
+                        <div class="link">儿童票<i class="fa fa-chevron-down"></i></div>
+                        <div class="submenu">
+                            <ul class="ticket01">
+                                <li>
+                                    <span class="ticket01_left_tit">香港迪士尼乐园景区手机智能导游门票电子导游 不含景区门票</span>
+                                    <span class="ticket01_left_exp">费用说明 ></span>
+                                    <span class="ticket01_right_price">¥ 2567</span>
+                                    <a href="javascript:;" class="ticket01_right_reserve yudin">预订</a>
+                                </li>
+                            </ul>
+                        </div>   
+                    </li>
+                    <li>
+                        <div class="link">学生票<i class="fa fa-chevron-down"></i></div>
+                        <div class="submenu">
+                            <ul class="ticket01">
+                                <li>
+                                    <span class="ticket01_left_tit">香港迪士尼乐园景区手机智能导游门票电子导游 不含景区门票</span>
+                                    <span class="ticket01_left_exp">费用说明 ></span>
+                                    <span class="ticket01_right_price">¥ 2567</span>
+                                    <a href="javascript:;" class="ticket01_right_reserve yudin" >预订</a>
+                                </li>
+                            </ul>
+                        </div>   
+                    </li>
+                </ul>
+            <!-- end accordion -->
+
+            </div>
+            <!-- end 预定门票-->
+            
+            <!-- 门票预订说明 -->
+            <div class="reserve_intro">
+                <p class="reserve_intro_tit">门票预订说明</p>
+                <div class="reserve_intro_txt">
+                    <p class="reserve_t01"><i class="iconfont">&#xe619;</i>长沙生态动物园预订说明：</p>
+                    <p class="reserve_t01">①预订门票为长沙生态动物园游览门票。</p>
+                    <p class="reserve_t01">②预订门票使用不步骤：</p>
+                    <p class="reserve_t01"><span style="margin-right:0.4rem;"><i class="iconfont">&#xe619;</i>温馨提示</span><span><i class="iconfont">&#xe619;</i>特殊说明</span></p>
+                </div>
+            </div>
+            <!-- end 门票预订说明 -->
+
+            <!-- footer -->
+            <div class="footer">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div>
+       <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="mpyd.html">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <p class="c_pic"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt">联系我们</p>
+                </a>
+            </li>
+        </ul>
+        <!-- end 底部菜单 -->
+        <!-- 点击预定弹出对话框 -->
+        <div class="yd_cover" id="yd_cover" style="display:none;">
+            <div class="ticket_win">
+                <p class="ticket_win_tit">门票信息</p>
+                <p class="ticket_win_cnt">您选择的是“长沙生态动物园日套票（2大1小或2大1长者）”，日期：2018-01-15，确认无误后再进行预订。</p>
+                <p class="ticket_win_num">
+                    <span class="tw_num">门票数量</span>
+                    <span class="sf">
+                        <span class="del">-</span>
+                        <span class="buy_num">1</span>
+                        <span class="add">+</span>
+                    </span>
+                </p>
+                <p class="yd_btn_wrap"><a href="qrdd.html" class="yd_btn">立即预订</a></p>
+                <span class="yd_close">X</span>
+            </div>
+        </div>
+        <!-- end 点击预定弹出对话框 -->
+        <script>
+            var oLink = document.getElement
+        </script>
+        <script src="js/accordion.js"></script>
+        <script src="js/accordion02.js"></script>
+        <script src="js/amazeui.min.js"></script>
+        <script src="js/yudin.js"></script>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+/*-----------公用样式---------------*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "microsoft yahei";
+    overflow-x: hidden;
+    font-size: 14px;
+    color: #333;
+}
+
+div, ul, li, p, span, em, i, b, dl, dd, dt, table, img, input, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font-family: "microsoft yahei";
+    font-style: normal;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+
+a:hover, img:hover {
+    /*opacity:.9;*/
+    /*filter:alpha(opacity=90);*/
+    /*-moz-opacity:.9;*/
+    /*-khtml-opacity: .9;*/
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/*::-webkit-scrollbar-thumb {*/
+    /*width: 5px;*/
+    /*background-color: #ccc;*/
+/*}*/
+
+/*::-webkit-scrollbar {*/
+    /*width: 5px;*/
+    /*background-color: #eee;*/
+/*}*/
+.fll{
+    float: left;
+}
+.frr{
+    float: right;
+}
+/*尾部版权信息*/
+.footBox {
+    width: 100%;
+    background: #191919;
+    min-height: 210px;
+    margin-top: 75px;
+    float: left;
+}
+
+.foot_1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.foot_left {
+    width: 860px;
+    float: left;
+}
+
+.foot_left dl {
+    margin-top: 57px;
+    width: 100%;
+    float: left;
+    color: #888;
+}
+
+.foot_left dl dd {
+    float: left;
+    margin-left: 40px;
+}
+
+.foot_left dl dd:first-child {
+    margin-left: 0;
+}
+
+.foot_left dl dd img {
+    float: left;
+}
+
+.foot_left dl dd span {
+    float: left;
+    margin-left: 17px;
+}
+
+.foot_left dl dd span i {
+    display: block;
+    margin-top: 5px;
+}
+
+.foot_left dl p {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.foot_right{
+    float: right;
+    margin-top: 40px;
+}
+.foot_right span:last-child{
+    margin-right: 0;
+}
+.foot_right span{
+    display: inline-block;
+    width: 103px;
+    height: 103px;
+    color: #888;
+    text-align: center;
+    margin-right: 35px;
+}
+.foot_right span img{
+    display: block;
+    margin-bottom: 15px;
+}
+.foot_left .pp p {
+    width: 505px;
+    text-align: center;
+    color: #b5b5b5;
+    margin: 15px auto;
+}
+
+.foot_left .pp a {
+    float: left;
+}
+
+.foot_left .pp i {
+    line-height: 59px;
+    float: left;
+    margin-left: 15px;
+}

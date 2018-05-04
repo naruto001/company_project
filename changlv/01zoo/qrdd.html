@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>确认订单</title>
+        <link href="css/frame.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/accordion02.css"/>
+        <link rel="stylesheet" href="css/accordion.css"/>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <script>
+            window.onload = function () {
+				var oBtn = document.getElementById("btn");
+				var oDiv = document.getElementById("nav_wrap");
+				var flag = 1;
+
+				/*document.addEventListener('touchstart', function (ev) {
+					ev.preventDefault();
+				} );*/
+
+				oBtn.addEventListener('touchend', function () {
+					if(flag) {
+						oDiv.style.display = "block";
+						oDiv.addEventListener('touchmove', function () {
+							this.style.display = "none";
+						} )
+
+					}else {
+						oDiv.style.display = "none";
+					}
+				} );
+
+               
+
+			}
+        </script>
+                                
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <a href="mpyd01.html" class="back"><i class="iconfont">&#xe62b;</i></a>
+            <p class="h_title">确认订单</p>
+            <a class="iconfont menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+        <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content">
+            
+            <!-- 订单简介-->
+            <div class="order_intro">
+                <div class="order_top">
+                    <img src="img/qrdd01.jpg" class="order_top_left">
+                    <div class="order_top_right">
+                        <p class="order_name">长沙生态动物园日套票</p>
+                        <p class="order_cnt">一日家庭特定日套票（2大1小或2大1长者）</p>
+                    </div>
+                </div>
+                <div class="order_bottom">
+                     <p class="order_date">游玩日期：2018-01-15</p>
+                     <p class="order_price">单价：¥360 <span class="order_num">X2</span></p>
+                </div>
+            </div>
+            <!-- end 订单简介-->
+
+            <!-- 取票信息-->
+            <div class="take_ticket">
+                <p class="take_tit">取票信息</p>
+                <form class="take_mes">
+                    <p class="take_user_wrap"><span class="star">*</span>取票人<input type="text" placeholder="需填写一个取票人" class="take_user"/></p>
+                    <p class="take_user_wrap"><span class="star">*</span>联系手机<input type="text" placeholder="接收确认短信" class="take_user"/></p>
+                    <p class="take_user_wrap">邮箱<input type="text" placeholder="接收确认短信" class="take_user"/></p>
+                </form>
+            </div>
+             <!-- end 取票信息-->
+             <div class="scale">
+                <p class="take_tit">优惠信息</p>
+                <p class="yh_ticket"><span class="yh_t">优惠券</span><span class="yh_num">暂无可用券</span></p>
+             </div>
+
+             <div class="order_total">
+                <p class="order_jine_wrap"><span class="jine_name">订单金额</span><span class="jine">￥360.00</span></p>
+                <p class="order_zhekou_wrap"><span class="zhekou_name">折扣</span><span class="zhekou">-￥0.00</span></p>
+                <p class="order_youhui_wrap"><span class="youhui_name">优惠</span><span class="youhui">-0.00</span></p>
+             </div>
+
+             <p class="ydxz">已经阅读并同意《预订须知》</p>
+
+             <div class="tips">
+                <p>温馨提示：</p>
+                <p>1、有票一经确认，即时成交，不可退换；</p>
+                <p>2、请仔细填写手机号码，订单付款成功后，取票凭证码将会以短信形式发送。</p>
+             </div>
+
+             <p class="tijiao"><span class="tj_left">实付金额：￥360.00</span><span class="tj_right">提交订单</span></p>
+
+            <!-- footer -->
+            <div class="footer">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div>
+       <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="mpyd.html">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <p class="c_pic"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt">联系我们</p>
+                </a>
+            </li>
+        </ul>
+        <!-- end 底部菜单 -->
+        <!-- 点击预定弹出对话框 -->
+        <div class="yd_cover" id="yd_cover" style="display:none;">
+            <div class="ticket_win">
+                <p class="ticket_win_tit">门票信息</p>
+                <p class="ticket_win_cnt">您选择的是“长沙生态动物园日套票（2大1小或2大1长者）”，日期：2018-01-15，确认无误后再进行预订。</p>
+                <p class="ticket_win_num">
+                    <span class="tw_num">门票数量</span>
+                    <span class="sf">
+                        <span class="del">-</span>
+                        <span class="buy_num">1</span>
+                        <span class="add">+</span>
+                    </span>
+                </p>
+                <p class="yd_btn_wrap"><a href="#" class="yd_btn">立即预订</a></p>
+                <span class="yd_close">X</span>
+            </div>
+        </div>
+        <script src="js/accordion.js"></script>
+        <script src="js/accordion02.js"></script>
+        <script src="js/amazeui.min.js"></script>
+    </body>
+</html>

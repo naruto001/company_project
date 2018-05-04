@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>长沙生态动物园</title>
+        <link href="css/index.css" rel="stylesheet"/>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script>
+            window.onload = function () {
+                var oBtn = document.getElementById("btn");
+                var oDiv = document.getElementById("nav_wrap");
+                var flag = 1;
+
+                /*document.addEventListener('touchstart', function (ev) {
+                    ev.preventDefault();
+                } );*/
+
+                oBtn.addEventListener('touchend', function () {
+                    if(flag) {
+                        oDiv.style.display = "block";
+                        oDiv.addEventListener('touchmove', function () {
+                            this.style.display = "none";
+                        } )
+
+                    }else {
+                        oDiv.style.display = "none";
+                    }
+                } );
+            }
+        </script>                    
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <img class="logo" src="img/logo.png"/>
+            <a class="iconfont menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+        <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content">
+
+            <!--轮播图 -->
+            <div class="am-slider am-slider-a1 show_pic" data-am-slider='{"directionNav":false}' data-am-widget="slider">
+                <ul class="am-slides">
+                    <li>
+                        <img src="img/01.png"/>
+                    </li>
+                    <li>
+                        <img src="img/02.png"/>
+                    </li>
+                    <li>
+                        <img src="img/03.png"/>
+                    </li>
+                    <li>
+                        <img src="img/04.png"/>
+                    </li>
+                </ul>
+            </div>
+            <!-- end 轮播图-->
+            
+            <!-- bar -->
+            <ul class="bar clear">
+                <li>
+                    <a href="ykfw.html">
+                        <img alt="01" src="img/bar01.png"/>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mpyd.html">
+                        <img alt="02" src="img/bar02.png"/>
+                        <span>
+                            门票预订
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <img alt="03" src="img/bar03.png"/>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="kpjy.html">
+                        <img alt="04" src="img/bar04.png"/>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <!-- end bar -->
+
+            <!-- 园区动态 -->
+            <div class="trends">
+                <div class="tre_txt">
+                    <p class="tre_main_title">
+                        园区动态
+                    </p>
+                    <p class="tre_sub_title">——<span>ACTIVITY</span>——</p>
+                </div>
+                <!--园区动态-轮播图 -->
+                <div class="am-slider am-slider-default tre_pics" data-am-slider='{"animation":"slide","slideshow":false}' data-am-widget="slider">
+                    <ul class="am-slides">
+                        <li style="position:relative;">
+                                <img src="img/trends01.png"/>
+                                <div class="am-slider-desc">
+                                    一场来自长沙生态动物园的维密秀
+                                </div>
+                                <a style="position:absolute;left:0;top:0;width:100%;height:100%;" href="http://www.baidu.com/"></a>
+
+                        </li>
+                        <li style="position:relative;">
+                                <img src="img/trends01.png"/>
+                                <div class="am-slider-desc">
+                                    一场来自长沙生态动物园的维密秀
+                                </div>
+                                <a style="position:absolute;left:0;top:0;width:100%;height:100%;" href="http://www.baidu.com/"></a>
+                        </li>
+                        <li>
+                            <img src="img/trends01.png"/>
+                                <div class="am-slider-desc">
+                                    一场来自长沙生态动物园的维密秀
+                                </div>
+
+                        </li>
+                        <li>
+                            <img src="img/trends01.png"/>
+                                <div class="am-slider-desc">
+                                    一场来自长沙生态动物园的维密秀
+                                </div>
+
+                        </li>
+                        <li>
+                            <img src="img/trends01.png"/>
+                                <div class="am-slider-desc">
+                                    一场来自长沙生态动物园的维密秀
+                                </div>
+                            </img>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end 园区动态-轮播图 --> 
+            </div>
+            <!-- end 园区动态 -->
+
+            <!--动物明星 -->
+            <div class="animal">
+                <p class="animal_title">动物明星</p>
+                <ul class="animal_list clear">
+                    <li>
+                        <a class="al" href="#">
+                            <img src="img/animal01.png" alt="白虎">
+                            <div class="ani_intro">
+                                <p>名   称：白虎</p>
+                                <p>英文名：BaiHu</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="al" href="#">
+                            <img src="img/animal02.png" alt="白虎">
+                            <div class="ani_intro">
+                                <p>名   称：白虎</p>
+                                <p>英文名：BaiHu</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="al" href="#">
+                            <img src="img/animal03.png" alt="白虎">
+                            <div class="ani_intro">
+                                <p>名   称：白虎</p>
+                                <p>英文名：BaiHu</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="al" href="#">
+                            <img src="img/animal04.png" alt="白虎">
+                            <div class="ani_intro">
+                                <p>名   称：白虎</p>
+                                <p>英文名：BaiHu</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="al" href="#">
+                            <img src="img/animal05.png" alt="白虎">
+                            <div class="ani_intro">
+                                <p>名   称：白虎</p>
+                                <p>英文名：BaiHu</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="al" href="#">
+                            <img src="img/animal06.png" alt="白虎">
+                            <div class="ani_intro">
+                                <p>名   称：白虎</p>
+                                <p>英文名：BaiHu</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="more_wrap">
+                    <a href="#" class="more">更多+</a>
+                </div>
+
+            </div>
+            <!--end 动物明星 -->
+            <!-- 科普教育 -->
+            <div class="news">
+                <div class="tre_txt">
+                    <p class="tre_main_title">科普教育</p>
+                    <p class="tre_sub_title">——<span>NEWS</span>——</p>
+                </div>
+                <ul class="news_list">
+                    <li>
+                        <img src="img/news01.png" alt="pic01" class="news_pic">
+                        <div class="news_list_right">
+                            <p class="n_title">一场来自长沙生态动物园的维密秀</p>
+                            <p class="n_date">2017-02-17</p>
+                            <a class="n_more" href="#">MORE ></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/news02.png" alt="pic02" class="news_pic">
+                        <div class="news_list_right">
+                            <p class="n_title">大熊猫的家里新添了好多玩具~</p>
+                            <p class="n_date">2017-11-17</p>
+                            <a class="n_more" href="#">MORE ></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/news03.png" alt="pic03" class="news_pic">
+                        <div class="news_list_right">
+                            <p class="n_title">感恩节活动入选留言公布~快看...</p>
+                            <p class="n_date">2017-11-20</p>
+                            <a class="n_more" href="#">MORE ></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/news04.png" alt="pic04" class="news_pic">
+                        <div class="news_list_right">
+                            <p class="n_title">如果可以，你想变成哪种动物？</p>
+                            <p class="n_date">2017-11-20</p>
+                            <a class="n_more" href="#">MORE ></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="more_wrap">
+                    <a href="kpjy.html" class="more"  style="background:#dd6b0f;">更多+</a>
+                </div>
+            </div>
+            <!-- end 科普教育 -->
+
+            <!-- 特色展区 -->
+            <div class="special">
+                <div class="tre_txt special_txt">
+                    <p class="tre_main_title special_main_title">特色展区</p>
+                    <p class="tre_sub_title special_sub_title">——<span>PAVILIONS</span>——</p>
+                </div>
+                <div class="special_top">
+                    <img src="img/special01.png" alt="special01" class="spe_pic">
+                    <div class="spe_txt_wrap">
+                        <p class="spe_title">车行猛兽区</p>
+                        <p class="spe_txt">长沙生态动物园车行放养区位于园区东北部，占地500亩，分为车行猛兽区和车行食草区... </p>
+                        <span class="spe_more">more ></span>
+                    </div>
+                </div>
+                <!-- 轮播图-->
+                <div class="special_center" id="spe">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/index_spe01.jpg" class="spe_left"/>
+                                <span class="spe_tit">爬行馆</span>
+                                <span class="spe_txt">爬行动物馆占地1510平方米，引进国内一流...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/index_spe02.jpg" class="spe_left"/>
+                                <span class="spe_tit">猴子馆</span>
+                                <span class="spe_txt">爬行动物馆占地1510平方米，引进国内一流...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/index_spe03.jpg" class="spe_left"/>
+                                <span class="spe_tit">飞行馆</span>
+                                <span class="spe_txt">爬行动物馆占地1510平方米，引进国内一流...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/index_spe04.jpg" class="spe_left"/>
+                                <span class="spe_tit">爬行馆</span>
+                                <span class="spe_txt">爬行动物馆占地1510平方米，引进国内一流...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/index_spe01.jpg" class="spe_left"/>
+                                <span class="spe_tit">爬行馆</span>
+                                <span class="spe_txt">爬行动物馆占地1510平方米，引进国内一流...</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!--end  轮播图-->
+                <div class="more_wrap">
+                    <a href="#" class="more">更多+</a>
+                </div>
+            </div>
+            <!-- end  特色展区 -->
+
+            <!-- 园区概况 -->
+            <div class="about">
+                <div class="tre_txt">
+                    <p class="tre_main_title">园区概况</p>
+                    <p class="tre_sub_title">——<span>ABOUT US</span>——</p>
+                </div>
+                <p class="about_txt">
+                    长沙生态动物园位于长沙县暮云镇，地处长沙、株洲、湘潭三市融城的中心地带（全国资源节约型和环境友好型社会建设综合配套改革实验区）,毗邻芙蓉南路和长沙市绕城高速，傍依即将建成的长株潭城际铁路动物园车站，从“三市中心”出发自驾车至生态动物园约需车程30分钟左右，交通十分便利...
+                </p>
+                <img src="img/about01.png" alt="about" class="about_pic"/>
+            </div>
+            <!-- end 园区概况 -->
+            <!-- footer -->
+            <div class="footer">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div>
+        <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="mpyd.html">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><!-- <i class="iconfont">&#xe60f;</i> --> <img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <p class="c_pic"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt">联系我们</p>
+                </a>
+            </li>
+        </ul>
+        <!-- end 底部菜单 -->
+        <script src="js/amazeui.min.js"></script>
+        <script src="js/jquery.scrollbox.js"></script>
+        <script>
+            $(function () {
+                 $('#spe').scrollbox({
+
+                    direction: 'h',
+
+                    switchItems: 5,
+
+                    distance: 500
+
+                  });
+            })
+        </script>
+    </body>
+</html>

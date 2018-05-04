@@ -1,0 +1,311 @@
+.Logo_1200 .logo {
+    margin: 20px 0;
+}
+
+.logo {
+    width: 300px;
+    float: left;
+}
+
+.Top_1200 .Tel_frr em {
+    color: #7ebd23 !important;
+}
+
+.Logo_1200 .search {
+    padding-top: 50px;
+}
+
+.Logo_1200 .search .mallSearch {
+    border: 1px solid #7ebd23 !important;
+}
+
+.Logo_1200 .search .mallSearch .button {
+    background: #7ebd23 !important;
+}
+
+.Logo_1200 .search dl dd.hotl_tel b {
+    color: #7ebd23  !important;
+}
+
+.nav {
+    background: #7ebd23 !important;
+}
+
+.nav_left .nav_info {
+    background: #c5e40b !important;
+}
+
+.nav_1200 .nav_right li:hover {
+    background: #629b0f !important;
+}
+
+.content_nav .content_show {
+    border: 1px solid #7ebd23 !important;
+}
+
+.suspension_nav li.active {
+    border-left: 2px solid #7ebd23 !important;
+    border-bottom: 1px solid #7ebd23 !important;
+    border-top: 1px solid #7ebd23 !important;
+    border-right: 1px solid #fff !important;
+}
+
+.footer {
+    background: #7ebd23 !important;
+}
+
+.HoterBg {
+    top: 1307px;
+}
+
+.SpecialtyBg {
+    top: 2531px;
+}
+
+.KeepsakeBg {
+    top: 3541px;
+}
+
+.gwc {
+    background: #ff8c01 url("../images/gwc_ic1.png") no-repeat center !important;
+
+}
+
+.sidebar ul li {
+    background: #ff8c01;/*background: #ff8c01 !important;*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sidebar ul li dl {
+    border: 1px solid #ff8c01 !important;
+}
+
+.btn_register {
+    background: #ff8c01 !important;
+}
+
+.Logo_1200 .search .mallSearch .search_422 {
+    color: #333;
+}
+
+.Logo_1200 .search .mallSearch .search_422::-webkit-input-placeholder {
+    color: #c9caca
+}
+
+.Logo_1200 .search .mallSearch .search_422:-moz-placeholder {
+    color: #c9caca
+}
+
+.Logo_1200 .search .mallSearch .search_422::-moz-placeholder {
+    color: #c9caca
+}
+
+.Logo_1200 .search .mallSearch .search_422:-ms-input-placeholder {
+    color: #c9caca
+}
+
+.position a:hover {
+    color: #ff8c00;
+}
+
+.thumbnail .smallscroll .smallimg ul li.on {
+    border: 2px solid #7ebd23;
+    padding: 2px;
+}
+
+.thumbnail .smallscroll .btn:hover {
+    background: #7ebd23;
+}
+
+.page dl dd {
+    display: inline-block;
+    border: 1px solid #7ebd23;
+    color: #7ebd23;
+    margin: 0 0 0 20px;
+}
+
+.page dl dd a {
+    color: #7ebd23;
+}
+
+.page dl dd.thisinfo {
+    padding: 6px 10px;
+    background: #7ebd23;
+    color: #fff;
+}
+
+.page dl dd .slet {
+    color: #7ebd23;
+}
+
+/*广告弹出事件*/
+.m_app_close {
+    position: fixed;
+    z-index: 99999;
+    left: 0px;
+    bottom: 0;
+}
+
+.m_app_close .background_img {
+    cursor: pointer;
+}
+
+.m_app_open {
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    min-width: 1000px;
+}
+
+.m_app_open .box_background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #263646;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+}
+
+.m_app_open .box_inner {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 2;
+}
+
+.m_app_open .background_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.m_app_open .background_img a {
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+    width: 670px;
+    height: 140px;
+    z-index: 3;
+    opacity: 0;
+    background: #fff;
+    filter: alpha(opacity=0);
+}
+
+.m_app_open .btn_close {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.m_app_open .btn_close:hover {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+/*浮动导航*/
+.FloatingNav {
+    width: 157px;
+    height: 544px;
+    position: fixed;
+    right: 70px;
+    top: 50%;
+    z-index: 999;
+    margin-top: -272px;
+    background: url("../images/qiqiu.png") no-repeat ;
+}
+.FloatingNav ul {
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+    margin-top: 264px;
+}
+
+.FloatingNav ul li {
+    width: 100%;
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-bottom: 1px dashed #fff;
+}
+
+.FloatingNav ul li i.flotnav_icon {
+    width: 22px;
+    height: 18px;
+    background: url("../images/flonav_icon.png");
+    display: inline-block;
+    float: left;
+}
+
+.FloatingNav ul li i.flot_icon1 {
+    background-position: 0 -2px;
+    margin-top: 13px;
+}
+
+.FloatingNav ul li i.flot_icon2 {
+
+    background-position: -24px -2px;
+    margin-top: 13px;
+}
+
+.FloatingNav ul li i.flot_icon3 {
+    width: 18px;
+    background-position: -47px -2px;
+    margin-top: 13px;
+}
+
+.FloatingNav ul li i.flot_icon4 {
+    width: 16px;
+    height: 15px;
+    background-position: -68px -3px;
+    margin-top: 15px;
+}
+.FloatingNav ul li i.flot_icon5 {
+    width: 18px;
+    background-position: -92px 0px;
+    margin-top: 13px;
+}
+.FloatingNav ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.Selling_lt .title{
+    background: #7ebd23  !important;
+}
+.box_main {
+    min-height: 532px;
+}
+.box_two {
+    min-height: 318px;
+}
+
+.tk_tab ul li.active{
+    background: #7ebd23  !important;
+}
+.tk_tab {
+    border-bottom: 2px solid #7ebd23 !important;
+}
+
+.nav_1200 .nav_right li.active {
+    background: #629b0f !important;
+}

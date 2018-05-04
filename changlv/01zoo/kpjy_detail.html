@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>科普教育</title>
+        <link href="css/frame.css" rel="stylesheet"/>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script>
+            window.onload = function () {
+				var oBtn = document.getElementById("btn");
+				var oDiv = document.getElementById("nav_wrap");
+				var flag = 1;
+
+				/*document.addEventListener('touchstart', function (ev) {
+					ev.preventDefault();
+				} );*/
+
+				oBtn.addEventListener('touchend', function () {
+					if(flag) {
+						oDiv.style.display = "block";
+						oDiv.addEventListener('touchmove', function () {
+							this.style.display = "none";
+						} )
+
+					}else {
+						oDiv.style.display = "none";
+					}
+				} );
+			}
+        </script>
+                                
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <a href="kpjy.html" class="back"><i class="iconfont">&#xe62b;</i></a>
+            <p class="h_title">科普教育</p>
+            <a class="iconfont menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+       <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content" style="background:#fff;">
+            <!-- 轮播图 -->
+            <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
+                  <ul class="am-slides">
+                      <li>
+                            <img src="img/kpjy_de01.jpg">
+                      </li>
+                      <li>
+                            <img src="img/kpjy_de02.jpg">
+                      </li>
+                      <li>
+                            <img src="img/kpjy_de03.jpg">
+                      </li>
+                      <li>
+                            <img src="img/kpjy_de04.jpg">
+                      </li>
+                  </ul>
+            </div>
+            <!-- 轮播图 -->
+           
+           
+            <!-- 标题 -->
+            <div class="kpjy_wrap">
+                <p class="kpjy_p"><span class="kpjy_tit">满满童心-你养过哪些蠢萌的动物？</span><span class="kpjy_share"><i class="iconfont">&#xe66c;</i></span></p>
+                <p class="kpjy_subtit"><span>英文名：</span><span>ManManTongXin_NiYangGuoNaXieChunMengDeDongWu</span></p>
+            </div>
+
+            <!-- a_intro -->
+            <div class="a_intro">
+                <div class="a_intro_txt">
+                    <p class="a_intro_p">
+                        近日在英国发生了一只母猫与一只母鸡轮流照看鸡蛋的趣事，令人感到惊奇又温馨，吸引了当地不少小学生驻足观看。据报导，在母鸡外出时，猫妈妈带领着它的孩子趴在鸡蛋上“孵蛋”，给鸡蛋保暖。而当母鸡回来继续孵蛋时，猫妈妈便领着小猫们外出玩耍。
+                    </p>
+                    <p class="a_intro_p">
+                        小学老师安吉称从未见过这样的事，猫与鸡配合得如此有序。她还说小学生们见到此景非常兴奋，都很好奇猫妈妈是如何“孵蛋”的。
+                    </p>
+                    <p class="a_intro_p">
+                        新加坡《海峡时报》11日报导，英国伦敦大学心理学系研究员发现，无论对方是它的主人还是陌生人，宠物狗都能够对哭泣的人表达出同情心。
+                    </p>
+                    <p class="a_intro_p">
+                        伦敦大学科学家近日对18只不同年龄和血统的宠物狗进行了测试，让他们的主人或陌生人假装哭泣、发出奇怪的哼哼声，或者闲谈，以测试这些狗是否会辨认人的情绪，并作出相对的反应。
+                    </p>
+                    <p class="a_intro_p">测试结果显示，当有人哭泣的时候，许多狗会注视、接近或触碰哭泣者。而对于发出奇怪的哼哼声的人，少数狗也会作出上述反应。对于在闲聊的人，所有狗都没有理睬。</p>
+                </div>
+            </div>
+
+            <!--上一篇 下一篇-->
+            <div class="page_wrap">
+                <p class="page">
+                    <a href="#" class="prev"><i class="iconfont">&#xe72e;</i>上一篇</a>
+                    <a href="#" class="next">下一篇<i class="iconfont">&#xe72f;</i></a>
+                </p>
+            </div>
+            <!-- end 上一篇 下一篇-->
+
+            <!-- footer -->
+            <div class="footer" style="background:#eaeaea;">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div>
+        <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="mpyd.html">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <p class="c_pic"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt">联系我们</p>
+                </a>
+            </li>
+        </ul>
+        <!-- end 底部菜单 -->
+       
+        <script src="js/amazeui.min.js"></script>
+    </body>
+</html>

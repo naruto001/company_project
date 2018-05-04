@@ -1,0 +1,25 @@
+/**
+ * Created by zxj on 2017/12/8.
+ */
+window.alert = function(name){
+
+    var html = "<div id=\"windowtest\" style=' background-color:#000;position: fixed;top: 0;left: 0;z-index:100000;opacity:0.3;filter: alpha(opacity=30);display:block;'></div>"+
+        "<div id='windowlog_window' style='width:300px;height:120px;border-radius: 8px;border: 1px solid #fff;background-color:#FFF;margin: auto;position: fixed;z-index:100001;top: 0;bottom: 0;left: 0;right: 0;display:block;'>"+
+        "<div style='text-align: center;line-height: 50px;'><span style='font-size: 13px;'>"+name+
+        "</span>"+
+        "</div>"+
+        "<div style='text-align: center;margin-top: 26px;'>"+
+        "<span onclick='alertclose();' style='font-size: 13px;background-color: #e5e5e5;padding: 5px 10px;border-radius: 2px;cursor: pointer;'>确定</span>"+
+        "</div>"+
+        "</div>";
+    $('body').append(html);
+    $("#windowtest").css('width',document.documentElement.clientWidth);
+    $("#windowtest").css('height',document.documentElement.clientHeight);
+}
+function alertclose(){
+    $('body').find('#windowtest').remove();
+    $('body').find('#windowlog_window').remove();
+    $('body').find('#windowtest').remove();
+    $('body').find('#windowlog_window').remove();
+}
+

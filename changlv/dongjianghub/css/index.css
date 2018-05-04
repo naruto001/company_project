@@ -1,0 +1,65 @@
+/*-----------公用样式---------------*/
+html, body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-family: "microsoft yahei";
+    overflow-x: hidden;
+    font-size: 14px;
+    background: url("../img/fotter.png") no-repeat center bottom;
+}
+
+div, ul, li, p, span, em, i, b, dl, dd, dt, table, img, input, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font-family: "microsoft yahei";
+    font-style: normal;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+
+a:hover, img:hover {
+    /*opacity:.9;*/
+    /*filter:alpha(opacity=90);*/
+    /*-moz-opacity:.9;*/
+    /*-khtml-opacity: .9;*/
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

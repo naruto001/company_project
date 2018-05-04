@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>关于我们</title>
+        <link href="css/frame.css" rel="stylesheet"/>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script>
+            window.onload = function () {
+				var oBtn = document.getElementById("btn");
+				var oDiv = document.getElementById("nav_wrap");
+				var flag = 1;
+
+				/*document.addEventListener('touchstart', function (ev) {
+					ev.preventDefault();
+				} );*/
+
+				oBtn.addEventListener('touchend', function () {
+					if(flag) {
+						oDiv.style.display = "block";
+						oDiv.addEventListener('touchmove', function () {
+							this.style.display = "none";
+						} )
+
+					}else {
+						oDiv.style.display = "none";
+					}
+				} );
+			}
+        </script>
+                                
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <a href="index.html" class="back"><i class="iconfont">&#xe62b;</i></a>
+            <p class="h_title">关于我们</p>
+            <a class="iconfont menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+        <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content">
+            <!-- banner -->
+            <img src="img/a01.png" alt="banner" class="a_banner"/>  
+            <!-- end banner -->
+           
+            <!-- 选项卡 -->
+            <ul class="a_tab clear">
+                <li>
+                    <a href="about.html">
+                        园区介绍
+                    </a>
+                </li>
+                <li>
+                    <a href="about01.html">
+                        园长寄语
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="javascript:;">
+                        饲养管理
+                    </a>
+                </li>
+            </ul>
+            <!-- end 选项卡 -->
+            
+            <!-- a_intro -->
+            <div class="a_intro">
+                <img src="img/a_intro01.png" alt="pic" class="a_intro_pic"/>
+                <div class="a_intro_txt">
+                    <p class="a_intro_tit">长沙生态动物园简介</p>
+                    <p class="a_intro_tit">生态世界 动物乐园</p>
+                    <p class="a_intro_p">
+                        长沙生态动物园位于长沙县暮云镇，地处长沙、株洲、湘潭三市融城的中心地带（全国资源节约型和环境友好型社会建设综合配套改革实验区）,毗邻芙蓉南路和长沙市绕城高速，傍依即将建成的长株潭城际铁路动物园车站，从“三市中心”出发自驾车至生态动物园约需车程30分钟左右，交通十分便利。
+                    </p>
+                    <p class="a_intro_p">
+                        长沙生态动物园于2010年10月建成开放，其前身为连续开放54年的长沙动物园，现园区面积1500亩，由中日著名设计师参照世界知名动物园标准联合设计，共分为步行圈养区、车行放养区、科普教育区、生态景观区、休闲娱乐区、后勤服务区、建有动物笼舍区和动物行为驯化展示区37个，饲养动物300余种类、约5000余只（羽）。
+                    </p>
+                    <p class="a_intro_p">
+                        长沙生态动物园是湖南省唯一一家经国家林业总局和农业部批准发证，能引进饲养一、二类水陆野生动物的公益性、事业性的专业野生动物饲养和展示单位。建造过程中得到了长沙市委、市政府的高度重视和大力支持，其设计建造理念、动物饲养种类和运营管理方法均处于全国一流动物园领先地位，是市民百姓旅游最佳目的地，全省最大的中小学科普教育基地。
+                    </p>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div>
+        <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="mpyd.html">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <p class="c_pic"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt">联系我们</p>
+                </a>
+            </li>
+        </ul>
+        <!-- end 底部菜单 -->
+    </body>
+</html>

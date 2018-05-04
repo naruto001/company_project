@@ -1,0 +1,414 @@
+/* reset */
+body,ul,p,h1,h2,h3,h4,h5,h6,form,dl,dd,select,input,textarea {
+    margin:0;
+    padding:0;
+   /* font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-user-select:none;
+}
+li {
+    list-style-type:none;
+}
+img {
+    border:none;
+}
+a {
+    text-decoration:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}a,input,button {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-appearance:none;
+    border-radius:0;
+}
+/* end reset */
+html,body {
+	width:100%;
+	height:auto;
+	overflow-x:hidden;
+	margin:0;
+    padding:0;
+}
+
+/* 引入iconfont字体 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* end 引入iconfont字体 */
+
+body {
+    min-width:1000px;
+    overflow:hidden;
+}
+/* header */
+.header {
+    height:480px;
+    margin:0 auto;
+    min-width:1000px;
+    overflow:hidden;
+    background:url(../img/header_bg.jpg) no-repeat;
+    background-size:100% 480px;
+}
+.header .header_box {
+    width:1098px;
+    height:480px;
+    margin:0 auto;
+    text-align:center;
+    min-width:1000px;
+    overflow:hidden;
+    position:relative;
+}
+.header .header_box .logo {
+    position:absolute;
+    left:0;
+    top:54px;
+    width:180px;
+    height:81px;
+}
+.header .header_box .header_nav {
+    position:absolute;
+    bottom:110px;
+    width:100%;
+}
+.header .header_nav a {
+    padding:14px 63px;
+    color:#333;
+    background:#fff;
+    /* border:4px solid rgba(241,241,241,0.4); */
+    border-radius:30px;
+    margin-right:50px;
+}
+.header .header_nav .active {
+    background:#006eb5;
+    color:#fff;
+}
+.header .header_nav a:active {
+    background:#006eb5;
+    color:#fff;
+}
+/* end header */
+
+/* 水平滚动导航 */
+.nav {
+    height:70px;
+    min-width:1000px;
+    overflow:hidden;
+    margin:0 auto;
+    background:#fff;
+}
+.nav .nav_box {
+    width:1098px;
+    height:70px;
+    margin:0 auto;  
+    position:relative;  
+    min-width:1000px;   
+    overflow:hidden;                                     
+}
+.nav .nav_box .nav_tit {
+    position:absolute;
+    left:0;
+    font-size:16px;
+    color:#666;
+    line-height:70px;
+    font-weight:bold;
+}
+.nav .nav_box a.prev {
+    position:absolute;
+    left:80px;
+    top:0;
+    width:20px;
+    height:70px;
+    line-height:70px;
+}
+.nav .nav_box a.next {
+    position:absolute;
+    right:0;
+    top:0;
+    width:20px;
+    height:70px;
+    line-height:70px;
+    transform:rotate(-180deg);
+}
+.nav .nav_box .nav_list {
+    position:absolute;
+    left:110px;
+    top:0;
+    height:70px;
+}
+.nav .nav_list li {
+    float:left;
+    line-height:70px;
+    font-size:14px;
+    color:#666;
+    margin-left:30px;
+    margin-right:30px;
+}
+/* end 水平滚动导航 */
+
+/* temp_list */
+.temp,.m_temp {
+    width:100%;
+    height:auto;
+    min-width:1000px;
+    margin:0 auto;
+    background:#f7f7f7;
+}
+.temp .temp_box , .m_temp .m_temp_box {
+    width:1098px;
+    height:auto;
+    min-width:1000px;
+    overflow:hidden;
+    margin:0 auto;
+    padding-bottom:52px;
+}
+.temp .temp_bg , .m_temp .m_temp_bg {
+    height:56px;
+    background:url(../img/temp_top_bg.png);
+}
+.temp .temp_box .temp_list {
+    width:100%;
+    height:auto;
+}
+.temp .temp_list li {
+    width:352px;
+    height:auto;
+    border:1px solid #cfcfcf;
+    transition:all 0.36s ease;
+    -webkit-transition: all .36s ease;
+    float:left;
+    margin-right:16px;
+    box-shadow: 1px 2px 6px #ccc;
+}
+.temp .temp_list li:nth-of-type(3n) {
+    margin-right:0;
+}
+.temp .temp_list .temp_link {
+    width:100%;
+    height:100%;
+    display:block;
+}
+.temp .temp_link .temp_tit {
+    line-height:50px;
+    text-indent:16px;
+    font-size:18px;
+    color:#555;
+    font-weight:bold;
+}
+.temp .temp_link .temp_pic {
+    width:318px;
+    display:block;
+    margin-left:16px;
+}
+.temp .temp_link .temp_intro {
+    font-size:14px;
+    color:#999;
+    width:318px;
+    margin-left:16px;
+    line-height:24px;
+    padding:7px 0;
+}
+.temp .temp_link .temp_tag {
+    width:100%;
+    height:42px;
+    border-top:1px solid #cfcfcf;
+    line-height:42px;
+    box-sizing:border-box;
+    text-indent:16px;
+    color:#666;
+    font-size:14px;
+    position:relative;
+}
+.clear {
+    content:"";
+    display:block;
+    clear:both;
+}
+.temp .temp_tag i {
+    position:absolute;
+    right:36px;
+    color:#cacaca;
+    opacity:0.7;
+    transition:all 0.8s ease;
+    font-size:20px;
+    color:#333;
+}
+.temp .temp_list li:hover .temp_tag i {
+    right:16px;
+    opacity:1;
+}
+/* end temp_list */
+
+/* footer */
+.footer_box {
+    height:200px;
+    min-width:1000px;
+    background:#ececec;
+    overflow:hidden;
+}
+.footer_box .footer {
+    width:1098px;
+    height:144px;
+    padding-top:56px;
+    margin:0 auto;
+}
+.footer_box .footer .ft_link {
+    width:898px;
+    height:44px;
+    padding:0 100px;
+    border:1px solid #ccc;
+    margin-bottom:40px;
+}
+.footer_box .ft_link li {
+    float:left;
+    margin-right:30px;
+    height:44px;
+    line-height:44px;
+}
+.footer_box .ft_link li:first-child {
+    color:#888;
+    font-size:14px;
+    font-weight:bold;
+}
+.footer_box .ft_link a {
+    color:#888;
+    font-size:14px;
+}
+.footer_box .footer .cr, .footer_box .cr a {
+    font-size:12px;
+    color:#888;
+    text-align:center;
+}
+/* end footer */
+
+/* 移动端展示 */
+.m_temp .m_temp_box .m_temp_list {
+    width:100%;
+    height:auto;
+}
+.m_temp .m_temp_list li {
+    width:225px;
+    height:442px;
+    margin-right:66px;
+    float:left;
+    background:url(../img/m_li_bg.png) no-repeat;
+    background-size:100%;
+    position:relative;
+    cursor:pointer;
+    margin-bottom:30px;
+}
+.m_temp .m_temp_list li:nth-of-type(4n) {
+    margin-right:0;
+}
+
+.m_temp .screen_box {
+    position:absolute;
+    left:13px;
+    top:30px;
+    width:200px;
+    height:356px;
+    background:#fff;
+}
+.m_temp .screen_box .src_pic {
+    width:200px;
+    height:356px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.m_temp .m_temp_list .cover {
+    width:200px;
+    height:356px;
+    z-index:999999;
+    background:rgba(0,0,0,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+}
+.m_temp .m_temp_list li:hover .cover {
+    display:block;
+}
+.m_temp .cover .scan {
+    line-height:44px;
+    height:44px;
+    color:#fff;
+    text-align:center;
+    margin-top:25px;
+    font-size:16px;
+}
+.m_temp .cover .code_pic {
+    width:124px; 
+    height:124px;
+}
+.m_temp .cover .src_tit {
+    line-height:58px;
+    height:58px;
+    font-size:14px;
+    color:#fff;
+}
+.m_temp .preview {
+    margin-top:22px;
+}
+.m_temp .preview .pre_link {
+    padding:16px 54px;
+    background:#006eb5;
+    color:#fff;
+    font-size:16px;
+    border-radius:10px;
+}
+
+.masonry {
+    column-count: 3;
+    column-gap: 0;
+}
+.item {
+    break-inside: avoid;
+    box-sizing: border-box;
+    margin:10px;
+}
+/* .item:nth-of-type(1) {
+    margin:0;
+}
+.item:nth-of-type(2) {
+    margin:0;
+}
+.item:nth-of-type(3) {
+    margin:0;
+} */
+.masonry {
+    column-count: 1; // one column on mobile 
+}
+
+/* @media (min-width: 400px) {
+    .masonry {
+        column-count: 2; // two columns on larger phones
+    } 
+} */
+@media (min-width: 1000px) {
+    .masonry {
+        column-count: 3; // three columns on...you get it 
+    } 
+}
+
+.m_h5 {
+    position: absolute;
+    right: 17px;
+    top: 37px;
+    text-decoration:underline;
+    color:#333;
+}
+.m_h5:hover {
+    color:red;
+}

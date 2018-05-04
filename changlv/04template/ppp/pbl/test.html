@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <style>  
+        #container{  
+          margin: 0 auto;  
+          background: red;  
+        }  
+        .item{  
+          width: 350px;     /* 控制每个图片宽度 */  
+          margin: 20px;  
+        }  
+    </style>  
+</head>
+
+<body>
+    <div id="container">
+        <div class="item">
+            <img src="timg.jpg">
+        </div>
+        <div class="item">
+                <img src="timg.jpg">
+        </div>
+        <div class="item">
+                <img src="timg.jpg">
+        </div>
+        <div class="item">
+                <img src="a.jpg">
+        </div>
+        <div class="item">
+                <img src="timg.jpg">
+        </div>
+        <div class="item">
+                <img src="timg.jpg">
+        </div>
+    </div>
+    <script>
+            $('#container').masonry({
+                    itemSelector: '.item',
+                    isAnimated: true,
+                    columnWidth: 350,       
+                    isFitWidth: true     // 自适应宽度  
+                }); 
+    </script>
+</body>
+
+</html>

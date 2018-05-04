@@ -1,0 +1,281 @@
+/*景点*/
+.warp_1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.box_main {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.Title {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.Title .icon_pt {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dotted #000000;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.Title .icon_pt i.icon {
+    width: 36px;
+    height: 36px;
+    float: left;
+    background: url("../images/icon_03.png") no-repeat;
+}
+
+.Title .icon_pt i.icon1 {
+    background-position: 0 0;
+}
+
+.Title .icon_pt i.icon2 {
+    background-position: -43px 0;
+}
+
+.Title .icon_pt i.icon3 {
+    background-position: -83px 0;
+}
+
+.Title .icon_pt i.icon4 {
+    background-position: -126px 0;
+}
+
+.Title .icon_pt i.icon5 {
+    background-position: -171px 0;
+}
+
+.Title .icon_pt i.icon6 {
+    background-position: -217px 0;
+}
+
+.Title .icon_pt h3.color {
+    line-height: 36px;
+    font-size: 24px;
+    margin-left: 5px;
+    float: left;
+}
+
+.Title .icon_pt .color1 {
+    color: #fc924c;
+}
+
+.Title .icon_pt .color2 {
+    color: #31a0ff;
+}
+
+.Title .icon_pt .color3 {
+    color: #89c62e;
+}
+
+.Title .icon_pt .color4 {
+    color: #fc924c;
+}
+
+.Title .icon_pt .color5 {
+    color: #31a0ff;
+}
+
+.Title .icon_pt .color6 {
+    color: #89c62e;
+}
+
+.Title .more {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-top: 10px;
+}
+
+.Title .more h4 {
+    float: left;
+    font-size: 16px;
+    color: #666;
+}
+
+.Title .more a {
+    float: right;
+    line-height: 16px;
+    color: #31a0ff;
+    font-size: 13px;
+}
+
+.Divbox {
+    width: 100%;
+    max-height: 434px;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.Divbox .Div_left {
+    width: 180px;
+    min-width: 180px;
+    max-height: 434px;
+    height: auto;
+    float: left;
+    background: #f5f5f5;
+    padding: 10px 0 0 6px;
+}
+
+.Divbox .Div_left ul li {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+}
+.Divbox .Div_left ul li h3 {
+    height: 38px;
+    overflow: hidden;
+    line-height: 20px;
+    width: 72px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.Divbox .Div_left ul li span.Simg {
+    width: 90px;
+    height: 60px;
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-right: 5px;
+}
+
+.Divbox .Div_left ul li span.Simg img {
+    width: 90px;
+    height: 60px;
+}
+
+.Divbox .Div_left ul li span.Simg i {
+    position: absolute;
+    left: 7px;
+    top: 0;
+    width: 29px;
+    height: 25px;
+    background: url("../images/icon_03.png") no-repeat;
+    background-position: -262px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.Divbox .Div_left ul li p {
+    position: absolute;
+    left: 95px;
+    bottom: 2px;
+    color: #f63;
+    font-weight: 600;
+}
+
+.Divbox .Div_cont {
+    width: 800px;
+    min-width: 800px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+}
+
+.Divbox .Div_cont li {
+    width: 180px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.Divbox .Div_cont li:hover {
+    background: #f5f5f5;
+}
+
+.Divbox .Div_cont li .Srimg {
+    width: 180px;
+    height: 122px;
+    float: left;
+    overflow: hidden;
+}
+
+.Divbox .Div_cont li .Stxt {
+    width: 100%;
+    height: 88px;
+    float: left;
+    padding: 0 5px;
+    position: relative;
+}
+
+.Divbox .Div_cont li .Stxt h3 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.Divbox .Div_cont li .Stxt strong {
+    position: absolute;
+    bottom: 15px;
+    font-size: 20px;
+    color: #f63;
+}
+
+/*首页样式切换背景集合*/
+.hotel .Divbox .Div_left, .Specialty .Divbox .Div_left ,.Keepsake .Divbox .Div_left{
+    background: #fff;
+}
+
+.hotel .Divbox .Div_cont li:hover, .Specialty .Divbox .Div_cont li:hover ,.Keepsake .Divbox .Div_cont li:hover {
+    background: #fff;
+}
+
+.Divbox .Div_right img {
+    width: 194px;
+    min-width: 194px;
+    height: 398px;
+    display: block;
+}
+.Div_right{
+    float: right;
+}
+
+/*背景集合*/
+.HoterBg {
+    width: 100%;
+    height: 600px;
+    background: #f9f9f9;
+    position: absolute;
+    top: 1267px;
+    left: 0;
+    z-index: 0;
+}
+
+.SpecialtyBg {
+    width: 100%;
+    height: 600px;
+    background: #f9f9f9;
+    position: absolute;
+    top: 2491px;
+    left: 0;
+    z-index: 0;
+}
+
+.KeepsakeBg {
+    width: 100%;
+    min-height: 420px;
+    height: auto;
+    background: #f9f9f9;
+    position: absolute;
+    top: 3501px;
+    left: 0;
+    z-index: 0;
+}
+
+

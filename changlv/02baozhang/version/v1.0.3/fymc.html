@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <title>费用名称</title>
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/selectFilter.css" />
+    <link rel="stylesheet" href="css/frame.css"/>
+    <link rel="stylesheet" href="css/accordion.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+</head>
+
+<body>
+    <!--header -->
+            <div class="header">
+                <a href="#" class="back" ><i class="iconfont">&#xe66f;</i></a>
+                <p class="h_title">费用名称</p>
+            </div>
+        <!-- end header -->
+            
+        <!-- content -->
+            <div class="content">
+                <div class="fymc_wrap">
+                    <ul class="list-ul">
+                        <li class="list-li" style="position: relative;" data-id="001">
+                            <div class="con">
+                                <p class="fymc-style">类型：XXXXXXX</p>
+                                <p class="fymc-cmp">往来单位往来单位往来单位往来单位往来单位</p>
+                                <p class="fymc-status clear"><span class="st-l">状态：已支付</span><span class="st-r">￥450</span></p>
+                                <p class="verify-wrap"><span class="fymc-verify">确认</span></p>
+                            </div>
+                            <div class="del"><i class="iconfont">&#xe690;</i></div>
+                        </li>
+                        <li class="list-li" style="position: relative;" data-id="002">
+                            <div class="con">
+                                <p class="fymc-style">类型：XXXXXXX</p>
+                                <p class="fymc-cmp">往来单位往来单位往来单位往来单位往来单位</p>
+                                <p class="fymc-status clear"><span class="st-l">状态：已支付</span><span class="st-r">￥450</span></p>
+                                <p class="verify-wrap"><span class="fymc-verify">确认</span></p>
+                            </div>
+                            <div class="del"><i class="iconfont">&#xe690;</i></div>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+        <!-- end content -->
+    </div>
+    <script src="js/aaa.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript">
+        $(".list-ul>li").on("swipeleft", function (event) {
+            event.stopPropagation()
+            $(this).siblings(this).animate(
+                { "left": "0px" },
+                500
+            );
+            $(this).animate(
+                { "left": "-120px" },
+                500
+            );
+
+        });
+        
+    </script>
+</body>
+
+</html>
