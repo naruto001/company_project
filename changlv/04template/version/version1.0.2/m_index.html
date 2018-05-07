@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <title>景区微网站</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/show_news.css"/>
+    <link rel="stylesheet" href="css/show_news.css" />
+    <link rel="stylesheet" href="css/slider.css" />
     <script src="js/jquery-1.12.4.min.js"></script>
 </head>
 
@@ -21,70 +22,74 @@
         </div>
     </div>
     <!-- end 头部-->
-
-   <!-- 水平滚动导航 -->
-   <div class="nav">
-        <div class="nav_box">
-            <p class="nav_tit">合作客户：</p>
-            <div class="focus-img" id="focus-img">
-                <div class="focus-img-con" id="focus-img-con">
-                    <ul>
+    <!-- 合作商家 -->
+    <div class="co_box">
+        <div class="co_ctn">
+            <p class="co_tit">合作客户：</p>
+            <div class="co_show">
+                <div class="co_list_box">
+                    <ul class="co_list">
                         <li>
-                            <div>韶山旅游</div>
+                            <ul class="show_date">
+                                <li>韶山旅游</li>
+                                <li>东江湖景区</li>
+                                <li>胡耀邦故居</li>
+                                <li>博裕隆汽车</li>
+                                <li>紫鹊界景区</li>
+                                <li>稻花香里</li>
+                                <li>东江湖政务网</li>
+                            </ul>
                         </li>
                         <li>
-                            <div>东江湖景区</div>
+                            <ul class="show_date">
+                                <li>长沙生态动物园</li>
+                                <li>舜皇山森林公园</li>
+                                <li>武陵源</li>
+                                <li>胡耀邦电商网</li>
+                                <li>郴州旅游局</li>
+                                <li>品逸美景</li>
+                                <li>畅旅科技</li>
+                            </ul>
                         </li>
                         <li>
-                            <div>胡耀邦故居</div>
+                            <ul class="show_date">
+                                <li>畅旅科技</li>
+                                <li>品逸美景</li>
+                                <li>郴州旅游局</li>
+                                <li>胡耀邦电商网</li>
+                                <li>武陵源</li>
+                                <li>舜皇山森林公园</li>
+                                <li>长沙生态动物园</li>
+                            </ul>
                         </li>
                         <li>
-                            <div>博裕隆汽车</div>
-                        </li>
-                        <li>
-                            <div>长沙生态动物园</div>
-                        </li>
-                        <li>
-                            <div>舜皇山森林公园</div>
-                        </li>
-                        <li>
-                            <div>张家界武陵源</div>
-                        </li>
-                        <li>
-                            <div>韶山旅游</div>
-                        </li>
-                        <li>
-                            <div>东江湖景区</div>
-                        </li>
-                        <li>
-                            <div>胡耀邦故居</div>
-                        </li>
-                        <li>
-                            <div>长沙生态动物园</div>
-                        </li>
-                        <li>
-                            <div>舜皇山森林公园</div>
-                        </li>
-                        <li>
-                            <div>张家界武陵源</div>
-                        </li>
-                        <li>
-                            <div>韶山旅游</div>
-                        </li>
-                        <li>
-                            <div>韶山旅游</div>
-                        </li>
-                        <li>
-                            <div>东江湖景区</div>
+                            <ul class="show_date">
+                                <li>东江湖政务网</li>
+                                <li>稻花香里</li>
+                                <li>紫鹊界景区</li>
+                                <li>博裕隆汽车</li>
+                                <li>胡耀邦故居</li>
+                                <li>东江湖景区</li>
+                                <li>韶山旅游</li>
+                            </ul>
                         </li>
                     </ul>
+
                 </div>
+
+                <!-- control button -->
+                <div class="co_btn" id="co_next">
+                    <i class="iconfont">&#xe667;</i>
+                </div>
+                <div class="co_btn" id="co_prev">
+                    <i class="iconfont">&#xe659;</i>
+                </div>
+
             </div>
-            
         </div>
     </div>
-    <!-- end 水平滚动导航 -->
-    
+    <!-- end 合作商家 -->
+
     <!--案例展示-->
     <div class="m_temp">
         <div class="m_temp_bg"></div>
@@ -148,7 +153,7 @@
                         <div class="cover">
                             <p class="scan">扫一扫 手机访问</p>
                             <img class="code_pic" src="img/scr_cov01.jpg" />
-                            <p class="src_tit">胡耀邦故居</p>
+                            <p class="src_tit">东江湖景区</p>
                             <p class="preview">
                                 <a href="m_temp05_index.html" target="_blank" class="pre_link">预 览</a>
                             </p>
@@ -161,65 +166,70 @@
                         <div class="cover">
                             <p class="scan">扫一扫 手机访问</p>
                             <img class="code_pic" src="img/scr_cov01.jpg" />
-                            <p class="src_tit">胡耀邦故居</p>
+                            <p class="src_tit">长沙生态动物园</p>
                             <p class="preview">
                                 <a href="m_temp06_index.html" target="_blank" class="pre_link">预 览</a>
                             </p>
                         </div>
                     </div>
                 </li>
-                
+
             </ul>
-            
+
         </div>
     </div>
 
     <!-- footer -->
     <div class="footer_box">
-            <div class="footer">
-                <ul class="ft_link">
-                    <li>友情链接：</li>
-                    <li>
-                        <a href="#">
-                            韶山旅游
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            东江湖景区
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            胡耀邦故居
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            博裕隆汽车
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            长沙生态动物园
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            张家界武陵源
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            湖南畅旅
-                        </a>
-                    </li>
-                </ul>
-                <p class="cr">Copyright © 2010 - 2018 All580.com. All Rights Reserved     湘ICP备14006056号-1     技术支持：<a href="#">湖南畅旅</a>     <a href="http://www.all580.com/index.php?m=content&c=index&a=lists&catid=3020">联系我们</a></p>
-            </div>
+        <div class="footer">
+            <ul class="ft_link">
+                <li>友情链接：</li>
+                <li>
+                    <a href="#">
+                        韶山旅游
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        东江湖景区
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        胡耀邦故居
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        博裕隆汽车
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        长沙生态动物园
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        张家界武陵源
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        湖南畅旅
+                    </a>
+                </li>
+            </ul>
+            <p class="cr">Copyright © 2010 - 2018 All580.com. All Rights Reserved 湘ICP备14006056号-1 技术支持：
+                <a href="#">湖南畅旅</a>
+                <a href="http://www.all580.com/index.php?m=content&c=index&a=lists&catid=3020">联系我们</a>
+            </p>
         </div>
-        <!-- end footer -->
-        <script src="js/show_news.js"></script>
+    </div>
+    <!-- end footer -->
+    <script src="js/slider.js"></script>
+    <!-- <script src="js/show_news.js"></script>
+
         <script type="text/javascript">
             $(function () {
                 $("#focus-img").changeImg({
@@ -230,6 +240,7 @@
                     'changeHandle': true
                 });
             });
-        </script>
+        </script> -->
 </body>
+
 </html>

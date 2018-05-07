@@ -12,9 +12,11 @@
     <link href="css/foundation.min.css" rel="stylesheet" type="text/css">
     <link href="css/calendar.css" rel="stylesheet" />
     <link href="css/foundation-datepicker.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
     <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="layui/layui.js"></script>
 </head>
 
 <body>
@@ -68,8 +70,8 @@
         <div class="nav_wrapper1">
             <div class="navList">
                 <div class="navList_left">
-                    <a href="#" class="nav_active">景点门票</a>
-                    <a href="#">精品酒店</a>
+                    <a href="jdmp.html" class="nav_active">景点门票</a>
+                    <a href="jdyd.html">精品酒店</a>
                 </div>
                 <div class="navList_right">
                     <a href="http://www.pyticket.com/">您当前位置 : 首页 ></a>
@@ -115,8 +117,7 @@
                         </p>
                         <p class="dy_ver_date">
                             <span>出行日期：</span>
-                            <input type="text" id="dt" placeholder="trigger calendar">
-                            <div id="dd"></div>
+                            <input type="text" class="layui-input date_box" id="test1">
                         </p>
                         <p class="dy_ver_sum02">
                             <span>门票数量：</span>
@@ -262,6 +263,16 @@
         <!-- end 右侧客服悬浮窗 -->
 
     </div>
+    <script>
+        layui.use('laydate', function () {
+            var laydate = layui.laydate;
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#test1' //指定元素
+            });
+        });
+    </script>
     <script src="js/foundation-datepicker.js"></script>
     <script src="js/calendar.js"></script>
     <script>

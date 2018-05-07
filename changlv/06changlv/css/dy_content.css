@@ -719,7 +719,7 @@
 }
 
 .dy_verify02 .dy_ver_ctn02 .dy_ver_date {
-    height: 26px;
+    height: 30px;
     line-height: 30px;
     font-size: 14px;
     color: #666;
@@ -993,3 +993,11 @@
 }
 
 /* end 景点门票订单支付 */
+
+
+
+.dy_ver_date .date_box {
+    width:200px;
+    height:30px;
+    display:inline-block;
+}

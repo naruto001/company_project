@@ -925,3 +925,9 @@
     font-size:36px;
 }
 /* end 景点门票订单支付 */
+
+.dy_ver_date .date_box {
+    width:200px;
+    height:30px;
+    display:inline-block;
+}

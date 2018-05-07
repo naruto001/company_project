@@ -16,9 +16,11 @@
     <link href="css/foundation.min.css" rel="stylesheet" type="text/css">
     <link href="css/calendar.css" rel="stylesheet" />
     <link href="css/foundation-datepicker.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.ui.min.js"></script>
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="layui/layui.js"></script>
 </head>
 
 <body>
@@ -123,8 +125,7 @@
                     </p>
                     <p class="dy_ver_date">
                         <span>出行日期：</span>
-                        <input type="text" id="dt" placeholder="trigger calendar">
-                        <div id="dd"></div>
+                        <input type="text" class="layui-input date_box" id="test1">
                     </p>
                     <p class="dy_ver_sum02">
                         <span>门票数量：</span>
@@ -272,8 +273,16 @@
         </ul>
     </div>
     <!--结束-->
+    <script>
+        layui.use('laydate', function () {
+            var laydate = layui.laydate;
 
-
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#test1' //指定元素
+            });
+        });
+    </script>
     <script src="js/foundation-datepicker.js"></script>
     <script src="js/calendar.js"></script>
     <script>
